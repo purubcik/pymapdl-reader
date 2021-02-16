@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reading MAPDL Result Files &#8212; PyMAPDL Reader 0.50.5 documentation</title>
+    <title>Reading MAPDL Result Files &#8212; PyMAPDL Reader 0.50.6 documentation</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -28,11 +28,11 @@
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/ansys.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery-dataframe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery-rendered-html.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/ansys.css" />
     
   <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
 
@@ -383,11 +383,11 @@ of a result, which returns a <code class="docutils literal notranslate"><span cl
 <p>Which contains the following attributes:</p>
 <dl class="py class">
 <dt id="ansys.mapdl.reader.mesh.Mesh">
-<em class="property">class </em><code class="sig-prename descclassname">ansys.mapdl.reader.mesh.</code><code class="sig-name descname">Mesh</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nnum</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">nodes</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">elem</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">elem_off</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">ekey</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">node_comps</span><span class="o">=</span><span class="default_value">{}</span></em>, <em class="sig-param"><span class="n">elem_comps</span><span class="o">=</span><span class="default_value">{}</span></em>, <em class="sig-param"><span class="n">rdat</span><span class="o">=</span><span class="default_value">[]</span></em>, <em class="sig-param"><span class="n">rnum</span><span class="o">=</span><span class="default_value">[]</span></em>, <em class="sig-param"><span class="n">keyopt</span><span class="o">=</span><span class="default_value">{}</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.mesh.</span></code><code class="sig-name descname"><span class="pre">Mesh</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nnum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elem_off</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ekey</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_comps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elem_comps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rdat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rnum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keyopt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh" title="Permalink to this definition">¶</a></dt>
 <dd><p>Common class between Archive, and result mesh</p>
 <dl class="py method">
 <dt id="ansys.mapdl.reader.mesh.Mesh.ekey">
-<em class="property">property </em><code class="sig-name descname">ekey</code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.ekey" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">ekey</span></code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.ekey" title="Permalink to this definition">¶</a></dt>
 <dd><p>Element type key</p>
 <p>Array containing element type numbers in the first column and
 the element types (like SURF154) in the second column.</p>
@@ -406,7 +406,7 @@ the element types (like SURF154) in the second column.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.mesh.Mesh.elem">
-<em class="property">property </em><code class="sig-name descname">elem</code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.elem" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">elem</span></code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.elem" title="Permalink to this definition">¶</a></dt>
 <dd><p>List of elements containing raw ansys information.</p>
 <p>Each element contains 10 items plus the nodes belonging to the
 element.  The first 10 items are:</p>
@@ -441,7 +441,7 @@ element.  The first 10 items are:</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.mesh.Mesh.elem_real_constant">
-<em class="property">property </em><code class="sig-name descname">elem_real_constant</code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.elem_real_constant" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">elem_real_constant</span></code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.elem_real_constant" title="Permalink to this definition">¶</a></dt>
 <dd><p>Real constant reference for each element.</p>
 <p>Use the data within <code class="docutils literal notranslate"><span class="pre">rlblock</span></code> and <code class="docutils literal notranslate"><span class="pre">rlblock_num</span></code> to get the
 real constant datat for each element.</p>
@@ -463,7 +463,7 @@ real constant datat for each element.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.mesh.Mesh.element_components">
-<em class="property">property </em><code class="sig-name descname">element_components</code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.element_components" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">element_components</span></code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.element_components" title="Permalink to this definition">¶</a></dt>
 <dd><p>Element components for the archive.</p>
 <p>Output is a dictionary of element components.  Each entry is an
 array of MAPDL element numbers corresponding to the element
@@ -484,7 +484,7 @@ component.  The keys are element component names.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.mesh.Mesh.element_coord_system">
-<code class="sig-name descname">element_coord_system</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.element_coord_system" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">element_coord_system</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.element_coord_system" title="Permalink to this definition">¶</a></dt>
 <dd><p>Element coordinate system number</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -500,7 +500,7 @@ component.  The keys are element component names.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.mesh.Mesh.enum">
-<em class="property">property </em><code class="sig-name descname">enum</code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.enum" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">enum</span></code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.enum" title="Permalink to this definition">¶</a></dt>
 <dd><p>ANSYS element numbers.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -514,7 +514,7 @@ component.  The keys are element component names.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.mesh.Mesh.etype">
-<em class="property">property </em><code class="sig-name descname">etype</code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.etype" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">etype</span></code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.etype" title="Permalink to this definition">¶</a></dt>
 <dd><p>Element type of each element.</p>
 <p>This is the ansys element type for each element.</p>
 <p class="rubric">Examples</p>
@@ -539,7 +539,7 @@ Reference for more details:</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.mesh.Mesh.key_option">
-<em class="property">property </em><code class="sig-name descname">key_option</code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.key_option" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">key_option</span></code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.key_option" title="Permalink to this definition">¶</a></dt>
 <dd><p>Additional key options for element types</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -553,7 +553,7 @@ Reference for more details:</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.mesh.Mesh.material_type">
-<em class="property">property </em><code class="sig-name descname">material_type</code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.material_type" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">material_type</span></code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.material_type" title="Permalink to this definition">¶</a></dt>
 <dd><p>Material type index of each element in the archive.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -569,19 +569,19 @@ Reference for more details:</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.mesh.Mesh.n_elem">
-<em class="property">property </em><code class="sig-name descname">n_elem</code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.n_elem" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">n_elem</span></code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.n_elem" title="Permalink to this definition">¶</a></dt>
 <dd><p>Number of nodes</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.mesh.Mesh.n_node">
-<em class="property">property </em><code class="sig-name descname">n_node</code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.n_node" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">n_node</span></code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.n_node" title="Permalink to this definition">¶</a></dt>
 <dd><p>Number of nodes</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.mesh.Mesh.nnum">
-<em class="property">property </em><code class="sig-name descname">nnum</code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.nnum" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">nnum</span></code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.nnum" title="Permalink to this definition">¶</a></dt>
 <dd><p>Array of node numbers.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -595,7 +595,7 @@ Reference for more details:</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.mesh.Mesh.node_angles">
-<em class="property">property </em><code class="sig-name descname">node_angles</code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.node_angles" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">node_angles</span></code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.node_angles" title="Permalink to this definition">¶</a></dt>
 <dd><p>Node angles from the archive file.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -615,7 +615,7 @@ Reference for more details:</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.mesh.Mesh.node_components">
-<em class="property">property </em><code class="sig-name descname">node_components</code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.node_components" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">node_components</span></code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.node_components" title="Permalink to this definition">¶</a></dt>
 <dd><p>Node components for the archive.</p>
 <p>Output is a dictionary of node components.  Each entry is an
 array of MAPDL node numbers corresponding to the node
@@ -643,7 +643,7 @@ component.  The keys are node component names.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.mesh.Mesh.nodes">
-<em class="property">property </em><code class="sig-name descname">nodes</code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.nodes" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">nodes</span></code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.nodes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Array of nodes.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -663,7 +663,7 @@ component.  The keys are node component names.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.mesh.Mesh.rlblock">
-<em class="property">property </em><code class="sig-name descname">rlblock</code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.rlblock" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">rlblock</span></code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.rlblock" title="Permalink to this definition">¶</a></dt>
 <dd><p>Real constant data from the RLBLOCK.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -680,7 +680,7 @@ component.  The keys are node component names.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.mesh.Mesh.rlblock_num">
-<em class="property">property </em><code class="sig-name descname">rlblock_num</code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.rlblock_num" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">rlblock_num</span></code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.rlblock_num" title="Permalink to this definition">¶</a></dt>
 <dd><p>Indices from the real constant data</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -694,7 +694,7 @@ component.  The keys are node component names.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.mesh.Mesh.save">
-<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">binary</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">force_linear</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">allowable_types</span><span class="o">=</span><span class="default_value">[]</span></em>, <em class="sig-param"><span class="n">null_unallowed</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.save" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">save</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">binary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_linear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowable_types</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">null_unallowed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.save" title="Permalink to this definition">¶</a></dt>
 <dd><p>Save the geometry as a vtk file</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -726,7 +726,7 @@ file size.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.mesh.Mesh.section">
-<em class="property">property </em><code class="sig-name descname">section</code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.section" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">section</span></code><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.section" title="Permalink to this definition">¶</a></dt>
 <dd><p>Section number</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -1120,7 +1120,7 @@ shape by a complex value for a given phase.</p>
 <span class="n">result</span><span class="o">.</span><span class="n">plot_nodal_solution</span><span class="p">(</span><span class="n">rnum</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Displacement&#39;</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="../_images/rotor1.jpg" src="../_images/rotor1.jpg" />
+<img alt="../_images/rotor.jpg" src="../_images/rotor.jpg" />
 <p>The phase of the result can be changed by modifying the <code class="docutils literal notranslate"><span class="pre">phase</span></code>
 option.  See <code class="docutils literal notranslate"><span class="pre">help(result.plot_nodal_solution)</span></code> for details on its
 implementation.</p>
@@ -1155,7 +1155,7 @@ node average stress in the Sx, Sy Sz, Sxy, Syz, and Sxz directions.</p>
 <h2>Result Object Methods<a class="headerlink" href="#result-object-methods" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="ansys.mapdl.reader.rst.Result">
-<em class="property">class </em><code class="sig-prename descclassname">ansys.mapdl.reader.rst.</code><code class="sig-name descname">Result</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">read_mesh</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.rst.</span></code><code class="sig-name descname"><span class="pre">Result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">read_mesh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reads a binary ANSYS result file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1174,7 +1174,7 @@ mesh from the result file.</p></li>
 </div>
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.animate_nodal_displacement">
-<code class="sig-name descname">animate_nodal_displacement</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">comp</span><span class="o">=</span><span class="default_value">'norm'</span></em>, <em class="sig-param"><span class="n">node_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">element_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sel_type_all</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">add_text</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">displacement_factor</span><span class="o">=</span><span class="default_value">0.1</span></em>, <em class="sig-param"><span class="n">nangles</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">loop</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">movie_filename</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.animate_nodal_displacement" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">animate_nodal_displacement</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'norm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nangles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">movie_filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.animate_nodal_displacement" title="Permalink to this definition">¶</a></dt>
 <dd><p>Animate nodal solution.  Assumes nodal solution is a
 displacement array from a modal solution.</p>
 <dl class="simple">
@@ -1230,7 +1230,7 @@ without looping</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.animate_nodal_solution">
-<code class="sig-name descname">animate_nodal_solution</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">comp</span><span class="o">=</span><span class="default_value">'norm'</span></em>, <em class="sig-param"><span class="n">node_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">element_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sel_type_all</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">add_text</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">displacement_factor</span><span class="o">=</span><span class="default_value">0.1</span></em>, <em class="sig-param"><span class="n">nangles</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">loop</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">movie_filename</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.animate_nodal_solution" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">animate_nodal_solution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'norm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nangles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">movie_filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.animate_nodal_solution" title="Permalink to this definition">¶</a></dt>
 <dd><p>Animate nodal solution.  Assumes nodal solution is a
 displacement array from a modal solution.</p>
 <dl class="simple">
@@ -1286,7 +1286,7 @@ without looping</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.animate_nodal_solution_set">
-<code class="sig-name descname">animate_nodal_solution_set</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnums</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">comp</span><span class="o">=</span><span class="default_value">'norm'</span></em>, <em class="sig-param"><span class="n">node_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">element_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sel_type_all</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">loop</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">movie_filename</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">add_text</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">fps</span><span class="o">=</span><span class="default_value">20</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.animate_nodal_solution_set" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">animate_nodal_solution_set</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnums</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'norm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">movie_filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.animate_nodal_solution_set" title="Permalink to this definition">¶</a></dt>
 <dd><p>Animate a set of nodal solutions.</p>
 <p>Animates the scalars of all the result sets.  Best when used
 with a series of static analyses.</p>
@@ -1342,7 +1342,7 @@ the top down.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.available_results">
-<em class="property">property </em><code class="sig-name descname">available_results</code><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.available_results" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">available_results</span></code><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.available_results" title="Permalink to this definition">¶</a></dt>
 <dd><p>Available result types.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">available_results</span>
@@ -1363,13 +1363,13 @@ the top down.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.cs_4x4">
-<code class="sig-name descname">cs_4x4</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cs_cord</span></em>, <em class="sig-param"><span class="n">as_vtk_matrix</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.cs_4x4" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">cs_4x4</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cs_cord</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_vtk_matrix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.cs_4x4" title="Permalink to this definition">¶</a></dt>
 <dd><p>return a 4x4 transformation array for a given coordinate system</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.cylindrical_nodal_stress">
-<code class="sig-name descname">cylindrical_nodal_stress</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.cylindrical_nodal_stress" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">cylindrical_nodal_stress</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.cylindrical_nodal_stress" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieves the stresses for each node in the solution in the
 cylindrical coordinate system as the following values:</p>
 <p><code class="docutils literal notranslate"><span class="pre">R</span></code>, <code class="docutils literal notranslate"><span class="pre">THETA</span></code>, <code class="docutils literal notranslate"><span class="pre">Z</span></code>, <code class="docutils literal notranslate"><span class="pre">RTHETA</span></code>, <code class="docutils literal notranslate"><span class="pre">THETAZ</span></code>, and <code class="docutils literal notranslate"><span class="pre">RZ</span></code></p>
@@ -1408,7 +1408,7 @@ PRNSOL, S</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.element_components">
-<em class="property">property </em><code class="sig-name descname">element_components</code><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.element_components" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">element_components</span></code><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.element_components" title="Permalink to this definition">¶</a></dt>
 <dd><p>Dictionary of ansys element components from the result file.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -1426,8 +1426,14 @@ PRNSOL, S</p>
 </dd></dl>
 
 <dl class="py method">
+<dt id="ansys.mapdl.reader.rst.Result.element_lookup">
+<code class="sig-name descname"><span class="pre">element_lookup</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.element_lookup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Index of the element the element within the result mesh</p>
+</dd></dl>
+
+<dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.element_solution_data">
-<code class="sig-name descname">element_solution_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">datatype</span></em>, <em class="sig-param"><span class="n">sort</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.element_solution_data" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">element_solution_data</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datatype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.element_solution_data" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieves element solution data.  Similar to ETABLE.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1518,7 +1524,7 @@ from MAPDL with ESOL commands:</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.element_stress">
-<code class="sig-name descname">element_stress</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">principal</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">in_element_coord_sys</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.element_stress" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">element_stress</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">principal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_element_coord_sys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.element_stress" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieves the element component stresses.</p>
 <p>Equivalent ANSYS command: PRESOL, S</p>
 <dl class="field-list simple">
@@ -1563,7 +1569,7 @@ the bottom layer is reported.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.materials">
-<em class="property">property </em><code class="sig-name descname">materials</code><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.materials" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">materials</span></code><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.materials" title="Permalink to this definition">¶</a></dt>
 <dd><p>Result file material properties.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -1640,7 +1646,7 @@ properrties of that material with only the valid entries filled.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.mesh">
-<em class="property">property </em><code class="sig-name descname">mesh</code><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.mesh" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">mesh</span></code><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.mesh" title="Permalink to this definition">¶</a></dt>
 <dd><p>Mesh from result file</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">mesh</span>
@@ -1656,19 +1662,19 @@ properrties of that material with only the valid entries filled.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.n_results">
-<em class="property">property </em><code class="sig-name descname">n_results</code><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.n_results" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">n_results</span></code><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.n_results" title="Permalink to this definition">¶</a></dt>
 <dd><p>Number of results</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.n_sector">
-<em class="property">property </em><code class="sig-name descname">n_sector</code><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.n_sector" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">n_sector</span></code><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.n_sector" title="Permalink to this definition">¶</a></dt>
 <dd><p>Number of sectors</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.nodal_acceleration">
-<code class="sig-name descname">nodal_acceleration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">in_nodal_coord_sys</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_acceleration" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_acceleration</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_nodal_coord_sys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_acceleration" title="Permalink to this definition">¶</a></dt>
 <dd><p>Nodal velocities for a given result set.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1703,7 +1709,7 @@ solution results are reflected in <code class="docutils literal notranslate"><sp
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.nodal_boundary_conditions">
-<code class="sig-name descname">nodal_boundary_conditions</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_boundary_conditions" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_boundary_conditions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_boundary_conditions" title="Permalink to this definition">¶</a></dt>
 <dd><p>Nodal boundary conditions for a given result number.</p>
 <p>These nodal boundary conditions are generally set with the
 APDL command <code class="docutils literal notranslate"><span class="pre">D</span></code>.  For example, <code class="docutils literal notranslate"><span class="pre">D,</span> <span class="pre">25,</span> <span class="pre">UX,</span> <span class="pre">0.001</span></code></p>
@@ -1739,7 +1745,7 @@ degrees of freedom associated with each index.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.nodal_displacement">
-<code class="sig-name descname">nodal_displacement</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">in_nodal_coord_sys</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_displacement" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_displacement</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_nodal_coord_sys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_displacement" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the DOF solution for each node in the global
 cartesian coordinate system or nodal coordinate system.</p>
 <p>Solution may be nodal temperatures or nodal displacements
@@ -1778,7 +1784,7 @@ solution results are reflected in <code class="docutils literal notranslate"><sp
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.nodal_elastic_strain">
-<code class="sig-name descname">nodal_elastic_strain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_elastic_strain" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_elastic_strain</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_elastic_strain" title="Permalink to this definition">¶</a></dt>
 <dd><p>Nodal component elastic strains.  This record contains
 strains in the order X, Y, Z, XY, YZ, XZ, EQV.</p>
 <p>Elastic strains can be can be nodal values extrapolated from
@@ -1812,7 +1818,7 @@ X, Y, Z, XY, YZ, XZ, EQV.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.nodal_input_force">
-<code class="sig-name descname">nodal_input_force</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_input_force" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_input_force</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_input_force" title="Permalink to this definition">¶</a></dt>
 <dd><p>Nodal input force for a given result number.</p>
 <p>Nodal input force is generally set with the APDL command
 <code class="docutils literal notranslate"><span class="pre">F</span></code>.  For example, <code class="docutils literal notranslate"><span class="pre">F,</span> <span class="pre">25,</span> <span class="pre">FX,</span> <span class="pre">0.001</span></code></p>
@@ -1847,7 +1853,7 @@ of freedom associated with each index.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.nodal_plastic_strain">
-<code class="sig-name descname">nodal_plastic_strain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_plastic_strain" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_plastic_strain</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_plastic_strain" title="Permalink to this definition">¶</a></dt>
 <dd><p>Nodal component plastic strains.  This record contains
 strains in the order X, Y, Z, XY, YZ, XZ, EQV.</p>
 <p>Plastic strains are always values at the integration points
@@ -1877,7 +1883,7 @@ X, Y, Z, XY, YZ, XZ, EQV.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.nodal_reaction_forces">
-<code class="sig-name descname">nodal_reaction_forces</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">sort</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_reaction_forces" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_reaction_forces</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_reaction_forces" title="Permalink to this definition">¶</a></dt>
 <dd><p>Nodal reaction forces.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1920,7 +1926,7 @@ the reaction forces of a single node.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.nodal_solution">
-<code class="sig-name descname">nodal_solution</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">in_nodal_coord_sys</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_solution" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_solution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_nodal_coord_sys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_solution" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the DOF solution for each node in the global
 cartesian coordinate system or nodal coordinate system.</p>
 <p>Solution may be nodal temperatures or nodal displacements
@@ -1959,7 +1965,7 @@ solution results are reflected in <code class="docutils literal notranslate"><sp
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.nodal_static_forces">
-<code class="sig-name descname">nodal_static_forces</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_static_forces" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_static_forces</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_static_forces" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the nodal forces averaged at the nodes</p>
 <p>Nodal forces are computed on an element by element basis, and
 this method averages the nodal forces for each element for
@@ -1995,7 +2001,7 @@ midside (quadratic) nodes.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.nodal_stress">
-<code class="sig-name descname">nodal_stress</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_stress" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_stress</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_stress" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieves the component stresses for each node in the
 solution.</p>
 <p>The order of the results corresponds to the sorted node
@@ -2031,7 +2037,7 @@ Equivalent ANSYS command: PRNSOL, S</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.nodal_temperature">
-<code class="sig-name descname">nodal_temperature</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_temperature" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_temperature</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_temperature" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieves the temperature for each node in the
 solution.</p>
 <p>The order of the results corresponds to the sorted node
@@ -2060,7 +2066,7 @@ list containing (step, substep) of the requested result.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.nodal_thermal_strain">
-<code class="sig-name descname">nodal_thermal_strain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_thermal_strain" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_thermal_strain</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_thermal_strain" title="Permalink to this definition">¶</a></dt>
 <dd><p>Nodal component thermal strain.</p>
 <p>This record contains strains in the order X, Y, Z, XY, YZ, XZ,
 EQV, and eswell (element swelling strain).  Thermal strains
@@ -2092,7 +2098,7 @@ X, Y, Z, XY, YZ, XZ, EQV, ESWELL</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.nodal_time_history">
-<code class="sig-name descname">nodal_time_history</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">solution_type</span><span class="o">=</span><span class="default_value">'NSL'</span></em>, <em class="sig-param"><span class="n">in_nodal_coord_sys</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_time_history" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_time_history</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">solution_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'NSL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_nodal_coord_sys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_time_history" title="Permalink to this definition">¶</a></dt>
 <dd><p>The DOF solution for each node for all result sets.</p>
 <p>The nodal results are returned returned in the global
 cartesian coordinate system or nodal coordinate system.</p>
@@ -2120,7 +2126,7 @@ time steps by number of nodes by degrees of freedom.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.nodal_velocity">
-<code class="sig-name descname">nodal_velocity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">in_nodal_coord_sys</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_velocity" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_velocity</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_nodal_coord_sys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.nodal_velocity" title="Permalink to this definition">¶</a></dt>
 <dd><p>Nodal velocities for a given result set.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2155,7 +2161,7 @@ solution results are reflected in <code class="docutils literal notranslate"><sp
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.node_components">
-<em class="property">property </em><code class="sig-name descname">node_components</code><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.node_components" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">node_components</span></code><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.node_components" title="Permalink to this definition">¶</a></dt>
 <dd><p>Dictionary of ansys node components from the result file.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -2172,7 +2178,7 @@ solution results are reflected in <code class="docutils literal notranslate"><sp
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.overwrite_element_solution_record">
-<code class="sig-name descname">overwrite_element_solution_record</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">solution_type</span></em>, <em class="sig-param"><span class="n">element_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.overwrite_element_solution_record" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">overwrite_element_solution_record</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solution_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.overwrite_element_solution_record" title="Permalink to this definition">¶</a></dt>
 <dd><p>Overwrite element solution record.</p>
 <p>This method replaces solution data for of an element at a
 result index for a given solution type.  The number of items
@@ -2189,9 +2195,9 @@ with:
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>data</strong> (<em>list</em><em> or </em><em>np.ndarray</em>) – Data that will replace the record</p></li>
+<li><p><strong>data</strong> (<em>list</em><em> or </em><em>np.ndarray</em>) – Data that will replace the existing records.</p></li>
 <li><p><strong>rnum</strong> (<em>int</em>) – Zero based result number.</p></li>
-<li><p><strong>solution_type</strong> (<em>str</em>) – <p>Element data type to retrieve.</p>
+<li><p><strong>solution_type</strong> (<em>str</em>) – <p>Element data type to overwrite.</p>
 <ul>
 <li><p>EMS: misc. data</p></li>
 <li><p>ENF: nodal forces</p></li>
@@ -2236,8 +2242,73 @@ first result with random data.</p>
 </dd></dl>
 
 <dl class="py method">
+<dt id="ansys.mapdl.reader.rst.Result.overwrite_element_solution_records">
+<code class="sig-name descname"><span class="pre">overwrite_element_solution_records</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solution_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.overwrite_element_solution_records" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite element solution record.</p>
+<p>This method replaces solution data for a set of elements at a
+result index for a given solution type.  The number of items
+in <code class="docutils literal notranslate"><span class="pre">data</span></code> must match the number of items in the record.</p>
+<p>If you are not sure how many records are in a given record,
+use <code class="docutils literal notranslate"><span class="pre">element_solution_data</span></code> to retrieve all the records for
+a given <code class="docutils literal notranslate"><span class="pre">solution_type</span></code> and check the number of items in the
+record.</p>
+<p>Note: The record being replaced cannot be a compressed record.
+If the result file uses compression (default sparse
+compression as of 2019R1), you can disable this within MAPDL
+with:
+<code class="docutils literal notranslate"><span class="pre">/FCOMP,</span> <span class="pre">RST,</span> <span class="pre">0</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element_data</strong> (<em>dict</em>) – Dictionary of results that will replace the existing records.</p></li>
+<li><p><strong>rnum</strong> (<em>int</em>) – Zero based result number.</p></li>
+<li><p><strong>solution_type</strong> (<em>str</em>) – <p>Element data type to overwrite.</p>
+<ul>
+<li><p>EMS: misc. data</p></li>
+<li><p>ENF: nodal forces</p></li>
+<li><p>ENS: nodal stresses</p></li>
+<li><p>ENG: volume and energies</p></li>
+<li><p>EGR: nodal gradients</p></li>
+<li><p>EEL: elastic strains</p></li>
+<li><p>EPL: plastic strains</p></li>
+<li><p>ECR: creep strains</p></li>
+<li><p>ETH: thermal strains</p></li>
+<li><p>EUL: euler angles</p></li>
+<li><p>EFX: nodal fluxes</p></li>
+<li><p>ELF: local forces</p></li>
+<li><p>EMN: misc. non-sum values</p></li>
+<li><p>ECD: element current densities</p></li>
+<li><p>ENL: nodal nonlinear data</p></li>
+<li><p>EHC: calculated heat generations</p></li>
+<li><p>EPT: element temperatures</p></li>
+<li><p>ESF: element surface stresses</p></li>
+<li><p>EDI: diffusion strains</p></li>
+<li><p>ETB: ETABLE items</p></li>
+<li><p>ECT: contact data</p></li>
+<li><p>EXY: integration point locations</p></li>
+<li><p>EBA: back stresses</p></li>
+<li><p>ESV: state variables</p></li>
+<li><p>MNL: material nonlinear record</p></li>
+</ul>
+</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>Overwrite the elastic strain record for elements 1 and 2 with
+for the first result with random data.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span> <span class="o">=</span> <span class="n">pymapdl_reader</span><span class="o">.</span><span class="n">read_binary</span><span class="p">(</span><span class="s1">&#39;file.rst&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="mi">56</span><span class="p">),</span>
+<span class="go">            2: np.random.random(56)}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">overwrite_element_solution_data</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;EEL&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.parse_coordinate_system">
-<code class="sig-name descname">parse_coordinate_system</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.parse_coordinate_system" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">parse_coordinate_system</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.parse_coordinate_system" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reads in coordinate system information from a binary result
 file.</p>
 <dl class="field-list simple">
@@ -2280,13 +2351,13 @@ ellipse Z-axis radius to X-axis radius (defaults to 1.0
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.parse_step_substep">
-<code class="sig-name descname">parse_step_substep</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user_input</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.parse_step_substep" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">parse_step_substep</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.parse_step_substep" title="Permalink to this definition">¶</a></dt>
 <dd><p>Converts (step, substep) to a cumulative index</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.plot">
-<code class="sig-name descname">plot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">node_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">element_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sel_type_all</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">plot</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot result geometry</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2325,7 +2396,7 @@ containing all nodes of the component.  Default True.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.plot_cylindrical_nodal_stress">
-<code class="sig-name descname">plot_cylindrical_nodal_stress</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">comp</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">show_displacement</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">displacement_factor</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">node_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">element_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sel_type_all</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot_cylindrical_nodal_stress" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">plot_cylindrical_nodal_stress</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot_cylindrical_nodal_stress" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot nodal_stress in the cylindrical coordinate system.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2363,7 +2434,7 @@ containing all nodes of the component.  Default True.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.plot_element_result">
-<code class="sig-name descname">plot_element_result</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">result_type</span></em>, <em class="sig-param"><span class="n">item_index</span></em>, <em class="sig-param"><span class="n">in_element_coord_sys</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot_element_result" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">plot_element_result</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_element_coord_sys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot_element_result" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot an element result.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2416,7 +2487,7 @@ coordinate system.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.plot_nodal_displacement">
-<code class="sig-name descname">plot_nodal_displacement</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">comp</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">show_displacement</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">displacement_factor</span><span class="o">=</span><span class="default_value">1.0</span></em>, <em class="sig-param"><span class="n">node_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">element_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sel_type_all</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot_nodal_displacement" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">plot_nodal_displacement</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot_nodal_displacement" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plots the nodal solution.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2466,7 +2537,7 @@ example</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.plot_nodal_elastic_strain">
-<code class="sig-name descname">plot_nodal_elastic_strain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">comp</span></em>, <em class="sig-param"><span class="n">stitle</span><span class="o">=</span><span class="default_value">'Nodal Elastic Strain'</span></em>, <em class="sig-param"><span class="n">show_displacement</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">displacement_factor</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">node_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">element_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sel_type_all</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot_nodal_elastic_strain" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">plot_nodal_elastic_strain</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Nodal</span> <span class="pre">Elastic</span> <span class="pre">Strain'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot_nodal_elastic_strain" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot nodal elastic strain.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2506,7 +2577,7 @@ containing all nodes of the component.  Default True.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.plot_nodal_plastic_strain">
-<code class="sig-name descname">plot_nodal_plastic_strain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">comp</span></em>, <em class="sig-param"><span class="n">stitle</span><span class="o">=</span><span class="default_value">'Nodal Plastic Strain'</span></em>, <em class="sig-param"><span class="n">show_displacement</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">displacement_factor</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">node_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">element_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sel_type_all</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot_nodal_plastic_strain" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">plot_nodal_plastic_strain</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Nodal</span> <span class="pre">Plastic</span> <span class="pre">Strain'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot_nodal_plastic_strain" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot nodal component plastic strain.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2547,7 +2618,7 @@ containing all nodes of the component.  Default True.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.plot_nodal_solution">
-<code class="sig-name descname">plot_nodal_solution</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">comp</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">show_displacement</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">displacement_factor</span><span class="o">=</span><span class="default_value">1.0</span></em>, <em class="sig-param"><span class="n">node_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">element_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sel_type_all</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot_nodal_solution" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">plot_nodal_solution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot_nodal_solution" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plots the nodal solution.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2597,7 +2668,7 @@ example</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.plot_nodal_stress">
-<code class="sig-name descname">plot_nodal_stress</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">comp</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">show_displacement</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">displacement_factor</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">node_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">element_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sel_type_all</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot_nodal_stress" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">plot_nodal_stress</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot_nodal_stress" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plots the stresses at each node in the solution.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2638,7 +2709,7 @@ containing all nodes of the component.  Default True.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.plot_nodal_temperature">
-<code class="sig-name descname">plot_nodal_temperature</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">show_displacement</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">displacement_factor</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">node_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">element_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sel_type_all</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot_nodal_temperature" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">plot_nodal_temperature</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot_nodal_temperature" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot nodal temperature</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2673,7 +2744,7 @@ containing all nodes of the component.  Default True.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.plot_nodal_thermal_strain">
-<code class="sig-name descname">plot_nodal_thermal_strain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">comp</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">stitle</span><span class="o">=</span><span class="default_value">'Nodal Thermal Strain'</span></em>, <em class="sig-param"><span class="n">show_displacement</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">displacement_factor</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">node_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">element_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sel_type_all</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot_nodal_thermal_strain" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">plot_nodal_thermal_strain</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Nodal</span> <span class="pre">Thermal</span> <span class="pre">Strain'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot_nodal_thermal_strain" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot nodal component thermal strains.</p>
 <p>Equivalent MAPDL command: PLNSOL, EPTH, COMP</p>
 <dl class="field-list simple">
@@ -2715,7 +2786,7 @@ containing all nodes of the component.  Default True.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.plot_principal_nodal_stress">
-<code class="sig-name descname">plot_principal_nodal_stress</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">comp</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">show_displacement</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">displacement_factor</span><span class="o">=</span><span class="default_value">1.0</span></em>, <em class="sig-param"><span class="n">node_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">element_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sel_type_all</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot_principal_nodal_stress" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">plot_principal_nodal_stress</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.plot_principal_nodal_stress" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot the principal stress.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2756,7 +2827,7 @@ containing all nodes of the component.  Default True.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.principal_nodal_stress">
-<code class="sig-name descname">principal_nodal_stress</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.principal_nodal_stress" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">principal_nodal_stress</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.principal_nodal_stress" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes the principal component stresses for each node in
 the solution.</p>
 <dl class="field-list simple">
@@ -2795,7 +2866,7 @@ principal using the averaged value.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.result_dof">
-<code class="sig-name descname">result_dof</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.result_dof" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">result_dof</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.result_dof" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a list of degrees of freedom for a given result number.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2818,7 +2889,7 @@ list containing (step, substep) of the requested result.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.save_as_vtk">
-<code class="sig-name descname">save_as_vtk</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">rsets</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">result_types</span><span class="o">=</span><span class="default_value">['ENS']</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.save_as_vtk" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">save_as_vtk</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rsets</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_types</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['ENS']</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.save_as_vtk" title="Permalink to this definition">¶</a></dt>
 <dd><p>Writes results to a vtk readable file.</p>
 <p>The file extension will select the type of writer to use.
 <code class="docutils literal notranslate"><span class="pre">'.vtk'</span></code> will use the legacy writer, while <code class="docutils literal notranslate"><span class="pre">'.vtu'</span></code> will
@@ -2885,7 +2956,7 @@ Binary can only be selected for the legacy writer.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.section_data">
-<em class="property">property </em><code class="sig-name descname">section_data</code><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.section_data" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">section_data</span></code><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.section_data" title="Permalink to this definition">¶</a></dt>
 <dd><p>The section data from the result file</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -2904,7 +2975,7 @@ to interpret the section data for a given model.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.solution_info">
-<code class="sig-name descname">solution_info</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.solution_info" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">solution_info</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.solution_info" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return an informative dictionary of solution data for a
 result.</p>
 <dl class="field-list simple">
@@ -2966,13 +3037,13 @@ center of gravity</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.text_result_table">
-<code class="sig-name descname">text_result_table</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.text_result_table" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">text_result_table</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.text_result_table" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a text result table for plotting</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.version">
-<em class="property">property </em><code class="sig-name descname">version</code><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.version" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">version</span></code><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.version" title="Permalink to this definition">¶</a></dt>
 <dd><p>The version of MAPDL used to generate this result file.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">version</span>
@@ -2983,7 +3054,7 @@ center of gravity</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.rst.Result.write_tables">
-<code class="sig-name descname">write_tables</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.write_tables" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">write_tables</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.write_tables" title="Permalink to this definition">¶</a></dt>
 <dd><p>Write binary tables to ASCII.  Assumes int32</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -3000,11 +3071,11 @@ center of gravity</p>
 
 <dl class="py class">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult">
-<em class="property">class </em><code class="sig-prename descclassname">ansys.mapdl.reader.cyclic_reader.</code><code class="sig-name descname">CyclicResult</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.cyclic_reader.</span></code><code class="sig-name descname"><span class="pre">CyclicResult</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult" title="Permalink to this definition">¶</a></dt>
 <dd><p>Adds cyclic functionality to the result class</p>
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.animate_nodal_displacement">
-<code class="sig-name descname">animate_nodal_displacement</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">comp</span><span class="o">=</span><span class="default_value">'norm'</span></em>, <em class="sig-param"><span class="n">displacement_factor</span><span class="o">=</span><span class="default_value">0.1</span></em>, <em class="sig-param"><span class="n">nangles</span><span class="o">=</span><span class="default_value">180</span></em>, <em class="sig-param"><span class="n">add_text</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">loop</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">movie_filename</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.animate_nodal_displacement" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">animate_nodal_displacement</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'norm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nangles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">180</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">movie_filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.animate_nodal_displacement" title="Permalink to this definition">¶</a></dt>
 <dd><p>Animate nodal solution.  Assumes nodal solution is a
 displacement array from a modal solution.</p>
 <dl class="simple">
@@ -3037,7 +3108,7 @@ A single loop of the mode will be recorded.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.animate_nodal_solution">
-<code class="sig-name descname">animate_nodal_solution</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">comp</span><span class="o">=</span><span class="default_value">'norm'</span></em>, <em class="sig-param"><span class="n">displacement_factor</span><span class="o">=</span><span class="default_value">0.1</span></em>, <em class="sig-param"><span class="n">nangles</span><span class="o">=</span><span class="default_value">180</span></em>, <em class="sig-param"><span class="n">add_text</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">loop</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">movie_filename</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.animate_nodal_solution" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">animate_nodal_solution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'norm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nangles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">180</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">movie_filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.animate_nodal_solution" title="Permalink to this definition">¶</a></dt>
 <dd><p>Animate nodal solution.  Assumes nodal solution is a
 displacement array from a modal solution.</p>
 <dl class="simple">
@@ -3070,13 +3141,13 @@ A single loop of the mode will be recorded.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.full_rotor">
-<em class="property">property </em><code class="sig-name descname">full_rotor</code><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.full_rotor" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">full_rotor</span></code><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.full_rotor" title="Permalink to this definition">¶</a></dt>
 <dd><p>UnstructuredGrid of the full replicated rotor</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.harmonic_index_to_cumulative">
-<code class="sig-name descname">harmonic_index_to_cumulative</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hindex</span></em>, <em class="sig-param"><span class="n">mode</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.harmonic_index_to_cumulative" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">harmonic_index_to_cumulative</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hindex</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.harmonic_index_to_cumulative" title="Permalink to this definition">¶</a></dt>
 <dd><p>Converts a harmonic index and a 0 index mode number to a
 cumulative result index.</p>
 <p>Harmonic indices are stored as positive and negative pairs for
@@ -3101,7 +3172,7 @@ a negative/positive harmonic index.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.harmonic_indices">
-<em class="property">property </em><code class="sig-name descname">harmonic_indices</code><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.harmonic_indices" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">harmonic_indices</span></code><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.harmonic_indices" title="Permalink to this definition">¶</a></dt>
 <dd><p>Harmonic indices of the result file.</p>
 <p>Harmonic index is simply the Nodal Diameter of the mode.  This
 is defined as the number of complete sine waves that pass
@@ -3116,13 +3187,13 @@ through the circumference.</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.mode_table">
-<em class="property">property </em><code class="sig-name descname">mode_table</code><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.mode_table" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">mode_table</span></code><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.mode_table" title="Permalink to this definition">¶</a></dt>
 <dd><p>Unique modes for cyclic results</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_displacement">
-<code class="sig-name descname">nodal_displacement</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">phase</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">full_rotor</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">as_complex</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_displacement" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_displacement</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phase</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">full_rotor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_complex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_displacement" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the DOF solution for each node in the global
 cartesian coordinate system.</p>
 <dl class="field-list simple">
@@ -3169,7 +3240,7 @@ pairs (i.e. harmonic index 1, -1).</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_elastic_strain">
-<code class="sig-name descname">nodal_elastic_strain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">phase</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">as_complex</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">full_rotor</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_elastic_strain" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_elastic_strain</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phase</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_complex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">full_rotor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_elastic_strain" title="Permalink to this definition">¶</a></dt>
 <dd><p>Nodal component elastic strains.  This record contains
 strains in the order X, Y, Z, XY, YZ, XZ, EQV.</p>
 <p>Elastic strains can be can be nodal values extrapolated from
@@ -3209,7 +3280,7 @@ X, Y, Z, XY, YZ, XZ, EQV.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_plastic_strain">
-<code class="sig-name descname">nodal_plastic_strain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">phase</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">as_complex</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">full_rotor</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_plastic_strain" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_plastic_strain</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phase</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_complex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">full_rotor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_plastic_strain" title="Permalink to this definition">¶</a></dt>
 <dd><p>Nodal component plastic strains.  This record contains
 strains in the order X, Y, Z, XY, YZ, XZ, EQV.</p>
 <p>Plastic strains can be can be nodal values extrapolated from
@@ -3249,7 +3320,7 @@ X, Y, Z, XY, YZ, XZ, EQV.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_solution">
-<code class="sig-name descname">nodal_solution</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">phase</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">full_rotor</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">as_complex</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_solution" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_solution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phase</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">full_rotor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_complex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_solution" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the DOF solution for each node in the global
 cartesian coordinate system.</p>
 <dl class="field-list simple">
@@ -3296,7 +3367,7 @@ pairs (i.e. harmonic index 1, -1).</p>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_stress">
-<code class="sig-name descname">nodal_stress</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">phase</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">as_complex</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">full_rotor</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_stress" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_stress</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phase</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_complex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">full_rotor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_stress" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieves the component stresses for each node in the
 solution.</p>
 <p>The order of the results corresponds to the sorted node
@@ -3339,7 +3410,7 @@ result is the result object.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_temperature">
-<code class="sig-name descname">nodal_temperature</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">full_rotor</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_temperature" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_temperature</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">full_rotor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_temperature" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieves the temperature for each node in the
 solution.</p>
 <p>The order of the results corresponds to the sorted node
@@ -3371,7 +3442,7 @@ list containing (step, substep) of the requested result.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_thermal_strain">
-<code class="sig-name descname">nodal_thermal_strain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">phase</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">as_complex</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">full_rotor</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_thermal_strain" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">nodal_thermal_strain</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phase</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_complex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">full_rotor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.nodal_thermal_strain" title="Permalink to this definition">¶</a></dt>
 <dd><p>Nodal component thermal strains.  This record contains
 strains in the order X, Y, Z, XY, YZ, XZ, EQV, and eswell
 (element swelling strain).  Thermal strains are always values
@@ -3410,7 +3481,7 @@ X, Y, Z, XY, YZ, XZ, EQV, ESWELL</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.plot">
-<code class="sig-name descname">plot</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.plot" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">plot</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.plot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot the full rotor geometry.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -3437,7 +3508,7 @@ X, Y, Z, XY, YZ, XZ, EQV, ESWELL</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_nodal_elastic_strain">
-<code class="sig-name descname">plot_nodal_elastic_strain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">comp</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">phase</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">full_rotor</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">show_displacement</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">displacement_factor</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">node_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">element_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sel_type_all</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">add_text</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">overlay_wireframe</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_nodal_elastic_strain" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">plot_nodal_elastic_strain</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phase</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">full_rotor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overlay_wireframe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_nodal_elastic_strain" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot nodal elastic strain.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -3482,7 +3553,7 @@ containing all nodes of the component.  Default True.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_nodal_plastic_strain">
-<code class="sig-name descname">plot_nodal_plastic_strain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">comp</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">phase</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">full_rotor</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">show_displacement</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">displacement_factor</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">node_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">element_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sel_type_all</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">add_text</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">overlay_wireframe</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_nodal_plastic_strain" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">plot_nodal_plastic_strain</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phase</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">full_rotor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overlay_wireframe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_nodal_plastic_strain" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot nodal plastic strain.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -3527,7 +3598,7 @@ containing all nodes of the component.  Default True.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_nodal_solution">
-<code class="sig-name descname">plot_nodal_solution</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">comp</span><span class="o">=</span><span class="default_value">'norm'</span></em>, <em class="sig-param"><span class="n">phase</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">full_rotor</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">show_displacement</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">displacement_factor</span><span class="o">=</span><span class="default_value">1.0</span></em>, <em class="sig-param"><span class="n">node_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">element_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">overlay_wireframe</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">add_text</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">sel_type_all</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_nodal_solution" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">plot_nodal_solution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'norm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phase</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">full_rotor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overlay_wireframe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_nodal_solution" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot the nodal solution (generally displacement).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -3562,7 +3633,7 @@ containing all nodes of the component.  Default True.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_nodal_stress">
-<code class="sig-name descname">plot_nodal_stress</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">comp</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">phase</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">full_rotor</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">show_displacement</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">displacement_factor</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">node_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">element_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">overlay_wireframe</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">add_text</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">sel_type_all</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_nodal_stress" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">plot_nodal_stress</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phase</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">full_rotor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overlay_wireframe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_nodal_stress" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot nodal stress of a given component</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -3602,7 +3673,7 @@ containing all nodes of the component.  Default True.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_nodal_temperature">
-<code class="sig-name descname">plot_nodal_temperature</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">phase</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">full_rotor</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">show_displacement</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">displacement_factor</span><span class="o">=</span><span class="default_value">1.0</span></em>, <em class="sig-param"><span class="n">node_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">overlay_wireframe</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">add_text</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">element_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sel_type_all</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_nodal_temperature" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">plot_nodal_temperature</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phase</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">full_rotor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overlay_wireframe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_nodal_temperature" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot the nodal temperature.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -3633,7 +3704,7 @@ containing all nodes of the component.  Default True.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_nodal_thermal_strain">
-<code class="sig-name descname">plot_nodal_thermal_strain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">comp</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">phase</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">full_rotor</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">show_displacement</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">displacement_factor</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">node_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">element_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sel_type_all</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">add_text</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">overlay_wireframe</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_nodal_thermal_strain" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">plot_nodal_thermal_strain</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phase</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">full_rotor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overlay_wireframe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_nodal_thermal_strain" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot nodal thermal strain.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -3680,7 +3751,7 @@ containing all nodes of the component.  Default True.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_principal_nodal_stress">
-<code class="sig-name descname">plot_principal_nodal_stress</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">comp</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">phase</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">full_rotor</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">show_displacement</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">displacement_factor</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">node_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">element_components</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sel_type_all</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">add_text</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">overlay_wireframe</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_principal_nodal_stress" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">plot_principal_nodal_stress</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phase</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">full_rotor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overlay_wireframe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_principal_nodal_stress" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot the nodal principal stress.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -3716,7 +3787,7 @@ containing all nodes of the component.  Default True.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_sectors">
-<code class="sig-name descname">plot_sectors</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_sectors" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">plot_sectors</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.plot_sectors" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot the full rotor and individually color the sectors.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -3737,7 +3808,7 @@ containing all nodes of the component.  Default True.</p></li>
 
 <dl class="py method">
 <dt id="ansys.mapdl.reader.cyclic_reader.CyclicResult.principal_nodal_stress">
-<code class="sig-name descname">principal_nodal_stress</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rnum</span></em>, <em class="sig-param"><span class="n">phase</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">as_complex</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">full_rotor</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.principal_nodal_stress" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">principal_nodal_stress</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phase</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_complex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">full_rotor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.principal_nodal_stress" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes the principal component stresses for each node in
 the solution.</p>
 <dl class="field-list simple">
@@ -3798,7 +3869,7 @@ equivalent stress.</p>
   <div class="container">
     <p>
           &copy; Copyright 2020, ANSYS Open Source Developers.<br/>
-        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.0.<br/>
     </p>
   </div>
 </footer>
