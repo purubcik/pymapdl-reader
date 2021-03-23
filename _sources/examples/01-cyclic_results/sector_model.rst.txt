@@ -187,8 +187,8 @@ Disable movie_filename and increase nangles for a smoother plot
  .. code-block:: none
 
 
-    [(5.521550604329209, 5.5214282518334326, 5.110814907184016),
-     (3.164628200602593e-07, -0.00012203603295768417, -0.41073538068237303),
+    [(5.52155060432921, 5.5214282518334326, 5.110814907184016),
+     (3.164628201712816e-07, -0.00012203603295768417, -0.41073538068237303),
      (0.0, 0.0, 1.0)]
 
 
@@ -196,7 +196,7 @@ Disable movie_filename and increase nangles for a smoother plot
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  15.927 seconds)
+   **Total running time of the script:** ( 0 minutes  17.543 seconds)
 
 
 .. _sphx_glr_download_examples_01-cyclic_results_sector_model.py:

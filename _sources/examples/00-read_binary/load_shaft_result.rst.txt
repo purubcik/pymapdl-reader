@@ -374,6 +374,8 @@ Disable ``movie_filename`` and increase ``nangles`` for a smoother plot
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.8/x64/lib/python3.8/site-packages/ansys/mapdl/reader/rst.py:835: UserWarning: The ``nangles`` kwarg is depreciated and ``n_frames`` should be used instead.
+      warnings.warn('The ``nangles`` kwarg is depreciated and ``n_frames`` '
 
     [(-115.35773008378118, 285.36602704380107, -393.9029392590675),
      (126.12852038381345, 0.2179228023931401, 5.236408799851887),
@@ -384,7 +386,7 @@ Disable ``movie_filename`` and increase ``nangles`` for a smoother plot
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  15.914 seconds)
+   **Total running time of the script:** ( 0 minutes  18.091 seconds)
 
 
 .. _sphx_glr_download_examples_00-read_binary_load_shaft_result.py:
