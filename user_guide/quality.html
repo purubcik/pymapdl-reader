@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Compute Cell Quality &#8212; PyMAPDL Reader 0.50.8 documentation</title>
+    <title>Compute Cell Quality &#8212; PyMAPDL Reader 0.50.9 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -41,7 +41,7 @@
     <script src="../_static/copybutton.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Examples Gallery" href="../examples/index.html" />
+    <link rel="next" title="API Reference" href="../api/index.html" />
     <link rel="prev" title="Working with a MAPDL Full File (full)" href="loading_km.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -85,6 +85,12 @@
 <li class="toctree-l1 current active nav-item">
  <a class="reference internal nav-link" href="index.html">
   User Guide
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../api/index.html">
+  API Reference
  </a>
 </li>
 
@@ -253,6 +259,11 @@ element of a tetrahedral beam:</p>
 <dd><p>Compute the minimum scaled Jacobian cell quality of an UnstructuredGrid.</p>
 <p>Negative values indicate invalid cells while positive values
 indicate valid cells.  Varies between -1 and 1.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>grid</strong> (<em>pyvista.UnstructuredGrid</em><em> or </em><em>pyvista.StructuredGrid</em>) – Structured or Unstructured Grid from <code class="docutils literal notranslate"><span class="pre">pyvista</span></code>.</p>
+</dd>
+</dl>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyvista</span> <span class="k">as</span> <span class="nn">pv</span>
@@ -279,7 +290,7 @@ indicate valid cells.  Varies between -1 and 1.</p>
               <div class='prev-next-bottom'>
                 
     <a class='left-prev' id="prev-link" href="loading_km.html" title="previous page">Working with a MAPDL Full File (full)</a>
-    <a class='right-next' id="next-link" href="../examples/index.html" title="next page">Examples Gallery</a>
+    <a class='right-next' id="next-link" href="../api/index.html" title="next page">API Reference</a>
 
               </div>
               
@@ -288,11 +299,10 @@ indicate valid cells.  Varies between -1 and 1.</p>
 
       </div>
     </div>
-    
+  
   <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-
-    <footer class="footer mt-5 mt-md-0">
+  <footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>User Guide &#8212; PyMAPDL Reader 0.50.9 documentation</title>
+    <title>Compute Cell Quality &#8212; PyMAPDL Reader 0.50.9 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -41,8 +41,8 @@
     <script src="../_static/copybutton.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Reading MAPDL Result Files" href="loading_results.html" />
-    <link rel="prev" title="Installation" href="../getting_started.html" />
+    <link rel="next" title="Result Class" href="rst.html" />
+    <link rel="prev" title="Full File Class" href="full.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -82,14 +82,14 @@
  </a>
 </li>
 
-<li class="toctree-l1 current active nav-item">
- <a class="current reference internal nav-link" href="#">
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../user_guide/index.html">
   User Guide
  </a>
 </li>
 
-<li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../api/index.html">
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
   API Reference
  </a>
 </li>
@@ -141,30 +141,35 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <div class="bd-toc-item active">
-    <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="loading_results.html">
-   Reading MAPDL Result Files
-  </a>
- </li>
+    <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="archive.html">
-   Reading and Writing Mapdl Archive Files
+   Archive Class and Functions
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="loading_emat.html">
-   Working with a ANSYS Element Matrix File (.emat)
+  <a class="reference internal" href="cyclic_result.html">
+   Cyclic Result Class
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="loading_km.html">
-   Working with a MAPDL Full File (full)
+  <a class="reference internal" href="emat.html">
+   Element Matrix Class
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="quality.html">
+  <a class="reference internal" href="full.html">
+   Full File Class
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Compute Cell Quality
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="rst.html">
+   Result Class
   </a>
  </li>
 </ul>
@@ -203,46 +208,34 @@
               
               <div>
                 
-  <div class="section" id="user-guide">
-<h1>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h1>
-<p>This guide provides a general overview of the basics and usage of
-<code class="docutils literal notranslate"><span class="pre">ansys-mapdl-reader</span></code>.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="loading_results.html">Reading MAPDL Result Files</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="loading_results.html#loading-the-result-file">Loading the Result File</a></li>
-<li class="toctree-l2"><a class="reference internal" href="loading_results.html#result-properties">Result Properties</a></li>
-<li class="toctree-l2"><a class="reference internal" href="loading_results.html#mesh">Mesh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="loading_results.html#accessing-solution-results">Accessing Solution Results</a></li>
-<li class="toctree-l2"><a class="reference internal" href="loading_results.html#results-from-a-cyclic-analysis">Results from a Cyclic Analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="loading_results.html#exporting-to-paraview">Exporting to ParaView</a></li>
-<li class="toctree-l2"><a class="reference internal" href="loading_results.html#result-object-methods">Result Object Methods</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="archive.html">Reading and Writing Mapdl Archive Files</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="archive.html#reading-ansys-archives">Reading ANSYS Archives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="archive.html#writing-ansys-archives">Writing ANSYS Archives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="archive.html#converting-a-mapdl-archive-file-to-vtk-for-paraview">Converting a MAPDL Archive File to VTK for Paraview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="archive.html#archive-class">Archive Class</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="loading_emat.html">Working with a ANSYS Element Matrix File (.emat)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="loading_emat.html#example">Example</a></li>
-<li class="toctree-l2"><a class="reference internal" href="loading_emat.html#ematfile-object-methods">EmatFile Object Methods</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="loading_km.html">Working with a MAPDL Full File (full)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="loading_km.html#reading-a-full-file">Reading a Full File</a></li>
-<li class="toctree-l2"><a class="reference internal" href="loading_km.html#plotting-a-mode-shape">Plotting a Mode Shape</a></li>
-<li class="toctree-l2"><a class="reference internal" href="loading_km.html#fullfile-object-methods">FullFile Object Methods</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="quality.html">Compute Cell Quality</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="quality.html#plot-cell-quality">Plot Cell Quality</a></li>
-</ul>
-</li>
-</ul>
+  <div class="section" id="compute-cell-quality">
+<span id="ref-mesh-quality-api"></span><h1>Compute Cell Quality<a class="headerlink" href="#compute-cell-quality" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="ansys.mapdl.reader.cell_quality.quality">
+<code class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.cell_quality.</span></code><code class="sig-name descname"><span class="pre">quality</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">grid</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cell_quality.quality" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the minimum scaled Jacobian cell quality of an UnstructuredGrid.</p>
+<p>Negative values indicate invalid cells while positive values
+indicate valid cells.  Varies between -1 and 1.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>grid</strong> (<em>pyvista.UnstructuredGrid</em><em> or </em><em>pyvista.StructuredGrid</em>) – Structured or Unstructured Grid from <code class="docutils literal notranslate"><span class="pre">pyvista</span></code>.</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyvista</span> <span class="k">as</span> <span class="nn">pv</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">grid</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">StructuredGrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pymapdl_reader</span><span class="o">.</span><span class="n">quality</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span>
+<span class="go">array([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,</span>
+<span class="go">       1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.])</span>
+</pre></div>
 </div>
+</dd></dl>
+
 </div>
 
 
@@ -251,8 +244,8 @@
               
               <div class='prev-next-bottom'>
                 
-    <a class='left-prev' id="prev-link" href="../getting_started.html" title="previous page">Installation</a>
-    <a class='right-next' id="next-link" href="loading_results.html" title="next page">Reading MAPDL Result Files</a>
+    <a class='left-prev' id="prev-link" href="full.html" title="previous page">Full File Class</a>
+    <a class='right-next' id="next-link" href="rst.html" title="next page">Result Class</a>
 
               </div>
               

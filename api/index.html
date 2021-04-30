@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>User Guide &#8212; PyMAPDL Reader 0.50.9 documentation</title>
+    <title>API Reference &#8212; PyMAPDL Reader 0.50.9 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -41,8 +41,8 @@
     <script src="../_static/copybutton.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Reading MAPDL Result Files" href="loading_results.html" />
-    <link rel="prev" title="Installation" href="../getting_started.html" />
+    <link rel="next" title="Archive Class and Functions" href="archive.html" />
+    <link rel="prev" title="Compute Cell Quality" href="../user_guide/quality.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -82,14 +82,14 @@
  </a>
 </li>
 
-<li class="toctree-l1 current active nav-item">
- <a class="current reference internal nav-link" href="#">
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../user_guide/index.html">
   User Guide
  </a>
 </li>
 
-<li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../api/index.html">
+<li class="toctree-l1 current active nav-item">
+ <a class="current reference internal nav-link" href="#">
   API Reference
  </a>
 </li>
@@ -143,28 +143,33 @@
   <div class="bd-toc-item active">
     <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="loading_results.html">
-   Reading MAPDL Result Files
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="archive.html">
-   Reading and Writing Mapdl Archive Files
+   Archive Class and Functions
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="loading_emat.html">
-   Working with a ANSYS Element Matrix File (.emat)
+  <a class="reference internal" href="cyclic_result.html">
+   Cyclic Result Class
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="loading_km.html">
-   Working with a MAPDL Full File (full)
+  <a class="reference internal" href="emat.html">
+   Element Matrix Class
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="quality.html">
+  <a class="reference internal" href="full.html">
+   Full File Class
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mesh_quality.html">
    Compute Cell Quality
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="rst.html">
+   Result Class
   </a>
  </li>
 </ul>
@@ -203,44 +208,18 @@
               
               <div>
                 
-  <div class="section" id="user-guide">
-<h1>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h1>
-<p>This guide provides a general overview of the basics and usage of
-<code class="docutils literal notranslate"><span class="pre">ansys-mapdl-reader</span></code>.</p>
+  <div class="section" id="api-reference">
+<span id="ref-index-api"></span><h1>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h1>
+<p>This section gives an overview of the API of several public
+PyMAPDL-Reader classes, functions, and attributes.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="loading_results.html">Reading MAPDL Result Files</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="loading_results.html#loading-the-result-file">Loading the Result File</a></li>
-<li class="toctree-l2"><a class="reference internal" href="loading_results.html#result-properties">Result Properties</a></li>
-<li class="toctree-l2"><a class="reference internal" href="loading_results.html#mesh">Mesh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="loading_results.html#accessing-solution-results">Accessing Solution Results</a></li>
-<li class="toctree-l2"><a class="reference internal" href="loading_results.html#results-from-a-cyclic-analysis">Results from a Cyclic Analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="loading_results.html#exporting-to-paraview">Exporting to ParaView</a></li>
-<li class="toctree-l2"><a class="reference internal" href="loading_results.html#result-object-methods">Result Object Methods</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="archive.html">Reading and Writing Mapdl Archive Files</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="archive.html#reading-ansys-archives">Reading ANSYS Archives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="archive.html#writing-ansys-archives">Writing ANSYS Archives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="archive.html#converting-a-mapdl-archive-file-to-vtk-for-paraview">Converting a MAPDL Archive File to VTK for Paraview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="archive.html#archive-class">Archive Class</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="loading_emat.html">Working with a ANSYS Element Matrix File (.emat)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="loading_emat.html#example">Example</a></li>
-<li class="toctree-l2"><a class="reference internal" href="loading_emat.html#ematfile-object-methods">EmatFile Object Methods</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="loading_km.html">Working with a MAPDL Full File (full)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="loading_km.html#reading-a-full-file">Reading a Full File</a></li>
-<li class="toctree-l2"><a class="reference internal" href="loading_km.html#plotting-a-mode-shape">Plotting a Mode Shape</a></li>
-<li class="toctree-l2"><a class="reference internal" href="loading_km.html#fullfile-object-methods">FullFile Object Methods</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="quality.html">Compute Cell Quality</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="quality.html#plot-cell-quality">Plot Cell Quality</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="archive.html">Archive Class and Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cyclic_result.html">Cyclic Result Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="emat.html">Element Matrix Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="full.html">Full File Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mesh_quality.html">Compute Cell Quality</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst.html">Result Class</a></li>
 </ul>
 </div>
 </div>
@@ -251,8 +230,8 @@
               
               <div class='prev-next-bottom'>
                 
-    <a class='left-prev' id="prev-link" href="../getting_started.html" title="previous page">Installation</a>
-    <a class='right-next' id="next-link" href="loading_results.html" title="next page">Reading MAPDL Result Files</a>
+    <a class='left-prev' id="prev-link" href="../user_guide/quality.html" title="previous page">Compute Cell Quality</a>
+    <a class='right-next' id="next-link" href="archive.html" title="next page">Archive Class and Functions</a>
 
               </div>
               
