@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Working with a ANSYS Element Matrix File (.emat) &#8212; PyMAPDL Reader 0.50.9 documentation</title>
+    <title>Working with a ANSYS Element Matrix File (.emat) &#8212; PyMAPDL Reader 0.50.10 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery-binder.css" />
@@ -33,7 +33,7 @@
     
   <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
@@ -359,8 +359,8 @@ below:</p>
 <div class="section" id="ematfile-object-methods">
 <h2>EmatFile Object Methods<a class="headerlink" href="#ematfile-object-methods" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt id="ansys.mapdl.reader.emat.EmatFile">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.emat.</span></code><code class="sig-name descname"><span class="pre">EmatFile</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="ansys.mapdl.reader.emat.EmatFile">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.emat.</span></span><span class="sig-name descname"><span class="pre">EmatFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile" title="Permalink to this definition">¶</a></dt>
 <dd><p>Enables pythonic access to an ANSYS element matrix file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -372,9 +372,9 @@ below:</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">emat_file</span> <span class="o">=</span> <span class="n">pymapdl_reader</span><span class="o">.</span><span class="n">read_binary</span><span class="p">(</span><span class="s1">&#39;file.emat&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<dl class="py method">
-<dt id="ansys.mapdl.reader.emat.EmatFile.eeqv">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">eeqv</span></code><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.eeqv" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.emat.EmatFile.eeqv">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">eeqv</span></span><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.eeqv" title="Permalink to this definition">¶</a></dt>
 <dd><p>Element equivalence table.  This table equates the number
 used for storage to the actual element number.</p>
 <p class="rubric">Notes</p>
@@ -383,21 +383,21 @@ order that the SOLUTION processor solves the elements.  This
 table equates the order number used to the actual element.</p>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.emat.EmatFile.element_matrices_index_table">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">element_matrices_index_table</span></code><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.element_matrices_index_table" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.emat.EmatFile.element_matrices_index_table">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">element_matrices_index_table</span></span><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.element_matrices_index_table" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return element matrices index table</p>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.emat.EmatFile.enum">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">enum</span></code><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.enum" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.emat.EmatFile.enum">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">enum</span></span><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.enum" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sorted ANSYS element numbers</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ansys.mapdl.reader.emat.EmatFile.global_applied_force">
-<code class="sig-name descname"><span class="pre">global_applied_force</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.global_applied_force" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="ansys.mapdl.reader.emat.EmatFile.global_applied_force">
+<span class="sig-name descname"><span class="pre">global_applied_force</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.global_applied_force" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the applied force for each node.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -410,40 +410,40 @@ sorted to correspond with the sorted global nodes array.</p>
 </dl>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.emat.EmatFile.n_dof">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">n_dof</span></code><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.n_dof" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.emat.EmatFile.n_dof">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">n_dof</span></span><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.n_dof" title="Permalink to this definition">¶</a></dt>
 <dd><p>Number of dofs per node</p>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.emat.EmatFile.n_elements">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">n_elements</span></code><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.n_elements" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.emat.EmatFile.n_elements">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">n_elements</span></span><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.n_elements" title="Permalink to this definition">¶</a></dt>
 <dd><p>Number of elements in the file</p>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.emat.EmatFile.n_nodes">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">n_nodes</span></code><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.n_nodes" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.emat.EmatFile.n_nodes">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">n_nodes</span></span><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.n_nodes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Number of nodes in the file</p>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.emat.EmatFile.neqv">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">neqv</span></code><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.neqv" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.emat.EmatFile.neqv">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">neqv</span></span><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.neqv" title="Permalink to this definition">¶</a></dt>
 <dd><p>Nodal equivalence table. This table equates the number used
 for storage to the actual node number.</p>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.emat.EmatFile.nnum">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">nnum</span></code><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.nnum" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.emat.EmatFile.nnum">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">nnum</span></span><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.nnum" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sorted ANSYS node numbers</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ansys.mapdl.reader.emat.EmatFile.read_element">
-<code class="sig-name descname"><span class="pre">read_element</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stress</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">damping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stress_stiff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">applied_force</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">newton_raphson</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imaginary_load</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.read_element" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="ansys.mapdl.reader.emat.EmatFile.read_element">
+<span class="sig-name descname"><span class="pre">read_element</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stress</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">damping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stress_stiff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">applied_force</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">newton_raphson</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imaginary_load</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.read_element" title="Permalink to this definition">¶</a></dt>
 <dd><p>Read element by index</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -494,8 +494,8 @@ reference number given by <code class="docutils literal notranslate"><span class
 </dd></dl>
 
 <dl class="py method">
-<dt id="ansys.mapdl.reader.emat.EmatFile.read_element_matrix_header">
-<code class="sig-name descname"><span class="pre">read_element_matrix_header</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f_index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.read_element_matrix_header" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="ansys.mapdl.reader.emat.EmatFile.read_element_matrix_header">
+<span class="sig-name descname"><span class="pre">read_element_matrix_header</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f_index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.read_element_matrix_header" title="Permalink to this definition">¶</a></dt>
 <dd><p>Read element matrix header</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -532,8 +532,8 @@ lower triangular form.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ansys.mapdl.reader.emat.EmatFile.read_header">
-<code class="sig-name descname"><span class="pre">read_header</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.read_header" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="ansys.mapdl.reader.emat.EmatFile.read_header">
+<span class="sig-name descname"><span class="pre">read_header</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.emat.EmatFile.read_header" title="Permalink to this definition">¶</a></dt>
 <dd><p>Read standard emat file header</p>
 </dd></dl>
 
@@ -572,7 +572,7 @@ lower triangular form.</p>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.1.<br/>
 </p>
     </div>
     

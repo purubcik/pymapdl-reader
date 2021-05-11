@@ -117,6 +117,22 @@ plane.
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
+    "stitle" is a depreciated keyword and will be removed in a future
+    release.
+
+    Use ``scalar_bar_args`` instead.  For example:
+
+    scalar_bar_args={'title': 'Scalar Bar Title'}
+
+      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
+
 
 
 
@@ -172,6 +188,22 @@ which is (Load-step, sub-step).
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
+    "stitle" is a depreciated keyword and will be removed in a future
+    release.
+
+    Use ``scalar_bar_args`` instead.  For example:
+
+    scalar_bar_args={'title': 'Scalar Bar Title'}
+
+      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
+
 
 
 
@@ -193,6 +225,22 @@ Alternatively, you can refer to the results using cumulative indexing.
     :alt: academic sector nd
     :class: sphx-glr-single-img
 
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
+    "stitle" is a depreciated keyword and will be removed in a future
+    release.
+
+    Use ``scalar_bar_args`` instead.  For example:
+
+    scalar_bar_args={'title': 'Scalar Bar Title'}
+
+      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
 
 
 
@@ -250,6 +298,15 @@ harmonic index of 5:
  .. code-block:: none
 
     Harmonic Index: 5
+    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
+    "stitle" is a depreciated keyword and will be removed in a future
+    release.
+
+    Use ``scalar_bar_args`` instead.  For example:
+
+    scalar_bar_args={'title': 'Scalar Bar Title'}
+
+      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
 
 
 
@@ -290,6 +347,15 @@ The same can be done for the simpler nodal diameter 1
  .. code-block:: none
 
     1
+    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
+    "stitle" is a depreciated keyword and will be removed in a future
+    release.
+
+    Use ``scalar_bar_args`` instead.  For example:
+
+    scalar_bar_args={'title': 'Scalar Bar Title'}
+
+      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
 
 
 
@@ -436,6 +502,22 @@ We can verify these results by analyzing a multi-sector rotor
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
+    "stitle" is a depreciated keyword and will be removed in a future
+    release.
+
+    Use ``scalar_bar_args`` instead.  For example:
+
+    scalar_bar_args={'title': 'Scalar Bar Title'}
+
+      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
+
 
 
 
@@ -495,6 +577,22 @@ Cumulative result 8 and harmonic index 1
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
+    "stitle" is a depreciated keyword and will be removed in a future
+    release.
+
+    Use ``scalar_bar_args`` instead.  For example:
+
+    scalar_bar_args={'title': 'Scalar Bar Title'}
+
+      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
+
 
 
 
@@ -521,6 +619,22 @@ Cumulative result 10 and harmonic index 5
     :alt: academic sector nd
     :class: sphx-glr-single-img
 
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
+    "stitle" is a depreciated keyword and will be removed in a future
+    release.
+
+    Use ``scalar_bar_args`` instead.  For example:
+
+    scalar_bar_args={'title': 'Scalar Bar Title'}
+
+      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
 
 
 
@@ -549,6 +663,22 @@ Cumulative result 13 and harmonic index 7
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
+    "stitle" is a depreciated keyword and will be removed in a future
+    release.
+
+    Use ``scalar_bar_args`` instead.  For example:
+
+    scalar_bar_args={'title': 'Scalar Bar Title'}
+
+      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
+
 
 
 
@@ -575,6 +705,22 @@ Cumulative result 15 and harmonic index 11
     :alt: academic sector nd
     :class: sphx-glr-single-img
 
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
+    "stitle" is a depreciated keyword and will be removed in a future
+    release.
+
+    Use ``scalar_bar_args`` instead.  For example:
+
+    scalar_bar_args={'title': 'Scalar Bar Title'}
+
+      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
 
 
 
@@ -644,7 +790,7 @@ second mode in the mode pair ``(3, 2)`` instead of ``(3, 1)``.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  36.893 seconds)
+   **Total running time of the script:** ( 0 minutes  53.317 seconds)
 
 
 .. _sphx_glr_download_examples_01-cyclic_results_academic_sector_nd.py:

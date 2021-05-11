@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reading and Writing Mapdl Archive Files &#8212; PyMAPDL Reader 0.50.9 documentation</title>
+    <title>Reading and Writing Mapdl Archive Files &#8212; PyMAPDL Reader 0.50.10 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery-binder.css" />
@@ -33,7 +33,7 @@
     
   <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
@@ -370,8 +370,8 @@ will be written as SOLID187.</p>
 <div class="section" id="archive-class">
 <h2>Archive Class<a class="headerlink" href="#archive-class" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt id="ansys.mapdl.reader.archive.Archive">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.archive.</span></code><code class="sig-name descname"><span class="pre">Archive</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">read_parameters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parse_vtk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_linear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowable_types</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">null_unallowed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.archive.</span></span><span class="sig-name descname"><span class="pre">Archive</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">read_parameters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parse_vtk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_linear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowable_types</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">null_unallowed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive" title="Permalink to this definition">¶</a></dt>
 <dd><p>Read a blocked ANSYS archive file or input file.</p>
 <p>Reads a blocked CDB file and optionally parses it to a vtk grid.
 This can be used to read in files written from MAPDL using the
@@ -435,9 +435,9 @@ example, the record <code class="docutils literal notranslate"><span class="pre"
 <code class="docutils literal notranslate"><span class="pre">EBLOCK,10,,,3588</span></code> will not be read.  Generally, MAPDL will only
 write SOLID records and Mechanical Workbench may write SOLID
 records.  These additional records will be ignored.</p>
-<dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.ekey">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">ekey</span></code><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.ekey" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.ekey">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">ekey</span></span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.ekey" title="Permalink to this definition">¶</a></dt>
 <dd><p>Element type key</p>
 <p>Array containing element type numbers in the first column and
 the element types (like SURF154) in the second column.</p>
@@ -454,9 +454,9 @@ the element types (like SURF154) in the second column.</p>
 </div>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.elem">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">elem</span></code><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.elem" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.elem">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">elem</span></span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.elem" title="Permalink to this definition">¶</a></dt>
 <dd><p>List of elements containing raw ansys information.</p>
 <p>Each element contains 10 items plus the nodes belonging to the
 element.  The first 10 items are:</p>
@@ -489,9 +489,9 @@ element.  The first 10 items are:</p>
 </div>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.elem_real_constant">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">elem_real_constant</span></code><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.elem_real_constant" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.elem_real_constant">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">elem_real_constant</span></span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.elem_real_constant" title="Permalink to this definition">¶</a></dt>
 <dd><p>Real constant reference for each element.</p>
 <p>Use the data within <code class="docutils literal notranslate"><span class="pre">rlblock</span></code> and <code class="docutils literal notranslate"><span class="pre">rlblock_num</span></code> to get the
 real constant datat for each element.</p>
@@ -511,9 +511,9 @@ real constant datat for each element.</p>
 </div>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.element_components">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">element_components</span></code><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.element_components" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.element_components">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">element_components</span></span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.element_components" title="Permalink to this definition">¶</a></dt>
 <dd><p>Element components for the archive.</p>
 <p>Output is a dictionary of element components.  Each entry is an
 array of MAPDL element numbers corresponding to the element
@@ -533,8 +533,8 @@ component.  The keys are element component names.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.element_coord_system">
-<code class="sig-name descname"><span class="pre">element_coord_system</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.element_coord_system" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.element_coord_system">
+<span class="sig-name descname"><span class="pre">element_coord_system</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.element_coord_system" title="Permalink to this definition">¶</a></dt>
 <dd><p>Element coordinate system number</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -548,9 +548,9 @@ component.  The keys are element component names.</p>
 </div>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.enum">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">enum</span></code><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.enum" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.enum">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">enum</span></span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.enum" title="Permalink to this definition">¶</a></dt>
 <dd><p>ANSYS element numbers.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -562,9 +562,9 @@ component.  The keys are element component names.</p>
 </div>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.etype">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">etype</span></code><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.etype" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.etype">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">etype</span></span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.etype" title="Permalink to this definition">¶</a></dt>
 <dd><p>Element type of each element.</p>
 <p>This is the ansys element type for each element.</p>
 <p class="rubric">Examples</p>
@@ -587,9 +587,9 @@ Reference for more details:</p>
 <p><a class="reference external" href="https://www.mm.bme.hu/~gyebro/files/vem/ansys_14_element_reference.pdf">https://www.mm.bme.hu/~gyebro/files/vem/ansys_14_element_reference.pdf</a></p>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.grid">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">grid</span></code><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.grid" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.grid">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">grid</span></span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.grid" title="Permalink to this definition">¶</a></dt>
 <dd><p><code class="docutils literal notranslate"><span class="pre">vtk.UnstructuredGrid</span></code> of the archive file.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -607,9 +607,9 @@ Reference for more details:</p>
 </div>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.key_option">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">key_option</span></code><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.key_option" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.key_option">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">key_option</span></span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.key_option" title="Permalink to this definition">¶</a></dt>
 <dd><p>Additional key options for element types</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -621,9 +621,9 @@ Reference for more details:</p>
 </div>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.material_type">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">material_type</span></code><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.material_type" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.material_type">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">material_type</span></span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.material_type" title="Permalink to this definition">¶</a></dt>
 <dd><p>Material type index of each element in the archive.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -637,21 +637,21 @@ Reference for more details:</p>
 </div>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.n_elem">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">n_elem</span></code><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.n_elem" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.n_elem">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">n_elem</span></span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.n_elem" title="Permalink to this definition">¶</a></dt>
 <dd><p>Number of nodes</p>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.n_node">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">n_node</span></code><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.n_node" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.n_node">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">n_node</span></span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.n_node" title="Permalink to this definition">¶</a></dt>
 <dd><p>Number of nodes</p>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.nnum">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">nnum</span></code><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.nnum" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.nnum">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">nnum</span></span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.nnum" title="Permalink to this definition">¶</a></dt>
 <dd><p>Array of node numbers.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -663,9 +663,9 @@ Reference for more details:</p>
 </div>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.node_angles">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">node_angles</span></code><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.node_angles" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.node_angles">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">node_angles</span></span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.node_angles" title="Permalink to this definition">¶</a></dt>
 <dd><p>Node angles from the archive file.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -683,9 +683,9 @@ Reference for more details:</p>
 </div>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.node_components">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">node_components</span></code><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.node_components" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.node_components">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">node_components</span></span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.node_components" title="Permalink to this definition">¶</a></dt>
 <dd><p>Node components for the archive.</p>
 <p>Output is a dictionary of node components.  Each entry is an
 array of MAPDL node numbers corresponding to the node
@@ -711,9 +711,9 @@ component.  The keys are node component names.</p>
 </div>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.nodes">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">nodes</span></code><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.nodes" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.nodes">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">nodes</span></span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.nodes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Array of nodes.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -731,9 +731,9 @@ component.  The keys are node component names.</p>
 </div>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.parameters">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">parameters</span></code><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.parameters" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.parameters">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">parameters</span></span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.parameters" title="Permalink to this definition">¶</a></dt>
 <dd><p>Parameters stored in the archive file</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -747,31 +747,44 @@ component.  The keys are node component names.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.plot">
-<code class="sig-name descname"><span class="pre">plot</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">off_screen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">full_screen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">screenshot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interactive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cpos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">window_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_bounds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_axes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notebook</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">background</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_img</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eye_dome_lighting</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">volume</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parallel_projection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_ipyvtk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.plot" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.plot">
+<span class="sig-name descname"><span class="pre">plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">off_screen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">full_screen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">screenshot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interactive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cpos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">window_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_bounds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_axes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notebook</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">background</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_img</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eye_dome_lighting</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">volume</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parallel_projection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_ipyvtk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jupyter_backend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_viewer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jupyter_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.plot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot a vtk or numpy object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>item</strong> (<em>vtk</em><em> or </em><em>numpy object</em>) – VTK object or numpy array to be plotted.</p></li>
-<li><p><strong>off_screen</strong> (<em>bool</em>) – Plots off screen when True.  Helpful for saving screenshots
+<li><p><strong>item</strong> (<em>vtk</em><em> or </em><em>numpy object</em>) – VTK object or <code class="docutils literal notranslate"><span class="pre">numpy</span></code> array to be plotted.</p></li>
+<li><p><strong>off_screen</strong> (<em>bool</em>) – Plots off screen when <code class="docutils literal notranslate"><span class="pre">True</span></code>.  Helpful for saving screenshots
 without a window popping up.</p></li>
-<li><p><strong>full_screen</strong> (<em>bool</em><em>, </em><em>optional</em>) – Opens window in full screen.  When enabled, ignores window_size.
-Default False.</p></li>
+<li><p><strong>full_screen</strong> (<em>bool</em><em>, </em><em>optional</em>) – Opens window in full screen.  When enabled, ignores <code class="docutils literal notranslate"><span class="pre">window_size</span></code>.
+Default <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
 <li><p><strong>screenshot</strong> (<em>str</em><em> or </em><em>bool</em><em>, </em><em>optional</em>) – <p>Saves screenshot to file when enabled.  See:
-help(pyvistanterface.Plotter.screenshot).  Default disabled.</p>
-<p>When True, takes screenshot and returns numpy array of image.</p>
+<code class="docutils literal notranslate"><span class="pre">help(pyvista.Plotter.screenshot)</span></code>.  Default <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>When <code class="docutils literal notranslate"><span class="pre">True</span></code>, takes screenshot and returns <code class="docutils literal notranslate"><span class="pre">numpy</span></code> array of image.</p>
 </p></li>
-<li><p><strong>window_size</strong> (<em>list</em><em>, </em><em>optional</em>) – Window size in pixels.  Defaults to [1024, 768]</p></li>
-<li><p><strong>show_bounds</strong> (<em>bool</em><em>, </em><em>optional</em>) – Shows mesh bounds when True.  Default False. Alias <code class="docutils literal notranslate"><span class="pre">show_grid</span></code> also
-accepted.</p></li>
-<li><p><strong>notebook</strong> (<em>bool</em><em>, </em><em>optional</em>) – When True, the resulting plot is placed inline a jupyter notebook.
-Assumes a jupyter console is active.</p></li>
+<li><p><strong>window_size</strong> (<em>list</em><em>, </em><em>optional</em>) – Window size in pixels.  Defaults to <code class="docutils literal notranslate"><span class="pre">[1024,</span> <span class="pre">768]</span></code></p></li>
+<li><p><strong>show_bounds</strong> (<em>bool</em><em>, </em><em>optional</em>) – Shows mesh bounds when <code class="docutils literal notranslate"><span class="pre">True</span></code>.  Default <code class="docutils literal notranslate"><span class="pre">False</span></code>. Alias
+<code class="docutils literal notranslate"><span class="pre">show_grid</span></code> also accepted.</p></li>
+<li><p><strong>notebook</strong> (<em>bool</em><em>, </em><em>optional</em>) – When <code class="docutils literal notranslate"><span class="pre">True</span></code>, the resulting plot is placed inline a jupyter
+notebook.  Assumes a jupyter console is active.</p></li>
 <li><p><strong>show_axes</strong> (<em>bool</em><em>, </em><em>optional</em>) – Shows a vtk axes widget.  Enabled by default.</p></li>
 <li><p><strong>text</strong> (<em>str</em><em>, </em><em>optional</em>) – Adds text at the bottom of the plot.</p></li>
 <li><p><strong>volume</strong> (<em>bool</em><em>, </em><em>optional</em>) – Use the <code class="docutils literal notranslate"><span class="pre">add_volume</span></code> method for volume rendering.</p></li>
-<li><p><strong>use_ipyvtk</strong> (<em>bool</em><em>, </em><em>optional</em>) – Use the <code class="docutils literal notranslate"><span class="pre">ipyvtk-simple</span></code> <code class="docutils literal notranslate"><span class="pre">ViewInteractiveWidget</span></code> to
-visualize the plot within a juyterlab notebook.</p></li>
+<li><p><strong>use_ipyvtk</strong> (<em>bool</em><em>, </em><em>optional</em>) – Deprecated.  Instead, set the backend either globally with
+<code class="docutils literal notranslate"><span class="pre">pyvista.set_jupyter_backend('ipyvtklink')</span></code> or with
+<code class="docutils literal notranslate"><span class="pre">backend='ipyvtklink'</span></code>.</p></li>
+<li><p><strong>jupyter_backend</strong> (<em>str</em><em>, </em><em>optional</em>) – <p>Jupyter notebook plotting backend to use.  One of the
+following:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">'none'</span></code> : Do not display in the notebook.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'static'</span></code> : Display a static figure.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'ipygany'</span></code> : Show a <code class="docutils literal notranslate"><span class="pre">ipygany</span></code> widget</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'panel'</span></code> : Show a <code class="docutils literal notranslate"><span class="pre">panel</span></code> widget.</p></li>
+</ul>
+<p>This can also be set globally with
+<code class="docutils literal notranslate"><span class="pre">pyvista.set_jupyter_backend</span></code></p>
+</p></li>
+<li><p><strong>jupyter_kwargs</strong> (<em>dict</em><em>, </em><em>optional</em>) – Keyword arguments for the Jupyter notebook plotting backend.</p></li>
 <li><p><strong>**kwargs</strong> (<em>optional keyword arguments</em>) – See help(Plotter.add_mesh) for additional options.</p></li>
 </ul>
 </dd>
@@ -788,9 +801,9 @@ Returned only when screenshot enabled</p></li>
 </dl>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.quality">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">quality</span></code><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.quality" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.quality">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">quality</span></span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.quality" title="Permalink to this definition">¶</a></dt>
 <dd><p>Minimum scaled jacobian cell quality.</p>
 <p>Negative values indicate invalid cells while positive values
 indicate valid cells.  Varies between -1 and 1.</p>
@@ -806,9 +819,9 @@ indicate valid cells.  Varies between -1 and 1.</p>
 </div>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.rlblock">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">rlblock</span></code><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.rlblock" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.rlblock">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">rlblock</span></span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.rlblock" title="Permalink to this definition">¶</a></dt>
 <dd><p>Real constant data from the RLBLOCK.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -823,9 +836,9 @@ indicate valid cells.  Varies between -1 and 1.</p>
 </div>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.rlblock_num">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">rlblock_num</span></code><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.rlblock_num" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.rlblock_num">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">rlblock_num</span></span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.rlblock_num" title="Permalink to this definition">¶</a></dt>
 <dd><p>Indices from the real constant data</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -838,8 +851,8 @@ indicate valid cells.  Varies between -1 and 1.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.save">
-<code class="sig-name descname"><span class="pre">save</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">binary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_linear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowable_types</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">null_unallowed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.save" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">binary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_linear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowable_types</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">null_unallowed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.save" title="Permalink to this definition">¶</a></dt>
 <dd><p>Save the geometry as a vtk file</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -869,9 +882,9 @@ element numbers.  Default False.</p></li>
 file size.</p>
 </dd></dl>
 
-<dl class="py method">
-<dt id="ansys.mapdl.reader.archive.Archive.section">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">section</span></code><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.section" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive.section">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">section</span></span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive.section" title="Permalink to this definition">¶</a></dt>
 <dd><p>Section number</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -920,7 +933,7 @@ file size.</p>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.1.<br/>
 </p>
     </div>
     

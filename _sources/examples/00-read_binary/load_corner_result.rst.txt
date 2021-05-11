@@ -379,6 +379,22 @@ plot cylindrical nodal stress in the radial direction
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
+    "stitle" is a depreciated keyword and will be removed in a future
+    release.
+
+    Use ``scalar_bar_args`` instead.  For example:
+
+    scalar_bar_args={'title': 'Scalar Bar Title'}
+
+      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
+
 
 
 
@@ -401,6 +417,22 @@ plot cylindrical nodal stress in the theta direction
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
+    "stitle" is a depreciated keyword and will be removed in a future
+    release.
+
+    Use ``scalar_bar_args`` instead.  For example:
+
+    scalar_bar_args={'title': 'Scalar Bar Title'}
+
+      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
+
 
 
 
@@ -421,13 +453,29 @@ Plot cartesian stress in the "X" direction
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
+    "stitle" is a depreciated keyword and will be removed in a future
+    release.
+
+    Use ``scalar_bar_args`` instead.  For example:
+
+    scalar_bar_args={'title': 'Scalar Bar Title'}
+
+      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
+
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.100 seconds)
+   **Total running time of the script:** ( 0 minutes  3.134 seconds)
 
 
 .. _sphx_glr_download_examples_00-read_binary_load_corner_result.py:

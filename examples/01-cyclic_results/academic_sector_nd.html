@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Understanding Nodal Diameters from a Cyclic Model Analysis &#8212; PyMAPDL Reader 0.50.9 documentation</title>
+    <title>Understanding Nodal Diameters from a Cyclic Model Analysis &#8212; PyMAPDL Reader 0.50.10 documentation</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/gallery.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/gallery-binder.css" />
@@ -33,7 +33,7 @@
     
   <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
@@ -323,6 +323,18 @@ plane.</p>
 </pre></div>
 </div>
 <img alt="academic sector nd" class="sphx-glr-single-img" src="../../_images/sphx_glr_academic_sector_nd_001.png" />
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning:
+&quot;stitle&quot; is a depreciated keyword and will be removed in a future
+release.
+
+Use ``scalar_bar_args`` instead.  For example:
+
+scalar_bar_args={&#39;title&#39;: &#39;Scalar Bar Title&#39;}
+
+  warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
+</pre></div>
+</div>
 <p>Plot Nodal Displacement</p>
 <p>This modal analysis contains two modes for each harmonic index.
 Since this is a 24 sector rotor, it will contain the harmonic
@@ -342,11 +354,35 @@ which is (Load-step, sub-step).</p>
 </pre></div>
 </div>
 <img alt="academic sector nd" class="sphx-glr-single-img" src="../../_images/sphx_glr_academic_sector_nd_002.png" />
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning:
+&quot;stitle&quot; is a depreciated keyword and will be removed in a future
+release.
+
+Use ``scalar_bar_args`` instead.  For example:
+
+scalar_bar_args={&#39;title&#39;: &#39;Scalar Bar Title&#39;}
+
+  warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
+</pre></div>
+</div>
 <p>Alternatively, you can refer to the results using cumulative indexing.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_</span> <span class="o">=</span> <span class="n">rotor</span><span class="o">.</span><span class="n">plot_nodal_displacement</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">comp</span><span class="o">=</span><span class="s1">&#39;norm&#39;</span><span class="p">,</span> <span class="n">cpos</span><span class="o">=</span><span class="s1">&#39;xy&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 <img alt="academic sector nd" class="sphx-glr-single-img" src="../../_images/sphx_glr_academic_sector_nd_003.png" />
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning:
+&quot;stitle&quot; is a depreciated keyword and will be removed in a future
+release.
+
+Use ``scalar_bar_args`` instead.  For example:
+
+scalar_bar_args={&#39;title&#39;: &#39;Scalar Bar Title&#39;}
+
+  warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
+</pre></div>
+</div>
 </div>
 <div class="section" id="understanding-harmonic-indexing">
 <h1>Understanding Harmonic Indexing<a class="headerlink" href="#understanding-harmonic-indexing" title="Permalink to this headline">¶</a></h1>
@@ -378,6 +414,15 @@ harmonic index of 5:</p>
 <img alt="academic sector nd" class="sphx-glr-single-img" src="../../_images/sphx_glr_academic_sector_nd_004.png" />
 <p class="sphx-glr-script-out">Out:</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Harmonic Index: 5
+/opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning:
+&quot;stitle&quot; is a depreciated keyword and will be removed in a future
+release.
+
+Use ``scalar_bar_args`` instead.  For example:
+
+scalar_bar_args={&#39;title&#39;: &#39;Scalar Bar Title&#39;}
+
+  warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
 </pre></div>
 </div>
 <p>The same can be done for the simpler nodal diameter 1</p>
@@ -397,6 +442,15 @@ harmonic index of 5:</p>
 <img alt="academic sector nd" class="sphx-glr-single-img" src="../../_images/sphx_glr_academic_sector_nd_005.png" />
 <p class="sphx-glr-script-out">Out:</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>1
+/opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning:
+&quot;stitle&quot; is a depreciated keyword and will be removed in a future
+release.
+
+Use ``scalar_bar_args`` instead.  For example:
+
+scalar_bar_args={&#39;title&#39;: &#39;Scalar Bar Title&#39;}
+
+  warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
 </pre></div>
 </div>
 </div>
@@ -487,6 +541,18 @@ analysis since they are not aliased back into a repeated mode.</p>
 </pre></div>
 </div>
 <img alt="academic sector nd" class="sphx-glr-single-img" src="../../_images/sphx_glr_academic_sector_nd_006.png" />
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning:
+&quot;stitle&quot; is a depreciated keyword and will be removed in a future
+release.
+
+Use ``scalar_bar_args`` instead.  For example:
+
+scalar_bar_args={&#39;title&#39;: &#39;Scalar Bar Title&#39;}
+
+  warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
+</pre></div>
+</div>
 <p>We can then see that the harmonic indices for harmonic index 1
 indeed alias back to the expected nodal diameters in the following
 plots.</p>
@@ -512,6 +578,18 @@ Cumulative indices matching harmonic index 1: [ 8 10 13 15]
 </pre></div>
 </div>
 <img alt="academic sector nd" class="sphx-glr-single-img" src="../../_images/sphx_glr_academic_sector_nd_007.png" />
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning:
+&quot;stitle&quot; is a depreciated keyword and will be removed in a future
+release.
+
+Use ``scalar_bar_args`` instead.  For example:
+
+scalar_bar_args={&#39;title&#39;: &#39;Scalar Bar Title&#39;}
+
+  warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
+</pre></div>
+</div>
 <p>Cumulative result 10 and harmonic index 5</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rnum</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;Expected Nodal Diameter </span><span class="si">%2d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">nodal_diameters</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
@@ -522,6 +600,18 @@ Cumulative indices matching harmonic index 1: [ 8 10 13 15]
 </pre></div>
 </div>
 <img alt="academic sector nd" class="sphx-glr-single-img" src="../../_images/sphx_glr_academic_sector_nd_008.png" />
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning:
+&quot;stitle&quot; is a depreciated keyword and will be removed in a future
+release.
+
+Use ``scalar_bar_args`` instead.  For example:
+
+scalar_bar_args={&#39;title&#39;: &#39;Scalar Bar Title&#39;}
+
+  warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
+</pre></div>
+</div>
 <p>Cumulative result 13 and harmonic index 7</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rnum</span> <span class="o">=</span> <span class="mi">13</span>
 <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;Expected Nodal Diameter </span><span class="si">%2d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">nodal_diameters</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
@@ -532,6 +622,18 @@ Cumulative indices matching harmonic index 1: [ 8 10 13 15]
 </pre></div>
 </div>
 <img alt="academic sector nd" class="sphx-glr-single-img" src="../../_images/sphx_glr_academic_sector_nd_009.png" />
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning:
+&quot;stitle&quot; is a depreciated keyword and will be removed in a future
+release.
+
+Use ``scalar_bar_args`` instead.  For example:
+
+scalar_bar_args={&#39;title&#39;: &#39;Scalar Bar Title&#39;}
+
+  warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
+</pre></div>
+</div>
 <p>Cumulative result 15 and harmonic index 11</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rnum</span> <span class="o">=</span> <span class="mi">15</span>
 <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;Expected Nodal Diameter </span><span class="si">%2d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">nodal_diameters</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
@@ -542,6 +644,18 @@ Cumulative indices matching harmonic index 1: [ 8 10 13 15]
 </pre></div>
 </div>
 <img alt="academic sector nd" class="sphx-glr-single-img" src="../../_images/sphx_glr_academic_sector_nd_010.png" />
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning:
+&quot;stitle&quot; is a depreciated keyword and will be removed in a future
+release.
+
+Use ``scalar_bar_args`` instead.  For example:
+
+scalar_bar_args={&#39;title&#39;: &#39;Scalar Bar Title&#39;}
+
+  warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
+</pre></div>
+</div>
 </div>
 <div class="section" id="traveling-wave-animation">
 <h1>Traveling Wave Animation<a class="headerlink" href="#traveling-wave-animation" title="Permalink to this headline">¶</a></h1>
@@ -570,7 +684,7 @@ second mode in the mode pair <code class="docutils literal notranslate"><span cl
 </pre></div>
 </div>
 <img alt="academic sector nd" class="sphx-glr-single-img" src="../../_images/sphx_glr_academic_sector_nd_012.png" />
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  36.893 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  53.317 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-01-cyclic-results-academic-sector-nd-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/c9ed20fb704a0c01197c3e73488bb440/academic_sector_nd.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">academic_sector_nd.py</span></code></a></p>
@@ -612,7 +726,7 @@ second mode in the mode pair <code class="docutils literal notranslate"><span cl
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.1.<br/>
 </p>
     </div>
     
