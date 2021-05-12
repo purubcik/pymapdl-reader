@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Result Class &#8212; PyMAPDL Reader 0.50.10 documentation</title>
+    <title>Result Class &#8212; PyMAPDL Reader 0.50.11 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -940,23 +940,19 @@ X, Y, Z, XY, YZ, XZ, EQV.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">nodal_reaction_forces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span></dt>
+<span class="sig-name descname"><span class="pre">nodal_reaction_forces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Nodal reaction forces.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
-list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>sort</strong> (<em>bool</em>) – Sort results by node number.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
-</ul>
+<dd class="field-odd"><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+list containing (step, substep) of the requested result.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><ul class="simple">
-<li><p><strong>rforces</strong> (<em>np.ndarray</em>) – Nodal reaction forces.</p></li>
-<li><p><strong>nnum</strong> (<em>np.ndarray</em>) – Node numbers corresponding to the reaction forces.  Does
-not necessarily corresponds to <code class="docutils literal notranslate"><span class="pre">rst.mesh.nnum</span></code> as each
-node may not have a reaction force in each degree of
-freedom.</p></li>
+<li><p><strong>rforces</strong> (<em>np.ndarray</em>) – Nodal reaction forces for each degree of freedom.</p></li>
+<li><p><strong>nnum</strong> (<em>np.ndarray</em>) – Node numbers corresponding to the reaction forces.  Node
+numbers may be repeated if there is more than one degree
+of freedom for each node.</p></li>
 <li><p><strong>dof</strong> (<em>np.ndarray</em>) – Degree of freedom corresponding to each node using the
 MAPDL degree of freedom reference table.  See
 <code class="docutils literal notranslate"><span class="pre">rst.result_dof</span></code> for the corresponding degrees of
