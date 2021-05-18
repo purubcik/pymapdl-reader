@@ -69,15 +69,6 @@ Download the result file from verification manual test case 33
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
-    "stitle" is a depreciated keyword and will be removed in a future
-    release.
-
-    Use ``scalar_bar_args`` instead.  For example:
-
-    scalar_bar_args={'title': 'Scalar Bar Title'}
-
-      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
 
     [(4.256762018493109, 2.258665575329393, 2.3586655753293932),
      (1.9980964431637156, 2.7755575615628914e-17, 0.10000000000000002),
@@ -112,15 +103,6 @@ Plot with contours
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
-    "stitle" is a depreciated keyword and will be removed in a future
-    release.
-
-    Use ``scalar_bar_args`` instead.  For example:
-
-    scalar_bar_args={'title': 'Scalar Bar Title'}
-
-      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
 
     [(4.256762018493109, 2.258665575329393, 2.3586655753293932),
      (1.9980964431637156, 2.7755575615628914e-17, 0.10000000000000002),
@@ -131,7 +113,7 @@ Plot with contours
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.412 seconds)
+   **Total running time of the script:** ( 0 minutes  1.471 seconds)
 
 
 .. _sphx_glr_download_examples_00-read_binary_load_thermal_result.py:

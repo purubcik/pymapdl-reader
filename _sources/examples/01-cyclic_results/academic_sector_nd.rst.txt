@@ -188,22 +188,6 @@ which is (Load-step, sub-step).
     :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
-    "stitle" is a depreciated keyword and will be removed in a future
-    release.
-
-    Use ``scalar_bar_args`` instead.  For example:
-
-    scalar_bar_args={'title': 'Scalar Bar Title'}
-
-      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
-
 
 
 
@@ -225,22 +209,6 @@ Alternatively, you can refer to the results using cumulative indexing.
     :alt: academic sector nd
     :class: sphx-glr-single-img
 
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
-    "stitle" is a depreciated keyword and will be removed in a future
-    release.
-
-    Use ``scalar_bar_args`` instead.  For example:
-
-    scalar_bar_args={'title': 'Scalar Bar Title'}
-
-      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
 
 
 
@@ -790,7 +758,7 @@ second mode in the mode pair ``(3, 2)`` instead of ``(3, 1)``.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  45.334 seconds)
+   **Total running time of the script:** ( 0 minutes  59.669 seconds)
 
 
 .. _sphx_glr_download_examples_01-cyclic_results_academic_sector_nd.py:

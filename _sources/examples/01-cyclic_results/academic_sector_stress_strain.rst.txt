@@ -108,22 +108,6 @@ rotor._positive_cyclic_dir = True
     :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
-    "stitle" is a depreciated keyword and will be removed in a future
-    release.
-
-    Use ``scalar_bar_args`` instead.  For example:
-
-    scalar_bar_args={'title': 'Scalar Bar Title'}
-
-      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
-
 
 
 
@@ -197,22 +181,6 @@ can help you automate saving screenshots.
     :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
-    "stitle" is a depreciated keyword and will be removed in a future
-    release.
-
-    Use ``scalar_bar_args`` instead.  For example:
-
-    scalar_bar_args={'title': 'Scalar Bar Title'}
-
-      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
-
 
 
 
@@ -241,22 +209,6 @@ Available stress components are ``['Y', 'Z', 'XY', 'YZ', 'XZ']``
     :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
-    "stitle" is a depreciated keyword and will be removed in a future
-    release.
-
-    Use ``scalar_bar_args`` instead.  For example:
-
-    scalar_bar_args={'title': 'Scalar Bar Title'}
-
-      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
-
 
 
 
@@ -281,29 +233,13 @@ Available stress components are ``['S1', 'S2', 'S3', 'SINT', 'SEQV']``.
     :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
-    "stitle" is a depreciated keyword and will be removed in a future
-    release.
-
-    Use ``scalar_bar_args`` instead.  For example:
-
-    scalar_bar_args={'title': 'Scalar Bar Title'}
-
-      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
-
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.269 seconds)
+   **Total running time of the script:** ( 0 minutes  4.085 seconds)
 
 
 .. _sphx_glr_download_examples_01-cyclic_results_academic_sector_stress_strain.py:

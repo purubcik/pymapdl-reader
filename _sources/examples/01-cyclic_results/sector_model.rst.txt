@@ -151,15 +151,6 @@ use the (load step, sub step) ``(4, 3)``.
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning: 
-    "stitle" is a depreciated keyword and will be removed in a future
-    release.
-
-    Use ``scalar_bar_args`` instead.  For example:
-
-    scalar_bar_args={'title': 'Scalar Bar Title'}
-
-      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
 
     [(6.540205322486949, 6.56272183830626, 6.051282219978583),
      (-0.0006467092362623106, 0.021869806583048046, -0.48956981174462877),
@@ -205,7 +196,7 @@ Disable movie_filename and increase nangles for a smoother plot
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  21.334 seconds)
+   **Total running time of the script:** ( 0 minutes  27.285 seconds)
 
 
 .. _sphx_glr_download_examples_01-cyclic_results_sector_model.py:

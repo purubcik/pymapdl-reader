@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stress and Strain from a Cyclic Modal Analysis &#8212; PyMAPDL Reader 0.50.11 documentation</title>
+    <title>Stress and Strain from a Cyclic Modal Analysis &#8212; PyMAPDL Reader 0.50.12 documentation</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -280,18 +280,6 @@ rotor._positive_cyclic_dir = True</p>
 </pre></div>
 </div>
 <img alt="academic sector stress strain" class="sphx-glr-single-img" src="../../_images/sphx_glr_academic_sector_stress_strain_001.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning:
-&quot;stitle&quot; is a depreciated keyword and will be removed in a future
-release.
-
-Use ``scalar_bar_args`` instead.  For example:
-
-scalar_bar_args={&#39;title&#39;: &#39;Scalar Bar Title&#39;}
-
-  warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
-</pre></div>
-</div>
 <p>Extract the nodal elastic strain for the fourth cumulative result.
 Because pymapdl-reader uses zero based indexing, we have to input “3” here.</p>
 <p>Depending on the version of ANSYS, MAPDL either does or does not
@@ -330,18 +318,6 @@ can help you automate saving screenshots.</p>
 </pre></div>
 </div>
 <img alt="academic sector stress strain" class="sphx-glr-single-img" src="../../_images/sphx_glr_academic_sector_stress_strain_002.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning:
-&quot;stitle&quot; is a depreciated keyword and will be removed in a future
-release.
-
-Use ``scalar_bar_args`` instead.  For example:
-
-scalar_bar_args={&#39;title&#39;: &#39;Scalar Bar Title&#39;}
-
-  warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
-</pre></div>
-</div>
 <p>Plot the nodal elastic stress in the “Z” direction for this rotor.
 Since this is plotting the other pair of modes for the 5th loadstep,
 the displacement of this response is 90 degrees out of phase of
@@ -352,18 +328,6 @@ result <code class="docutils literal notranslate"><span class="pre">(5,</span> <
 </pre></div>
 </div>
 <img alt="academic sector stress strain" class="sphx-glr-single-img" src="../../_images/sphx_glr_academic_sector_stress_strain_003.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning:
-&quot;stitle&quot; is a depreciated keyword and will be removed in a future
-release.
-
-Use ``scalar_bar_args`` instead.  For example:
-
-scalar_bar_args={&#39;title&#39;: &#39;Scalar Bar Title&#39;}
-
-  warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
-</pre></div>
-</div>
 <p>You can also plot the nodal von mises principal stress.  This plot
 shows the principal stress for result <code class="docutils literal notranslate"><span class="pre">(5,</span> <span class="pre">2)</span></code>.</p>
 <p>Available stress components are <code class="docutils literal notranslate"><span class="pre">['S1',</span> <span class="pre">'S2',</span> <span class="pre">'S3',</span> <span class="pre">'SINT',</span> <span class="pre">'SEQV']</span></code>.</p>
@@ -372,19 +336,7 @@ shows the principal stress for result <code class="docutils literal notranslate"
 </pre></div>
 </div>
 <img alt="academic sector stress strain" class="sphx-glr-single-img" src="../../_images/sphx_glr_academic_sector_stress_strain_004.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/opt/hostedtoolcache/Python/3.8.10/x64/lib/python3.8/site-packages/pyvista/plotting/plotting.py:1318: PyvistaDeprecationWarning:
-&quot;stitle&quot; is a depreciated keyword and will be removed in a future
-release.
-
-Use ``scalar_bar_args`` instead.  For example:
-
-scalar_bar_args={&#39;title&#39;: &#39;Scalar Bar Title&#39;}
-
-  warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
-</pre></div>
-</div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  3.269 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  4.085 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-01-cyclic-results-academic-sector-stress-strain-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/42d2d740296feb235d23bebeee90f437/academic_sector_stress_strain.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">academic_sector_stress_strain.py</span></code></a></p>
