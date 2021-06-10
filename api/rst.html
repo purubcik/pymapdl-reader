@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Result Class &#8212; PyMAPDL Reader 0.50.14 documentation</title>
+    <title>Result Class &#8212; PyMAPDL Reader 0.50.15 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -377,7 +377,9 @@ recorded.</p>
 <dt>add_text<span class="classifier">bool, optional</span></dt><dd><p>Adds information about the result to the animation.</p>
 </dd>
 <dt>fps<span class="classifier">int, optional</span></dt><dd><p>Frames per second.  Defaults to 20 and limited to hardware
-capabilities and model density.</p>
+capabilities and model density. Carries over to movies
+created by providing the <code class="docutils literal notranslate"><span class="pre">movie_filename</span></code> argument,
+but <em>not</em> to gifs.</p>
 </dd>
 <dt>kwargs<span class="classifier">optional keyword arguments, optional</span></dt><dd><p>See help(pyvista.Plot) for additional keyword arguments.</p>
 </dd>
