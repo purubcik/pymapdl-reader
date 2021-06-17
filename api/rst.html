@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Result Class &#8212; PyMAPDL Reader 0.50.16 documentation</title>
+    <title>Result Class &#8212; PyMAPDL Legacy Reader 0.51.0 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -29,7 +29,6 @@
     <link rel="stylesheet" type="text/css" href="../_static/gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery-dataframe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery-rendered-html.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/ansys.css" />
     
   <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
@@ -52,81 +51,67 @@
     <div class="container-fluid" id="banner"></div>
 
     
-    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><style>
+    .navbar-light {
+        background-color: black !important;
+    }
+</style>
 
-  <div id="navbar-start">
+<div class="container-xl">
+
+    <a class="navbar-brand" href="../index.html">
     
+      <img src="../_static/pyansys-logo-black-cropped.png" class="logo" alt="logo" />
     
-
-<a class="navbar-brand" href="../index.html">
-  <img src="../_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
-</a>
-
-
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" >
+        <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+      </span>
+    </button>
     
-  </div>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  
-  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
-    <div id="navbar-center" class="mr-auto">
-      
-      <div class="navbar-center-item">
-        <ul id="navbar-main-elements" class="navbar-nav">
-    <li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../getting_started.html">
-  Installation
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../user_guide/index.html">
-  User Guide
- </a>
-</li>
-
-<li class="toctree-l1 current active nav-item">
- <a class="reference internal nav-link" href="index.html">
-  API Reference
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../examples/index.html">
-  Examples Gallery
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../contributing.html">
-  Contributing
- </a>
-</li>
-
-    
-</ul>
-      </div>
-      
-    </div>
-
-    <div id="navbar-end">
-      
-      <div class="navbar-end-item">
-        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/pyansys/pymapdl-reader" rel="noopener" target="_blank" title="GitHub">
-            <span><i class="fab fa-github-square"></i></span>
-            <label class="sr-only">GitHub</label>
-          </a>
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../getting_started.html">Installation</a>
         </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../user_guide/index.html">User Guide</a>
+        </li>
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="index.html">API Reference</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../examples/index.html">Examples Gallery</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../contributing.html">Contributing</a>
+        </li>
+        
+        
       </ul>
-      </div>
+
+
       
+
+      <ul class="navbar-nav">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/pyansys/PyMAPDL" target="_blank" rel="noopener">
+              <span><i class="fab fa-github-square" style="font-size:24px"></i></span>
+            </a>
+          </li>
+        
+        
+        
+      </ul>
     </div>
-  </div>
 </div>
     </nav>
     
@@ -250,7 +235,7 @@ components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p>
 </dd>
 <dt>sel_type_all<span class="classifier">bool, optional</span></dt><dd><p>If node_components is specified, plots those elements
-containing all nodes of the component.  Default True.</p>
+containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
 </dd>
 <dt>add_text<span class="classifier">bool, optional</span></dt><dd><p>Adds information about the result.</p>
 </dd>
@@ -266,7 +251,7 @@ animate once and close.</p>
 <code class="docutils literal notranslate"><span class="pre">imagio.get_writer</span></code>.  A single loop of the mode will be
 recorded.</p>
 </dd>
-<dt>kwargs<span class="classifier">optional keyword arguments, optional</span></dt><dd><p>See help(pyvista.Plot) for additional keyword arguments.</p>
+<dt>kwargs<span class="classifier">optional keyword arguments, optional</span></dt><dd><p>See <code class="docutils literal notranslate"><span class="pre">help(pyvista.Plot)</span></code> for additional keyword arguments.</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
@@ -306,7 +291,7 @@ components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p>
 </dd>
 <dt>sel_type_all<span class="classifier">bool, optional</span></dt><dd><p>If node_components is specified, plots those elements
-containing all nodes of the component.  Default True.</p>
+containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
 </dd>
 <dt>add_text<span class="classifier">bool, optional</span></dt><dd><p>Adds information about the result.</p>
 </dd>
@@ -322,7 +307,7 @@ animate once and close.</p>
 <code class="docutils literal notranslate"><span class="pre">imagio.get_writer</span></code>.  A single loop of the mode will be
 recorded.</p>
 </dd>
-<dt>kwargs<span class="classifier">optional keyword arguments, optional</span></dt><dd><p>See help(pyvista.Plot) for additional keyword arguments.</p>
+<dt>kwargs<span class="classifier">optional keyword arguments, optional</span></dt><dd><p>See <code class="docutils literal notranslate"><span class="pre">help(pyvista.Plot)</span></code> for additional keyword arguments.</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
@@ -364,7 +349,7 @@ components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p>
 </dd>
 <dt>sel_type_all<span class="classifier">bool, optional</span></dt><dd><p>If node_components is specified, plots those elements
-containing all nodes of the component.  Default True.</p>
+containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
 </dd>
 <dt>loop<span class="classifier">bool, optional</span></dt><dd><p>Loop the animation.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.  Disable this to
 animate once and close.</p>
@@ -430,7 +415,7 @@ the top down.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">cylindrical_nodal_stress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span></dt>
+<span class="sig-name descname"><span class="pre">cylindrical_nodal_stress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Retrieves the stresses for each node in the solution in the
 cylindrical coordinate system as the following values:</p>
 <p><code class="docutils literal notranslate"><span class="pre">R</span></code>, <code class="docutils literal notranslate"><span class="pre">THETA</span></code>, <code class="docutils literal notranslate"><span class="pre">Z</span></code>, <code class="docutils literal notranslate"><span class="pre">RTHETA</span></code>, <code class="docutils literal notranslate"><span class="pre">THETAZ</span></code>, and <code class="docutils literal notranslate"><span class="pre">RZ</span></code></p>
@@ -442,14 +427,24 @@ elements, stresses will vary based on the element they are
 evaluated from.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
-list containing (step, substep) of the requested result.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+list containing (step, substep) of the requested result.</p></li>
+<li><p><strong>nodes</strong> (<em>str</em><em>, </em><em>sequence of int</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+component or array of node numbers.  For example</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">np.arange(1000,</span> <span class="pre">2001)</span></code></p></li>
+</ul>
+</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>nnum</strong> (<em>numpy.ndarray</em>) – Node numbers of the result.</p></li>
-<li><p><strong>stress</strong> (<em>numpy.ndarray</em>) – Stresses at R, THETA, Z, RTHETA, THETAZ, and RZ averaged
-at each corner node where R is radial.</p></li>
+<li><p><strong>stress</strong> (<em>numpy.ndarray</em>) – Stresses at <code class="docutils literal notranslate"><span class="pre">R,</span> <span class="pre">THETA,</span> <span class="pre">Z,</span> <span class="pre">RTHETA,</span> <span class="pre">THETAZ,</span> <span class="pre">RZ</span></code> averaged
+at each corner node where <code class="docutils literal notranslate"><span class="pre">R</span></code> is radial.</p></li>
 </ul>
 </p>
 </dd>
@@ -458,6 +453,15 @@ at each corner node where R is radial.</p></li>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span> <span class="o">=</span> <span class="n">pymapdl_reader</span><span class="o">.</span><span class="n">read_binary</span><span class="p">(</span><span class="s1">&#39;file.rst&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">stress</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">cylindrical_nodal_stress</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Return the cylindrical nodal stress just for the nodal component
+<code class="docutils literal notranslate"><span class="pre">'MY_COMPONENT'</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">stress</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">cylindrical_nodal_stress</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="s1">&#39;MY_COMPONENT&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Return the nodal stress just for the nodes from 20 through 50.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">stress</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">cylindrical_nodal_stress</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">51</span><span class="p">))</span>
 </pre></div>
 </div>
 <p class="rubric">Notes</p>
@@ -806,7 +810,7 @@ degrees of freedom associated with each index.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">nodal_displacement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_nodal_coord_sys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span></dt>
+<span class="sig-name descname"><span class="pre">nodal_displacement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_nodal_coord_sys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Returns the DOF solution for each node in the global
 cartesian coordinate system or nodal coordinate system.</p>
 <p>Solution may be nodal temperatures or nodal displacements
@@ -816,8 +820,16 @@ depending on the type of the solution.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>in_nodal_coord_sys</strong> (<em>bool</em><em>, </em><em>optional</em>) – When <code class="docutils literal notranslate"><span class="pre">True</span></code>, returns results in the nodal coordinate system.
-Default <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+<li><p><strong>in_nodal_coord_sys</strong> (<em>bool</em><em>, </em><em>optional</em>) – When <code class="docutils literal notranslate"><span class="pre">True</span></code>, returns results in the nodal coordinate
+system.  Default <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+<li><p><strong>nodes</strong> (<em>str</em><em>, </em><em>sequence of int</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+component or array of node numbers.  For example</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">np.arange(1000,</span> <span class="pre">2001)</span></code></p></li>
+</ul>
+</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -832,9 +844,20 @@ number of degrees of freedom which includes <code class="docutils literal notran
 </dd>
 </dl>
 <p class="rubric">Examples</p>
+<p>Return the nodal soltuion (in this case, displacement) for the
+first result of <code class="docutils literal notranslate"><span class="pre">&quot;file.rst&quot;</span></code></p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span> <span class="o">=</span> <span class="n">pymapdl_reader</span><span class="o">.</span><span class="n">read_binary</span><span class="p">(</span><span class="s1">&#39;file.rst&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Return the nodal solution just for the nodal component
+<code class="docutils literal notranslate"><span class="pre">'MY_COMPONENT'</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="s1">&#39;MY_COMPONENT&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Return the nodal solution just for the nodes from 20 through 50.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">51</span><span class="p">))</span>
 </pre></div>
 </div>
 <p class="rubric">Notes</p>
@@ -845,23 +868,33 @@ solution results are reflected in <code class="docutils literal notranslate"><sp
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">nodal_elastic_strain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span></dt>
+<span class="sig-name descname"><span class="pre">nodal_elastic_strain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Nodal component elastic strains.  This record contains
-strains in the order X, Y, Z, XY, YZ, XZ, EQV.</p>
+strains in the order <code class="docutils literal notranslate"><span class="pre">X,</span> <span class="pre">Y,</span> <span class="pre">Z,</span> <span class="pre">XY,</span> <span class="pre">YZ,</span> <span class="pre">XZ,</span> <span class="pre">EQV</span></code>.</p>
 <p>Elastic strains can be can be nodal values extrapolated from
 the integration points or values at the integration points
 moved to the nodes.</p>
 <p>Equivalent MAPDL command: <code class="docutils literal notranslate"><span class="pre">PRNSOL,</span> <span class="pre">EPEL</span></code></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
-list containing (step, substep) of the requested result.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+list containing (step, substep) of the requested result.</p></li>
+<li><p><strong>nodes</strong> (<em>str</em><em>, </em><em>sequence of int</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+component or array of node numbers.  For example</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">np.arange(1000,</span> <span class="pre">2001)</span></code></p></li>
+</ul>
+</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><ul class="simple">
-<li><p><strong>nnum</strong> (<em>np.ndarray</em>) – ANSYS node numbers.</p></li>
+<li><p><strong>nnum</strong> (<em>np.ndarray</em>) – MAPDL node numbers.</p></li>
 <li><p><strong>elastic_strain</strong> (<em>np.ndarray</em>) – Nodal component elastic strains.  Array is in the order
-X, Y, Z, XY, YZ, XZ, EQV.</p></li>
+<code class="docutils literal notranslate"><span class="pre">X,</span> <span class="pre">Y,</span> <span class="pre">Z,</span> <span class="pre">XY,</span> <span class="pre">YZ,</span> <span class="pre">XZ,</span> <span class="pre">EQV</span></code>.</p></li>
 </ul>
 </p>
 </dd>
@@ -871,6 +904,15 @@ X, Y, Z, XY, YZ, XZ, EQV.</p></li>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span> <span class="o">=</span> <span class="n">pymapdl_reader</span><span class="o">.</span><span class="n">read_binary</span><span class="p">(</span><span class="s1">&#39;file.rst&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">elastic_strain</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_elastic_strain</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Return the nodal elastic strain just for the nodal component
+<code class="docutils literal notranslate"><span class="pre">'MY_COMPONENT'</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">elastic_strain</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_elastic_strain</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="s1">&#39;MY_COMPONENT&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Return the nodal elastic strain just for the nodes from 20 through 50.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">elastic_strain</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_elastic_strain</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">51</span><span class="p">))</span>
 </pre></div>
 </div>
 <p class="rubric">Notes</p>
@@ -914,21 +956,32 @@ of freedom associated with each index.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">nodal_plastic_strain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span></dt>
-<dd><p>Nodal component plastic strains.  This record contains
-strains in the order X, Y, Z, XY, YZ, XZ, EQV.</p>
+<span class="sig-name descname"><span class="pre">nodal_plastic_strain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Nodal component plastic strains.</p>
+<p>This record contains strains in the order:
+<code class="docutils literal notranslate"><span class="pre">X,</span> <span class="pre">Y,</span> <span class="pre">Z,</span> <span class="pre">XY,</span> <span class="pre">YZ,</span> <span class="pre">XZ,</span> <span class="pre">EQV</span></code>.</p>
 <p>Plastic strains are always values at the integration points
 moved to the nodes.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
-list containing (step, substep) of the requested result.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+list containing (step, substep) of the requested result.</p></li>
+<li><p><strong>nodes</strong> (<em>str</em><em>, </em><em>sequence of int</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+component or array of node numbers.  For example</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">np.arange(1000,</span> <span class="pre">2001)</span></code></p></li>
+</ul>
+</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><ul class="simple">
-<li><p><strong>nnum</strong> (<em>np.ndarray</em>) – ANSYS node numbers.</p></li>
+<li><p><strong>nnum</strong> (<em>np.ndarray</em>) – MAPDL node numbers.</p></li>
 <li><p><strong>plastic_strain</strong> (<em>np.ndarray</em>) – Nodal component plastic strains.  Array is in the order
-X, Y, Z, XY, YZ, XZ, EQV.</p></li>
+<code class="docutils literal notranslate"><span class="pre">X,</span> <span class="pre">Y,</span> <span class="pre">Z,</span> <span class="pre">XY,</span> <span class="pre">YZ,</span> <span class="pre">XZ,</span> <span class="pre">EQV</span></code>.</p></li>
 </ul>
 </p>
 </dd>
@@ -938,6 +991,16 @@ X, Y, Z, XY, YZ, XZ, EQV.</p></li>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span> <span class="o">=</span> <span class="n">pymapdl_reader</span><span class="o">.</span><span class="n">read_binary</span><span class="p">(</span><span class="s1">&#39;file.rst&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">plastic_strain</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_plastic_strain</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Return the nodal plastic strain just for the nodal component
+<code class="docutils literal notranslate"><span class="pre">'MY_COMPONENT'</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">plastic_strain</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_plastic_strain</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="s1">&#39;MY_COMPONENT&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Return the nodal plastic strain just for the nodes from 20
+through 50.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">plastic_strain</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_plastic_strain</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">51</span><span class="p">))</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -983,7 +1046,7 @@ the reaction forces of a single node.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">nodal_solution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_nodal_coord_sys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span></dt>
+<span class="sig-name descname"><span class="pre">nodal_solution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_nodal_coord_sys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Returns the DOF solution for each node in the global
 cartesian coordinate system or nodal coordinate system.</p>
 <p>Solution may be nodal temperatures or nodal displacements
@@ -993,8 +1056,16 @@ depending on the type of the solution.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>in_nodal_coord_sys</strong> (<em>bool</em><em>, </em><em>optional</em>) – When <code class="docutils literal notranslate"><span class="pre">True</span></code>, returns results in the nodal coordinate system.
-Default <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+<li><p><strong>in_nodal_coord_sys</strong> (<em>bool</em><em>, </em><em>optional</em>) – When <code class="docutils literal notranslate"><span class="pre">True</span></code>, returns results in the nodal coordinate
+system.  Default <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+<li><p><strong>nodes</strong> (<em>str</em><em>, </em><em>sequence of int</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+component or array of node numbers.  For example</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">np.arange(1000,</span> <span class="pre">2001)</span></code></p></li>
+</ul>
+</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -1009,9 +1080,20 @@ number of degrees of freedom which includes <code class="docutils literal notran
 </dd>
 </dl>
 <p class="rubric">Examples</p>
+<p>Return the nodal soltuion (in this case, displacement) for the
+first result of <code class="docutils literal notranslate"><span class="pre">&quot;file.rst&quot;</span></code></p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span> <span class="o">=</span> <span class="n">pymapdl_reader</span><span class="o">.</span><span class="n">read_binary</span><span class="p">(</span><span class="s1">&#39;file.rst&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Return the nodal solution just for the nodal component
+<code class="docutils literal notranslate"><span class="pre">'MY_COMPONENT'</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="s1">&#39;MY_COMPONENT&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Return the nodal solution just for the nodes from 20 through 50.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">51</span><span class="p">))</span>
 </pre></div>
 </div>
 <p class="rubric">Notes</p>
@@ -1022,19 +1104,29 @@ solution results are reflected in <code class="docutils literal notranslate"><sp
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">nodal_static_forces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span></dt>
-<dd><p>Return the nodal forces averaged at the nodes</p>
+<span class="sig-name descname"><span class="pre">nodal_static_forces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Return the nodal forces averaged at the nodes.</p>
 <p>Nodal forces are computed on an element by element basis, and
 this method averages the nodal forces for each element for
 each node.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
-list containing (step, substep) of the requested result.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+list containing (step, substep) of the requested result.</p></li>
+<li><p><strong>nodes</strong> (<em>str</em><em>, </em><em>sequence of int</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+component or array of node numbers.  For example</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">np.arange(1000,</span> <span class="pre">2001)</span></code></p></li>
+</ul>
+</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><ul class="simple">
-<li><p><strong>nnum</strong> (<em>np.ndarray</em>) – ANSYS node numbers.</p></li>
+<li><p><strong>nnum</strong> (<em>np.ndarray</em>) – MAPDL node numbers.</p></li>
 <li><p><strong>forces</strong> (<em>np.ndarray</em>) – Averaged nodal forces.  Array is sized <code class="docutils literal notranslate"><span class="pre">[nnod</span> <span class="pre">x</span> <span class="pre">numdof]</span></code>
 where <code class="docutils literal notranslate"><span class="pre">nnod</span></code> is the number of nodes and <code class="docutils literal notranslate"><span class="pre">numdof</span></code> is the
 number of degrees of freedom for this solution.</p></li>
@@ -1051,6 +1143,15 @@ example hexahedral result file.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">forces</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_static_forces</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Return the nodal static forces just for the nodal component
+<code class="docutils literal notranslate"><span class="pre">'MY_COMPONENT'</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">forces</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_static_forces</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="s1">&#39;MY_COMPONENT&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Return the nodal static forces just for the nodes from 20 through 50.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">forces</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_static_forces</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">51</span><span class="p">))</span>
+</pre></div>
+</div>
 <p class="rubric">Notes</p>
 <p>Nodes without a a nodal will be NAN.  These are generally
 midside (quadratic) nodes.</p>
@@ -1058,7 +1159,7 @@ midside (quadratic) nodes.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">nodal_stress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span></dt>
+<span class="sig-name descname"><span class="pre">nodal_stress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Retrieves the component stresses for each node in the
 solution.</p>
 <p>The order of the results corresponds to the sorted node
@@ -1069,13 +1170,23 @@ elements, stresses will vary based on the element they are
 evaluated from.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
-list containing (step, substep) of the requested result.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+list containing (step, substep) of the requested result.</p></li>
+<li><p><strong>nodes</strong> (<em>str</em><em>, </em><em>sequence of int</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+component or array of node numbers.  For example</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">np.arange(1000,</span> <span class="pre">2001)</span></code></p></li>
+</ul>
+</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>nnum</strong> (<em>numpy.ndarray</em>) – Node numbers of the result.</p></li>
-<li><p><strong>stress</strong> (<em>numpy.ndarray</em>) – Stresses at X, Y, Z, XY, YZ, and XZ averaged at each corner
+<li><p><strong>stress</strong> (<em>numpy.ndarray</em>) – Stresses at <code class="docutils literal notranslate"><span class="pre">X,</span> <span class="pre">Y,</span> <span class="pre">Z,</span> <span class="pre">XY,</span> <span class="pre">YZ,</span> <span class="pre">XZ</span></code> averaged at each corner
 node.</p></li>
 </ul>
 </p>
@@ -1087,6 +1198,15 @@ node.</p></li>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">stress</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_stress</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Return the nodal stress just for the nodal component
+<code class="docutils literal notranslate"><span class="pre">'MY_COMPONENT'</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">stress</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_stress</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="s1">&#39;MY_COMPONENT&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Return the nodal stress just for the nodes from 20 through 50.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">stress</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">51</span><span class="p">))</span>
+</pre></div>
+</div>
 <p class="rubric">Notes</p>
 <p>Nodes without a stress value will be NAN.
 Equivalent ANSYS command: PRNSOL, S</p>
@@ -1094,7 +1214,7 @@ Equivalent ANSYS command: PRNSOL, S</p>
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">nodal_temperature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
+<span class="sig-name descname"><span class="pre">nodal_temperature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Retrieves the temperature for each node in the
 solution.</p>
 <p>The order of the results corresponds to the sorted node
@@ -1102,8 +1222,18 @@ numbering.</p>
 <p>Equivalent MAPDL command: PRNSOL, TEMP</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
-list containing (step, substep) of the requested result.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+list containing (step, substep) of the requested result.</p></li>
+<li><p><strong>nodes</strong> (<em>str</em><em>, </em><em>sequence of int</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+component or array of node numbers.  For example</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">np.arange(1000,</span> <span class="pre">2001)</span></code></p></li>
+</ul>
+</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><ul class="simple">
@@ -1116,14 +1246,23 @@ list containing (step, substep) of the requested result.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span> <span class="o">=</span> <span class="n">pymapdl_reader</span><span class="o">.</span><span class="n">read_binary</span><span class="p">(</span><span class="s1">&#39;file.rst&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">stress</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_temperature</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_temperature</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Return the temperature just for the nodal component
+<code class="docutils literal notranslate"><span class="pre">'MY_COMPONENT'</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_stress</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="s1">&#39;MY_COMPONENT&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Return the temperature just for the nodes from 20 through 50.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">51</span><span class="p">))</span>
 </pre></div>
 </div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">nodal_thermal_strain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span></dt>
+<span class="sig-name descname"><span class="pre">nodal_thermal_strain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Nodal component thermal strain.</p>
 <p>This record contains strains in the order X, Y, Z, XY, YZ, XZ,
 EQV, and eswell (element swelling strain).  Thermal strains
@@ -1132,14 +1271,24 @@ nodes.</p>
 <p>Equivalent MAPDL command: PRNSOL, EPTH, COMP</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
-list containing (step, substep) of the requested result.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+list containing (step, substep) of the requested result.</p></li>
+<li><p><strong>nodes</strong> (<em>str</em><em>, </em><em>sequence of int</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+component or array of node numbers.  For example</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">np.arange(1000,</span> <span class="pre">2001)</span></code></p></li>
+</ul>
+</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><ul class="simple">
-<li><p><strong>nnum</strong> (<em>np.ndarray</em>) – ANSYS node numbers.</p></li>
+<li><p><strong>nnum</strong> (<em>np.ndarray</em>) – MAPDL node numbers.</p></li>
 <li><p><strong>thermal_strain</strong> (<em>np.ndarray</em>) – Nodal component plastic strains.  Array is in the order
-X, Y, Z, XY, YZ, XZ, EQV, ESWELL</p></li>
+<code class="docutils literal notranslate"><span class="pre">X,</span> <span class="pre">Y,</span> <span class="pre">Z,</span> <span class="pre">XY,</span> <span class="pre">YZ,</span> <span class="pre">XZ,</span> <span class="pre">EQV,</span> <span class="pre">ESWELL</span></code></p></li>
 </ul>
 </p>
 </dd>
@@ -1149,6 +1298,15 @@ X, Y, Z, XY, YZ, XZ, EQV, ESWELL</p></li>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span> <span class="o">=</span> <span class="n">pymapdl_reader</span><span class="o">.</span><span class="n">read_binary</span><span class="p">(</span><span class="s1">&#39;file.rst&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">thermal_strain</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_thermal_strain</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Return the nodal thermal strain just for the nodal component
+<code class="docutils literal notranslate"><span class="pre">'MY_COMPONENT'</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">thermal_strain</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_thermal_strain</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="s1">&#39;MY_COMPONENT&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Return the nodal thermal strain just for the nodes from 20 through 50.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">thermal_strain</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_thermal_strain</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">51</span><span class="p">))</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -1426,8 +1584,8 @@ components to plot.  For example:
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
 <li><p><strong>sel_type_all</strong> (<em>bool</em><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
-containing all nodes of the component.  Default True.</p></li>
-<li><p><strong>**kwargs</strong> (<em>keyword arguments</em>) – Optional keyword arguments.  See help(pyvista.plot)</p></li>
+containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p><strong>**kwargs</strong> (<em>keyword arguments</em>) – Optional keyword arguments.  See <code class="docutils literal notranslate"><span class="pre">help(pyvista.plot)</span></code>.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -1453,7 +1611,7 @@ containing all nodes of the component.  Default True.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">plot_cylindrical_nodal_stress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
+<span class="sig-name descname"><span class="pre">plot_cylindrical_nodal_stress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">treat_nan_as_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Plot nodal_stress in the cylindrical coordinate system.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1476,6 +1634,8 @@ components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
 <li><p><strong>sel_type_all</strong> (<em>bool</em><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
 containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p><strong>treat_nan_as_zero</strong> (<em>bool</em><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
+when plotting.</p></li>
 <li><p><strong>**kwargs</strong> (<em>keyword arguments</em>) – Optional keyword arguments.  See <code class="docutils literal notranslate"><span class="pre">help(pyvista.plot)</span></code></p></li>
 </ul>
 </dd>
@@ -1544,7 +1704,7 @@ coordinate system.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">plot_nodal_displacement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
+<span class="sig-name descname"><span class="pre">plot_nodal_displacement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">treat_nan_as_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Plots the nodal solution.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1567,7 +1727,10 @@ components to plot.  For example:
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
 <li><p><strong>sel_type_all</strong> (<em>bool</em><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
-containing all nodes of the component.  Default True.</p></li>
+containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p><strong>treat_nan_as_zero</strong> (<em>bool</em><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
+when plotting.</p></li>
+<li><p><strong>**kwargs</strong> (<em>keyword arguments</em>) – Optional keyword arguments.  See <code class="docutils literal notranslate"><span class="pre">help(pyvista.plot)</span></code>.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -1594,7 +1757,7 @@ example</p>
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">plot_nodal_elastic_strain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalar_bar_args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{'title':</span> <span class="pre">'EQV</span> <span class="pre">Nodal</span> <span class="pre">Elastic</span> <span class="pre">Strain'}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
+<span class="sig-name descname"><span class="pre">plot_nodal_elastic_strain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalar_bar_args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{'title':</span> <span class="pre">'EQV</span> <span class="pre">Nodal</span> <span class="pre">Elastic</span> <span class="pre">Strain'}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">treat_nan_as_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Plot nodal elastic strain.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1617,8 +1780,10 @@ components to plot.  For example:
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
 <li><p><strong>sel_type_all</strong> (<em>bool</em><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
-containing all nodes of the component.  Default True.</p></li>
-<li><p><strong>**kwargs</strong> (<em>keyword arguments</em>) – Optional keyword arguments.  See help(pyvista.plot)</p></li>
+containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p><strong>treat_nan_as_zero</strong> (<em>bool</em><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
+when plotting.</p></li>
+<li><p><strong>**kwargs</strong> (<em>keyword arguments</em>) – Optional keyword arguments.  See <a href="#id1"><span class="problematic" id="id2">``</span></a>help(pyvista.plot)``p</p></li>
 </ul>
 </dd>
 </dl>
@@ -1634,7 +1799,7 @@ containing all nodes of the component.  Default True.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">plot_nodal_plastic_strain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalar_bar_args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{'title':</span> <span class="pre">'Nodal</span> <span class="pre">Plastic</span> <span class="pre">Strain'}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
+<span class="sig-name descname"><span class="pre">plot_nodal_plastic_strain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalar_bar_args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{'title':</span> <span class="pre">'Nodal</span> <span class="pre">Plastic</span> <span class="pre">Strain'}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">treat_nan_as_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Plot nodal component plastic strain.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1658,8 +1823,10 @@ components to plot.  For example:
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
 <li><p><strong>sel_type_all</strong> (<em>bool</em><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
-containing all nodes of the component.  Default True.</p></li>
-<li><p><strong>**kwargs</strong> (<em>keyword arguments</em>) – Optional keyword arguments.  See help(pyvista.plot)</p></li>
+containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p><strong>treat_nan_as_zero</strong> (<em>bool</em><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
+when plotting.</p></li>
+<li><p><strong>**kwargs</strong> (<em>keyword arguments</em>) – Optional keyword arguments.  See <code class="docutils literal notranslate"><span class="pre">help(pyvista.plot)</span></code>.</p></li>
 </ul>
 </dd>
 </dl>
@@ -1675,7 +1842,7 @@ containing all nodes of the component.  Default True.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">plot_nodal_solution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
+<span class="sig-name descname"><span class="pre">plot_nodal_solution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">treat_nan_as_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Plots the nodal solution.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1698,7 +1865,10 @@ components to plot.  For example:
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
 <li><p><strong>sel_type_all</strong> (<em>bool</em><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
-containing all nodes of the component.  Default True.</p></li>
+containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p><strong>treat_nan_as_zero</strong> (<em>bool</em><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
+when plotting.</p></li>
+<li><p><strong>**kwargs</strong> (<em>keyword arguments</em>) – Optional keyword arguments.  See <code class="docutils literal notranslate"><span class="pre">help(pyvista.plot)</span></code>.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -1725,7 +1895,7 @@ example</p>
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">plot_nodal_stress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
+<span class="sig-name descname"><span class="pre">plot_nodal_stress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">treat_nan_as_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Plots the stresses at each node in the solution.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1747,6 +1917,8 @@ components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
 <li><p><strong>sel_type_all</strong> (<em>bool</em><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
 containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p><strong>treat_nan_as_zero</strong> (<em>bool</em><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
+when plotting.</p></li>
 <li><p><strong>kwargs</strong> (<em>keyword arguments</em>) – Additional keyword arguments.  See <code class="docutils literal notranslate"><span class="pre">help(pyvista.plot)</span></code></p></li>
 </ul>
 </dd>
@@ -1766,7 +1938,7 @@ containing all nodes of the component.  Default <code class="docutils literal no
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">plot_nodal_temperature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
+<span class="sig-name descname"><span class="pre">plot_nodal_temperature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">treat_nan_as_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Plot nodal temperature</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1782,12 +1954,14 @@ components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
 <li><p><strong>sel_type_all</strong> (<em>bool</em><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
 containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p><strong>treat_nan_as_zero</strong> (<em>bool</em><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
+when plotting.</p></li>
 <li><p><strong>**kwargs</strong> (<em>keyword arguments</em>) – Optional keyword arguments.  See <code class="docutils literal notranslate"><span class="pre">help(pyvista.plot)</span></code></p></li>
 </ul>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
-<p>Plot temperature of a result</p>
+<p>Plot temperature of a result.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">pymapdl_reader</span><span class="o">.</span><span class="n">read_binary</span><span class="p">(</span><span class="s1">&#39;file.rst&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">result</span><span class="o">.</span><span class="n">plot_nodal_temperature</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
@@ -1801,7 +1975,7 @@ containing all nodes of the component.  Default <code class="docutils literal no
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">plot_nodal_thermal_strain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalar_bar_args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{'title':</span> <span class="pre">'Nodal</span> <span class="pre">Thermal</span> <span class="pre">Strain'}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
+<span class="sig-name descname"><span class="pre">plot_nodal_thermal_strain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalar_bar_args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{'title':</span> <span class="pre">'Nodal</span> <span class="pre">Thermal</span> <span class="pre">Strain'}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">treat_nan_as_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Plot nodal component thermal strains.</p>
 <p>Equivalent MAPDL command: PLNSOL, EPTH, COMP</p>
 <dl class="field-list simple">
@@ -1826,13 +2000,15 @@ components to plot.  For example:
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
 <li><p><strong>sel_type_all</strong> (<em>bool</em><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
-containing all nodes of the component.  Default True.</p></li>
+containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p><strong>treat_nan_as_zero</strong> (<em>bool</em><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
+when plotting.</p></li>
 <li><p><strong>**kwargs</strong> (<em>keyword arguments</em>) – Optional keyword arguments.  See <code class="docutils literal notranslate"><span class="pre">help(pyvista.plot)</span></code></p></li>
 </ul>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
-<p>Plot thermal strain for result 0 of verification manual example 33</p>
+<p>Plot thermal strain for result 0 of verification manual example 33.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl.reader</span> <span class="kn">import</span> <span class="n">examples</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">examples</span><span class="o">.</span><span class="n">download_verification_result</span><span class="p">(</span><span class="mi">33</span><span class="p">)</span>
@@ -1843,7 +2019,7 @@ containing all nodes of the component.  Default True.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">plot_principal_nodal_stress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
+<span class="sig-name descname"><span class="pre">plot_principal_nodal_stress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">treat_nan_as_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Plot the principal stress.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1864,7 +2040,9 @@ components to plot.  For example:
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
 <li><p><strong>sel_type_all</strong> (<em>bool</em><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
-containing all nodes of the component.  Default True.</p></li>
+containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p><strong>treat_nan_as_zero</strong> (<em>bool</em><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
+when plotting.</p></li>
 <li><p><strong>kwargs</strong> (<em>keyword arguments</em>) – Additional keyword arguments.  See <code class="docutils literal notranslate"><span class="pre">help(pyvista.plot)</span></code></p></li>
 </ul>
 </dd>
@@ -1876,7 +2054,7 @@ containing all nodes of the component.  Default True.</p></li>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
-<p>Plot the equivalent von mises stress</p>
+<p>Plot the equivalent von mises stress.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">plot_principal_nodal_stress</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">comp</span><span class="o">=</span><span class="s1">&#39;SEQV&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -2195,7 +2373,7 @@ center of gravity</p>
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright 2020, ANSYS Open Source Developers.<br/>
+    &copy; Copyright (c) 2021 ANSYS, Inc. All rights reserved.<br/>
 </p>
     </div>
     
