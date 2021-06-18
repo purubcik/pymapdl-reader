@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reading MAPDL Result Files &#8212; PyMAPDL Legacy Reader 0.51.0 documentation</title>
+    <title>Reading MAPDL Result Files &#8212; PyMAPDL Legacy Reader 0.51.1 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -1193,7 +1193,7 @@ mesh from the result file.</p></li>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.rst.Result.animate_nodal_displacement">
-<span class="sig-name descname"><span class="pre">animate_nodal_displacement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'norm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_frames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">movie_filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.animate_nodal_displacement" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">animate_nodal_displacement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'norm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_frames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">movie_filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">progress_bar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.animate_nodal_displacement" title="Permalink to this definition">¶</a></dt>
 <dd><p>Animate nodal solution.  Assumes nodal solution is a
 displacement array from a modal or static solution.</p>
 <dl class="simple">
@@ -1221,18 +1221,22 @@ containing all nodes of the component.  Default <code class="docutils literal no
 <dt>n_frames<span class="classifier">int, optional</span></dt><dd><p>Number of “frames” between each full cycle.</p>
 </dd>
 <dt>loop<span class="classifier">bool, optional</span></dt><dd><p>Loop the animation.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.  Disable this to
-animate once and close.</p>
+animate once and close.  Automatically disabled when
+<code class="docutils literal notranslate"><span class="pre">off_screen=True</span></code> and <code class="docutils literal notranslate"><span class="pre">movie_filename</span></code> is set.</p>
 </dd>
 <dt>movie_filename<span class="classifier">str, optional</span></dt><dd><p>Filename of the movie to open.  Filename should end in
-<code class="docutils literal notranslate"><span class="pre">'mp4'</span></code>, but other filetypes may be supported.  See
-<code class="docutils literal notranslate"><span class="pre">imagio.get_writer</span></code>.  A single loop of the mode will be
-recorded.</p>
+<code class="docutils literal notranslate"><span class="pre">'mp4'</span></code>, but other filetypes may be supported like
+<code class="docutils literal notranslate"><span class="pre">&quot;gif&quot;</span></code>.  See <code class="docutils literal notranslate"><span class="pre">imagio.get_writer</span></code>.  A single loop of
+the mode will be recorded.</p>
+</dd>
+<dt>progress_bar<span class="classifier">bool, optional</span></dt><dd><p>Displays a progress bar when generating a movie while
+<code class="docutils literal notranslate"><span class="pre">off_screen=True</span></code>.  Default is <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
 </dd>
 <dt>kwargs<span class="classifier">optional keyword arguments, optional</span></dt><dd><p>See <code class="docutils literal notranslate"><span class="pre">help(pyvista.Plot)</span></code> for additional keyword arguments.</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
-<p>Animate first result</p>
+<p>Animate the first result interactively.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">animate_nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1241,15 +1245,19 @@ without looping</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">animate_nodal_solution</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">comp</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Animate second result and save as a movie</p>
+<p>Animate the second result and save as a movie.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">animate_nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">movie_filename</span><span class="o">=</span><span class="s1">&#39;disp.mp4&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Animate the second result and save as a movie in the background.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">animate_nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">movie_filename</span><span class="o">=</span><span class="s1">&#39;disp.mp4&#39;</span><span class="p">,</span> <span class="n">off_screen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.rst.Result.animate_nodal_solution">
-<span class="sig-name descname"><span class="pre">animate_nodal_solution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'norm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_frames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">movie_filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.animate_nodal_solution" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">animate_nodal_solution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'norm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_frames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">movie_filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">progress_bar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.animate_nodal_solution" title="Permalink to this definition">¶</a></dt>
 <dd><p>Animate nodal solution.  Assumes nodal solution is a
 displacement array from a modal or static solution.</p>
 <dl class="simple">
@@ -1277,18 +1285,22 @@ containing all nodes of the component.  Default <code class="docutils literal no
 <dt>n_frames<span class="classifier">int, optional</span></dt><dd><p>Number of “frames” between each full cycle.</p>
 </dd>
 <dt>loop<span class="classifier">bool, optional</span></dt><dd><p>Loop the animation.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.  Disable this to
-animate once and close.</p>
+animate once and close.  Automatically disabled when
+<code class="docutils literal notranslate"><span class="pre">off_screen=True</span></code> and <code class="docutils literal notranslate"><span class="pre">movie_filename</span></code> is set.</p>
 </dd>
 <dt>movie_filename<span class="classifier">str, optional</span></dt><dd><p>Filename of the movie to open.  Filename should end in
-<code class="docutils literal notranslate"><span class="pre">'mp4'</span></code>, but other filetypes may be supported.  See
-<code class="docutils literal notranslate"><span class="pre">imagio.get_writer</span></code>.  A single loop of the mode will be
-recorded.</p>
+<code class="docutils literal notranslate"><span class="pre">'mp4'</span></code>, but other filetypes may be supported like
+<code class="docutils literal notranslate"><span class="pre">&quot;gif&quot;</span></code>.  See <code class="docutils literal notranslate"><span class="pre">imagio.get_writer</span></code>.  A single loop of
+the mode will be recorded.</p>
+</dd>
+<dt>progress_bar<span class="classifier">bool, optional</span></dt><dd><p>Displays a progress bar when generating a movie while
+<code class="docutils literal notranslate"><span class="pre">off_screen=True</span></code>.  Default is <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
 </dd>
 <dt>kwargs<span class="classifier">optional keyword arguments, optional</span></dt><dd><p>See <code class="docutils literal notranslate"><span class="pre">help(pyvista.Plot)</span></code> for additional keyword arguments.</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
-<p>Animate first result</p>
+<p>Animate the first result interactively.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">animate_nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1297,8 +1309,12 @@ without looping</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">animate_nodal_solution</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">comp</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Animate second result and save as a movie</p>
+<p>Animate the second result and save as a movie.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">animate_nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">movie_filename</span><span class="o">=</span><span class="s1">&#39;disp.mp4&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Animate the second result and save as a movie in the background.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">animate_nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">movie_filename</span><span class="o">=</span><span class="s1">&#39;disp.mp4&#39;</span><span class="p">,</span> <span class="n">off_screen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd></dl>
