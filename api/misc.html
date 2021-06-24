@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Compute Cell Quality &#8212; PyMAPDL Legacy Reader 0.51.2 documentation</title>
+    <title>Miscellaneous Classes &#8212; PyMAPDL Legacy Reader 0.51.2 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -40,8 +40,8 @@
     <script src="../_static/copybutton.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Result Class" href="rst.html" />
-    <link rel="prev" title="Full File Class" href="full.html" />
+    <link rel="next" title="Examples Gallery" href="../examples/index.html" />
+    <link rel="prev" title="Result Class" href="rst.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -147,8 +147,8 @@
    Full File Class
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="mesh_quality.html">
    Compute Cell Quality
   </a>
  </li>
@@ -157,8 +157,8 @@
    Result Class
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="misc.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Miscellaneous Classes
   </a>
  </li>
@@ -198,30 +198,56 @@
               
               <div>
                 
-  <div class="section" id="compute-cell-quality">
-<span id="ref-mesh-quality-api"></span><h1>Compute Cell Quality<a class="headerlink" href="#compute-cell-quality" title="Permalink to this headline">¶</a></h1>
-<dl class="py function">
-<dt class="sig sig-object py" id="ansys.mapdl.reader.cell_quality.quality">
-<span class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.cell_quality.</span></span><span class="sig-name descname"><span class="pre">quality</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">grid</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cell_quality.quality" title="Permalink to this definition">¶</a></dt>
-<dd><p>Compute the minimum scaled Jacobian cell quality of an UnstructuredGrid.</p>
-<p>Negative values indicate invalid cells while positive values
-indicate valid cells.  Varies between -1 and 1.</p>
+  <div class="section" id="miscellaneous-classes">
+<span id="ref-misc-api"></span><h1>Miscellaneous Classes<a class="headerlink" href="#miscellaneous-classes" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.</span></span><span class="sig-name descname"><span class="pre">Report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">additional</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ncol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">79</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gpu</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Generate an environment and software report.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>grid</strong> (<em>pyvista.UnstructuredGrid</em><em> or </em><em>pyvista.StructuredGrid</em>) – Structured or Unstructured Grid from <code class="docutils literal notranslate"><span class="pre">pyvista</span></code>.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>additional</strong> (<em>list</em><em>(</em><em>ModuleType</em><em>)</em><em>, </em><em>list</em><em>(</em><em>str</em><em>)</em>) – List of packages or package names to add to output information.</p></li>
+<li><p><strong>ncol</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of package-columns in html table; only has effect if
+<code class="docutils literal notranslate"><span class="pre">mode='HTML'</span></code> or <code class="docutils literal notranslate"><span class="pre">mode='html'</span></code>. Defaults to 3.</p></li>
+<li><p><strong>text_width</strong> (<em>int</em><em>, </em><em>optional</em>) – The text width for non-HTML display modes.</p></li>
+<li><p><strong>sort</strong> (<em>bool</em><em>, </em><em>optional</em>) – Alphabetically sort the packages.</p></li>
+<li><p><strong>gpu</strong> (<em>bool</em><em>, </em><em>optional</em>) – Gather information about the GPU. Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code> but if
+experiencing rendering issues, pass <code class="docutils literal notranslate"><span class="pre">False</span></code> to safely
+generate a report.</p></li>
+</ul>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyvista</span> <span class="k">as</span> <span class="nn">pv</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">grid</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">StructuredGrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">pymapdl_reader</span><span class="o">.</span><span class="n">quality</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span>
-<span class="go">array([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,</span>
-<span class="go">       1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">pymapdl_reader</span><span class="o">.</span><span class="n">Report</span><span class="p">())</span>
+<span class="go">-----------------------------------------------------------------</span>
+<span class="go">PyMAPDL-Reader Software and Environment Report</span>
+<span class="go">-----------------------------------------------------------------</span>
+<span class="go">  Date: Sat Jun 19 14:52:00 2021 MDT</span>
+<span class="go">|</span>
+<span class="go">                OS : Linux</span>
+<span class="go">            CPU(s) : 16</span>
+<span class="go">           Machine : x86_64</span>
+<span class="go">      Architecture : 64bit</span>
+<span class="go">               RAM : 62.8 GiB</span>
+<span class="go">       Environment : Python</span>
+<span class="go">NVIDIA Corporation : GPU Vendor</span>
+<span class="go">NVIDIA Quadro P2000/PCIe/SSE2 : GPU Renderer</span>
+<span class="go">4.5.0 NVIDIA 465.27 : GPU Version</span>
+<span class="go">|</span>
+<span class="go">  Python 3.8.5 (default, May 27 2021, 13:30:53)  [GCC 9.3.0]</span>
+<span class="go">|</span>
+<span class="go">           pyvista : 0.31.1</span>
+<span class="go">               vtk : 9.0.1</span>
+<span class="go">             numpy : 1.20.3</span>
+<span class="go">           appdirs : 1.4.4</span>
+<span class="go">ansys.mapdl.reader : 0.51.dev0</span>
+<span class="go">              tqdm : 4.61.1</span>
+<span class="go">        matplotlib : 3.4.2</span>
+<span class="go">  ansys.mapdl.core : 0.59.dev0</span>
+<span class="go">             scipy : 1.6.3</span>
+<span class="go">-----------------------------------------------------------------</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -234,8 +260,8 @@ indicate valid cells.  Varies between -1 and 1.</p>
               
               <div class='prev-next-bottom'>
                 
-    <a class='left-prev' id="prev-link" href="full.html" title="previous page">Full File Class</a>
-    <a class='right-next' id="next-link" href="rst.html" title="next page">Result Class</a>
+    <a class='left-prev' id="prev-link" href="rst.html" title="previous page">Result Class</a>
+    <a class='right-next' id="next-link" href="../examples/index.html" title="next page">Examples Gallery</a>
 
               </div>
               
