@@ -80,7 +80,7 @@ of the Python visualizing property used to plot within Python.
 
     -------------------------------------------------------------------------------
     shaft.grid:
-     UnstructuredGrid (0x7f38f278f640)
+     UnstructuredGrid (0x7f44f8c33ca0)
       N Cells:      25051
       N Points:     27132
       X Bounds:     0.000e+00, 2.700e+02
@@ -117,16 +117,6 @@ underlying mesh with:
     :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(461.5153157248284, 326.5153157248283, 326.5153157248283),
-     (135.00000000000003, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -161,16 +151,6 @@ of cells in the unstructured grid.  Here, we're plotting node values.
     :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(461.5153157248284, 326.5153157248283, 326.5153157248283),
-     (135.00000000000003, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -210,23 +190,13 @@ nodes.
     :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(150.0152852510816, 105.0152852510816, 108.01528525108166),
-     (45.000000000000014, 8.881784197001252e-16, 3.000000000000005),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.156 seconds)
+   **Total running time of the script:** ( 0 minutes  2.967 seconds)
 
 
 .. _sphx_glr_download_examples_00-read_binary_custom_visualization.py:

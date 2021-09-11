@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cyclic Model Visualization &#8212; PyMAPDL Legacy Reader 0.51.5 documentation</title>
+    <title>Cyclic Model Visualization &#8212; PyMAPDL Legacy Reader 0.51.6 documentation</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -309,12 +309,6 @@ documentation on all the keyword arguments.</p>
 <li><img alt="sector model" class="sphx-glr-multi-img" src="../../_images/sphx_glr_sector_model_002.png" />
 </li>
 </ul>
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(6.501737475645392, 6.524253991464702, 6.091648804199281),
- (-0.0006467092362623106, 0.021869806583048046, -0.41073538068237314),
- (0.0, 0.0, 1.0)]
-</pre></div>
-</div>
 <p>Plot nodal displacement for result 21.</p>
 <p>Note that pymapdl-reader uses 0 based cumulative indexing.  You could also
 use the (load step, sub step) <code class="docutils literal notranslate"><span class="pre">(4,</span> <span class="pre">3)</span></code>.</p>
@@ -324,20 +318,14 @@ use the (load step, sub step) <code class="docutils literal notranslate"><span c
 </pre></div>
 </div>
 <img alt="sector model" class="sphx-glr-single-img" src="../../_images/sphx_glr_sector_model_003.png" />
-<p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(6.540205322486949, 6.56272183830626, 6.051282219978583),
- (-0.0006467092362623106, 0.021869806583048046, -0.48956981174462877),
- (0.0, 0.0, 1.0)]
-</pre></div>
-</div>
 </div>
 <div class="section" id="animate-mode-21">
 <h1>Animate Mode 21<a class="headerlink" href="#animate-mode-21" title="Permalink to this headline">¶</a></h1>
-<p>Disable movie_filename and increase nangles for a smoother plot</p>
+<p>Disable movie_filename and increase n_frames for a smoother plot</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rotor</span><span class="o">.</span><span class="n">animate_nodal_solution</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">movie_filename</span><span class="o">=</span><span class="s1">&#39;rotor_mode.gif&#39;</span><span class="p">,</span>
                              <span class="n">background</span><span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">displacement_factor</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span>
                              <span class="n">add_text</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-                             <span class="n">nangles</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+                             <span class="n">n_frames</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
 </pre></div>
 </div>
 <img alt="sector model" class="sphx-glr-single-img" src="../../_images/sphx_glr_sector_model_004.png" />
@@ -347,7 +335,7 @@ use the (load step, sub step) <code class="docutils literal notranslate"><span c
  (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  22.197 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  9.084 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-01-cyclic-results-sector-model-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/a87893f84b72a642c60ff22f0e577c76/sector_model.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">sector_model.py</span></code></a></p>

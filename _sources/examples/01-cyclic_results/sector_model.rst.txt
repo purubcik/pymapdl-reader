@@ -108,16 +108,6 @@ documentation on all the keyword arguments.
           :class: sphx-glr-multi-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(6.501737475645392, 6.524253991464702, 6.091648804199281),
-     (-0.0006467092362623106, 0.021869806583048046, -0.41073538068237314),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -145,16 +135,6 @@ use the (load step, sub step) ``(4, 3)``.
     :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(6.540205322486949, 6.56272183830626, 6.051282219978583),
-     (-0.0006467092362623106, 0.021869806583048046, -0.48956981174462877),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -162,7 +142,7 @@ use the (load step, sub step) ``(4, 3)``.
 
 Animate Mode 21
 ~~~~~~~~~~~~~~~
-Disable movie_filename and increase nangles for a smoother plot
+Disable movie_filename and increase n_frames for a smoother plot
 
 .. GENERATED FROM PYTHON SOURCE LINES 42-46
 
@@ -171,7 +151,7 @@ Disable movie_filename and increase nangles for a smoother plot
     rotor.animate_nodal_solution(20, loop=False, movie_filename='rotor_mode.gif',
                                  background='w', displacement_factor=0.001,
                                  add_text=False,
-                                 nangles=30)
+                                 n_frames=30)
 
 
 
@@ -196,7 +176,7 @@ Disable movie_filename and increase nangles for a smoother plot
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  22.197 seconds)
+   **Total running time of the script:** ( 0 minutes  9.084 seconds)
 
 
 .. _sphx_glr_download_examples_01-cyclic_results_sector_model.py:
