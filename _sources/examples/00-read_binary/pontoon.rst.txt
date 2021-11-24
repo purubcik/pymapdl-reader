@@ -100,9 +100,10 @@ Plot the nodal displacement
 
 
 
-.. image:: /examples/00-read_binary/images/sphx_glr_pontoon_001.png
-    :alt: pontoon
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-read_binary/images/sphx_glr_pontoon_001.png
+   :alt: pontoon
+   :srcset: /examples/00-read_binary/images/sphx_glr_pontoon_001.png
+   :class: sphx-glr-single-img
 
 
 
@@ -158,9 +159,10 @@ Plot the shell elements
 
 
 
-.. image:: /examples/00-read_binary/images/sphx_glr_pontoon_002.png
-    :alt: pontoon
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-read_binary/images/sphx_glr_pontoon_002.png
+   :alt: pontoon
+   :srcset: /examples/00-read_binary/images/sphx_glr_pontoon_002.png
+   :class: sphx-glr-single-img
 
 
 
@@ -184,9 +186,10 @@ Plot the elastic strain and show exaggerated displacement
 
 
 
-.. image:: /examples/00-read_binary/images/sphx_glr_pontoon_003.png
-    :alt: pontoon
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-read_binary/images/sphx_glr_pontoon_003.png
+   :alt: pontoon
+   :srcset: /examples/00-read_binary/images/sphx_glr_pontoon_003.png
+   :class: sphx-glr-single-img
 
 
 
@@ -195,7 +198,7 @@ Plot the elastic strain and show exaggerated displacement
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.535 seconds)
+   **Total running time of the script:** ( 0 minutes  1.194 seconds)
 
 
 .. _sphx_glr_download_examples_00-read_binary_pontoon.py:

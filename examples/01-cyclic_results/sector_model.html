@@ -4,11 +4,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cyclic Model Visualization &#8212; PyMAPDL Legacy Reader 0.51.6 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Cyclic Model Visualization &#8212; PyMAPDL Legacy Reader 0.51.7 documentation</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -23,14 +24,14 @@
 
     
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/basic.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/gallery-binder.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/gallery-dataframe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/gallery-rendered-html.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-rendered-html.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -43,7 +44,10 @@
     <link rel="next" title="Contributing" href="../../contributing.html" />
     <link rel="prev" title="Stress and Strain from a Cyclic Modal Analysis" href="academic_sector_stress_strain.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -63,8 +67,8 @@
     
     
 
-<a class="navbar-brand" href="../../index.html">
-  <img src="_static/https://docs.pyansys.com/_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
+<a class="navbar-brand" href="https://readerdocs.pyansys.com/">
+  <img src="../../_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
 </a>
 
 
@@ -124,7 +128,7 @@
       <div class="navbar-end-item">
         <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/pyansys/PyMAPDL" rel="noopener" target="_blank" title="GitHub">
+          <a class="nav-link" href="https://github.com/pyansys/pymapdl-reader" rel="noopener" target="_blank" title="GitHub">
             <span><i class="fab fa-github-square"></i></span>
             <label class="sr-only">GitHub</label>
           </a>
@@ -259,7 +263,7 @@
 <p>Click <a class="reference internal" href="#sphx-glr-download-examples-01-cyclic-results-sector-model-py"><span class="std std-ref">here</span></a>
 to download the full example code</p>
 </div>
-<div class="sphx-glr-example-title section" id="cyclic-model-visualization">
+<section class="sphx-glr-example-title" id="cyclic-model-visualization">
 <span id="ref-sector-model"></span><span id="sphx-glr-examples-01-cyclic-results-sector-model-py"></span><h1>Cyclic Model Visualization<a class="headerlink" href="#cyclic-model-visualization" title="Permalink to this headline">¶</a></h1>
 <p>Visualize and animate a full cyclic model.  This model is based on the
 jetcat rotor.</p>
@@ -304,10 +308,8 @@ documentation on all the keyword arguments.</p>
 </pre></div>
 </div>
 <ul class="sphx-glr-horizontal">
-<li><img alt="sector model" class="sphx-glr-multi-img" src="../../_images/sphx_glr_sector_model_001.png" />
-</li>
-<li><img alt="sector model" class="sphx-glr-multi-img" src="../../_images/sphx_glr_sector_model_002.png" />
-</li>
+<li><img src="../../_images/sphx_glr_sector_model_001.png" srcset="../../_images/sphx_glr_sector_model_001.png" alt="sector model" class = "sphx-glr-multi-img"/></li>
+<li><img src="../../_images/sphx_glr_sector_model_002.png" srcset="../../_images/sphx_glr_sector_model_002.png" alt="sector model" class = "sphx-glr-multi-img"/></li>
 </ul>
 <p>Plot nodal displacement for result 21.</p>
 <p>Note that pymapdl-reader uses 0 based cumulative indexing.  You could also
@@ -317,9 +319,8 @@ use the (load step, sub step) <code class="docutils literal notranslate"><span c
                               <span class="n">overlay_wireframe</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># same as (2, 4)</span>
 </pre></div>
 </div>
-<img alt="sector model" class="sphx-glr-single-img" src="../../_images/sphx_glr_sector_model_003.png" />
-</div>
-<div class="section" id="animate-mode-21">
+<img src="../../_images/sphx_glr_sector_model_003.png" srcset="../../_images/sphx_glr_sector_model_003.png" alt="sector model" class = "sphx-glr-single-img"/></section>
+<section id="animate-mode-21">
 <h1>Animate Mode 21<a class="headerlink" href="#animate-mode-21" title="Permalink to this headline">¶</a></h1>
 <p>Disable movie_filename and increase n_frames for a smoother plot</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rotor</span><span class="o">.</span><span class="n">animate_nodal_solution</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">movie_filename</span><span class="o">=</span><span class="s1">&#39;rotor_mode.gif&#39;</span><span class="p">,</span>
@@ -328,14 +329,13 @@ use the (load step, sub step) <code class="docutils literal notranslate"><span c
                              <span class="n">n_frames</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="sector model" class="sphx-glr-single-img" src="../../_images/sphx_glr_sector_model_004.png" />
-<p class="sphx-glr-script-out">Out:</p>
+<img src="../../_images/sphx_glr_sector_model_004.png" srcset="../../_images/sphx_glr_sector_model_004.png" alt="sector model" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(5.52155060432921, 5.5214282518334326, 5.110814907184016),
  (3.164628201712816e-07, -0.00012203603295768417, -0.41073538068237303),
  (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  9.084 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  7.016 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-01-cyclic-results-sector-model-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/a87893f84b72a642c60ff22f0e577c76/sector_model.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">sector_model.py</span></code></a></p>
@@ -345,18 +345,11 @@ use the (load step, sub step) <code class="docutils literal notranslate"><span c
 </div>
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
-</div>
+</section>
 
 
               </div>
               
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="academic_sector_stress_strain.html" title="previous page">Stress and Strain from a Cyclic Modal Analysis</a>
-    <a class='right-next' id="next-link" href="../../contributing.html" title="next page">Contributing</a>
-
-              </div>
               
           </main>
           
@@ -364,20 +357,19 @@ use the (load step, sub step) <code class="docutils literal notranslate"><span c
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright (c) 2021 ANSYS, Inc. All rights reserved.<br/>
+    &copy; Copyright (c) 2021 ANSYS, Inc. All rights reserved.<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.2.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.0.<br>
 </p>
     </div>
     

@@ -112,9 +112,10 @@ plane.
 
 
 
-.. image:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_001.png
-    :alt: academic sector nd
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_001.png
+   :alt: academic sector nd
+   :srcset: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_001.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -123,7 +124,7 @@ plane.
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.9.6/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:1795: PyvistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.9.8/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:1795: PyvistaDeprecationWarning: 
     "stitle" is a depreciated keyword and will be removed in a future
     release.
 
@@ -183,9 +184,10 @@ which is (Load-step, sub-step).
 
 
 
-.. image:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_002.png
-    :alt: academic sector nd
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_002.png
+   :alt: academic sector nd
+   :srcset: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_002.png
+   :class: sphx-glr-single-img
 
 
 
@@ -205,9 +207,10 @@ Alternatively, you can refer to the results using cumulative indexing.
 
 
 
-.. image:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_003.png
-    :alt: academic sector nd
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_003.png
+   :alt: academic sector nd
+   :srcset: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_003.png
+   :class: sphx-glr-single-img
 
 
 
@@ -254,9 +257,10 @@ harmonic index of 5:
 
 
 
-.. image:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_004.png
-    :alt: academic sector nd
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_004.png
+   :alt: academic sector nd
+   :srcset: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_004.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -266,7 +270,7 @@ harmonic index of 5:
  .. code-block:: none
 
     Harmonic Index: 5
-    /opt/hostedtoolcache/Python/3.9.6/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:1795: PyvistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.9.8/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:1795: PyvistaDeprecationWarning: 
     "stitle" is a depreciated keyword and will be removed in a future
     release.
 
@@ -303,9 +307,10 @@ The same can be done for the simpler nodal diameter 1
 
 
 
-.. image:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_005.png
-    :alt: academic sector nd
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_005.png
+   :alt: academic sector nd
+   :srcset: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_005.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -315,7 +320,7 @@ The same can be done for the simpler nodal diameter 1
  .. code-block:: none
 
     1
-    /opt/hostedtoolcache/Python/3.9.6/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:1795: PyvistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.9.8/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:1795: PyvistaDeprecationWarning: 
     "stitle" is a depreciated keyword and will be removed in a future
     release.
 
@@ -465,9 +470,10 @@ We can verify these results by analyzing a multi-sector rotor
 
 
 
-.. image:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_006.png
-    :alt: academic sector nd
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_006.png
+   :alt: academic sector nd
+   :srcset: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_006.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -476,7 +482,7 @@ We can verify these results by analyzing a multi-sector rotor
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.9.6/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:1795: PyvistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.9.8/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:1795: PyvistaDeprecationWarning: 
     "stitle" is a depreciated keyword and will be removed in a future
     release.
 
@@ -540,9 +546,10 @@ Cumulative result 8 and harmonic index 1
 
 
 
-.. image:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_007.png
-    :alt: academic sector nd
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_007.png
+   :alt: academic sector nd
+   :srcset: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_007.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -551,7 +558,7 @@ Cumulative result 8 and harmonic index 1
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.9.6/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:1795: PyvistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.9.8/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:1795: PyvistaDeprecationWarning: 
     "stitle" is a depreciated keyword and will be removed in a future
     release.
 
@@ -583,9 +590,10 @@ Cumulative result 10 and harmonic index 5
 
 
 
-.. image:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_008.png
-    :alt: academic sector nd
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_008.png
+   :alt: academic sector nd
+   :srcset: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_008.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -594,7 +602,7 @@ Cumulative result 10 and harmonic index 5
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.9.6/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:1795: PyvistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.9.8/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:1795: PyvistaDeprecationWarning: 
     "stitle" is a depreciated keyword and will be removed in a future
     release.
 
@@ -626,9 +634,10 @@ Cumulative result 13 and harmonic index 7
 
 
 
-.. image:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_009.png
-    :alt: academic sector nd
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_009.png
+   :alt: academic sector nd
+   :srcset: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_009.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -637,7 +646,7 @@ Cumulative result 13 and harmonic index 7
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.9.6/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:1795: PyvistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.9.8/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:1795: PyvistaDeprecationWarning: 
     "stitle" is a depreciated keyword and will be removed in a future
     release.
 
@@ -669,9 +678,10 @@ Cumulative result 15 and harmonic index 11
 
 
 
-.. image:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_010.png
-    :alt: academic sector nd
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_010.png
+   :alt: academic sector nd
+   :srcset: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_010.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -680,7 +690,7 @@ Cumulative result 15 and harmonic index 11
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.9.6/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:1795: PyvistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.9.8/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:1795: PyvistaDeprecationWarning: 
     "stitle" is a depreciated keyword and will be removed in a future
     release.
 
@@ -722,9 +732,10 @@ Set ``loop=True`` to allow for a continuous plot, and modify
 
 
 
-.. image:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_011.png
-    :alt: academic sector nd
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_011.png
+   :alt: academic sector nd
+   :srcset: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_011.png
+   :class: sphx-glr-single-img
 
 
 
@@ -747,9 +758,10 @@ second mode in the mode pair ``(3, 2)`` instead of ``(3, 1)``.
 
 
 
-.. image:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_012.png
-    :alt: academic sector nd
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_012.png
+   :alt: academic sector nd
+   :srcset: /examples/01-cyclic_results/images/sphx_glr_academic_sector_nd_012.png
+   :class: sphx-glr-single-img
 
 
 
@@ -758,7 +770,7 @@ second mode in the mode pair ``(3, 2)`` instead of ``(3, 1)``.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  20.567 seconds)
+   **Total running time of the script:** ( 0 minutes  15.843 seconds)
 
 
 .. _sphx_glr_download_examples_01-cyclic_results_academic_sector_nd.py:

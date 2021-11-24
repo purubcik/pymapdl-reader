@@ -4,11 +4,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Compute Cell Quality &#8212; PyMAPDL Legacy Reader 0.51.6 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Compute Cell Quality &#8212; PyMAPDL Legacy Reader 0.51.7 documentation</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -23,14 +24,14 @@
 
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/gallery-binder.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/gallery-dataframe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/gallery-rendered-html.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-rendered-html.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -43,7 +44,10 @@
     <link rel="next" title="API Reference" href="../api/index.html" />
     <link rel="prev" title="Working with a MAPDL Full File (full)" href="loading_km.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -63,8 +67,8 @@
     
     
 
-<a class="navbar-brand" href="../index.html">
-  <img src="_static/https://docs.pyansys.com/_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
+<a class="navbar-brand" href="https://readerdocs.pyansys.com/">
+  <img src="../_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
 </a>
 
 
@@ -124,7 +128,7 @@
       <div class="navbar-end-item">
         <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/pyansys/PyMAPDL" rel="noopener" target="_blank" title="GitHub">
+          <a class="nav-link" href="https://github.com/pyansys/pymapdl-reader" rel="noopener" target="_blank" title="GitHub">
             <span><i class="fab fa-github-square"></i></span>
             <label class="sr-only">GitHub</label>
           </a>
@@ -227,11 +231,11 @@
               
               <div>
                 
-  <div class="section" id="compute-cell-quality">
+  <section id="compute-cell-quality">
 <h1>Compute Cell Quality<a class="headerlink" href="#compute-cell-quality" title="Permalink to this headline">¶</a></h1>
 <p>Compute the minimum scaled jacoabian of a <code class="docutils literal notranslate"><span class="pre">vtk.Unstructured.Grid</span></code>,
 <code class="docutils literal notranslate"><span class="pre">pyvista.UnstructuredGrid</span></code>, or <code class="docutils literal notranslate"><span class="pre">pyvista.StructuredGrid</span></code>.</p>
-<div class="section" id="plot-cell-quality">
+<section id="plot-cell-quality">
 <h2>Plot Cell Quality<a class="headerlink" href="#plot-cell-quality" title="Permalink to this headline">¶</a></h2>
 <p>This built-in example displays the minimum scaled jacobian of each
 element of a tetrahedral beam:</p>
@@ -258,7 +262,7 @@ element of a tetrahedral beam:</p>
 <span class="n">grid</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">scalars</span><span class="o">=</span><span class="n">qual</span><span class="p">,</span> <span class="n">stitle</span><span class="o">=</span><span class="s1">&#39;Cell Minimum Scaled</span><span class="se">\n</span><span class="s1">Jacobian&#39;</span><span class="p">,</span> <span class="n">rng</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 </pre></div>
 </div>
-<div class="section" id="pyansys-quality">
+<section id="pyansys-quality">
 <h3>pyansys.quality<a class="headerlink" href="#pyansys-quality" title="Permalink to this headline">¶</a></h3>
 <dl class="py function">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.quality">
@@ -286,20 +290,13 @@ indicate valid cells.  Varies between -1 and 1.</p>
 </div>
 </dd></dl>
 
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
               </div>
               
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="loading_km.html" title="previous page">Working with a MAPDL Full File (full)</a>
-    <a class='right-next' id="next-link" href="../api/index.html" title="next page">API Reference</a>
-
-              </div>
               
           </main>
           
@@ -307,20 +304,19 @@ indicate valid cells.  Varies between -1 and 1.</p>
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright (c) 2021 ANSYS, Inc. All rights reserved.<br/>
+    &copy; Copyright (c) 2021 ANSYS, Inc. All rights reserved.<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.2.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.0.<br>
 </p>
     </div>
     

@@ -4,11 +4,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Working with a MAPDL Full File (full) &#8212; PyMAPDL Legacy Reader 0.51.6 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Working with a MAPDL Full File (full) &#8212; PyMAPDL Legacy Reader 0.51.7 documentation</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -23,14 +24,14 @@
 
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/gallery-binder.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/gallery-dataframe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/gallery-rendered-html.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-rendered-html.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -43,7 +44,10 @@
     <link rel="next" title="Compute Cell Quality" href="quality.html" />
     <link rel="prev" title="Working with a ANSYS Element Matrix File (.emat)" href="loading_emat.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -63,8 +67,8 @@
     
     
 
-<a class="navbar-brand" href="../index.html">
-  <img src="_static/https://docs.pyansys.com/_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
+<a class="navbar-brand" href="https://readerdocs.pyansys.com/">
+  <img src="../_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
 </a>
 
 
@@ -124,7 +128,7 @@
       <div class="navbar-end-item">
         <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/pyansys/PyMAPDL" rel="noopener" target="_blank" title="GitHub">
+          <a class="nav-link" href="https://github.com/pyansys/pymapdl-reader" rel="noopener" target="_blank" title="GitHub">
             <span><i class="fab fa-github-square"></i></span>
             <label class="sr-only">GitHub</label>
           </a>
@@ -230,12 +234,12 @@
               
               <div>
                 
-  <div class="section" id="working-with-a-mapdl-full-file-full">
+  <section id="working-with-a-mapdl-full-file-full">
 <h1>Working with a MAPDL Full File (full)<a class="headerlink" href="#working-with-a-mapdl-full-file-full" title="Permalink to this headline">¶</a></h1>
 <p>The MAPDL full file is a FORTRAN formatted binary file containing the
 mass and stiffness from an Ansys analysis.  Using pyansys it can be
 loaded into memory as either a sparse or full matrix.</p>
-<div class="section" id="reading-a-full-file">
+<section id="reading-a-full-file">
 <h2>Reading a Full File<a class="headerlink" href="#reading-a-full-file" title="Permalink to this headline">¶</a></h2>
 <p>This example reads in the mass and stiffness matrices associated with
 the above example.  <code class="docutils literal notranslate"><span class="pre">load_km</span></code> sorts degrees of freedom such that the
@@ -294,8 +298,8 @@ frequencies and mode shapes of a system.</p>
 <span class="mf">6919.399</span> <span class="n">Hz</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="plotting-a-mode-shape">
+</section>
+<section id="plotting-a-mode-shape">
 <h2>Plotting a Mode Shape<a class="headerlink" href="#plotting-a-mode-shape" title="Permalink to this headline">¶</a></h2>
 <p>You can also plot the mode shape of this finite element model.  Since
 the constrained degrees of freedom have been removed from the
@@ -338,12 +342,12 @@ displacement.</p>
 <img alt="../_images/solved_km.png" src="../_images/solved_km.png" />
 <p>This example is built into <code class="docutils literal notranslate"><span class="pre">pyansys-mapdl</span></code> and can be run from
 <code class="docutils literal notranslate"><span class="pre">examples.solve_km()</span></code>.</p>
-</div>
-<div class="section" id="fullfile-object-methods">
+</section>
+<section id="fullfile-object-methods">
 <h2>FullFile Object Methods<a class="headerlink" href="#fullfile-object-methods" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.full.FullFile">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.full.</span></span><span class="sig-name descname"><span class="pre">FullFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.full.FullFile" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.full.</span></span><span class="sig-name descname"><span class="pre">FullFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.full.FullFile" title="Permalink to this definition">¶</a></dt>
 <dd><p>Stores the results of an ANSYS full file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -367,7 +371,7 @@ displacement.</p>
 </div>
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.full.FullFile.const">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">const</span></span><a class="headerlink" href="#ansys.mapdl.reader.full.FullFile.const" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">const</span></span><a class="headerlink" href="#ansys.mapdl.reader.full.FullFile.const" title="Permalink to this definition">¶</a></dt>
 <dd><p>Constrained DOF
 Returns the node number and DOF constrained in ANSYS.</p>
 <p class="rubric">Examples</p>
@@ -379,7 +383,7 @@ Returns the node number and DOF constrained in ANSYS.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.full.FullFile.dof_ref">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">dof_ref</span></span><a class="headerlink" href="#ansys.mapdl.reader.full.FullFile.dof_ref" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dof_ref</span></span><a class="headerlink" href="#ansys.mapdl.reader.full.FullFile.dof_ref" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sorted degree of freedom reference.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">full</span><span class="o">.</span><span class="n">dof_ref</span>
@@ -398,7 +402,7 @@ Returns the node number and DOF constrained in ANSYS.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.full.FullFile.k">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">k</span></span><a class="headerlink" href="#ansys.mapdl.reader.full.FullFile.k" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">k</span></span><a class="headerlink" href="#ansys.mapdl.reader.full.FullFile.k" title="Permalink to this definition">¶</a></dt>
 <dd><p>Stiffness Matrix corresponding to sorted DOF.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -462,7 +466,7 @@ the node number and DOF constrained in ANSYS.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.full.FullFile.load_vector">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">load_vector</span></span><a class="headerlink" href="#ansys.mapdl.reader.full.FullFile.load_vector" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">load_vector</span></span><a class="headerlink" href="#ansys.mapdl.reader.full.FullFile.load_vector" title="Permalink to this definition">¶</a></dt>
 <dd><p>The load vector</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">full</span><span class="o">.</span><span class="n">load_vector</span>
@@ -473,7 +477,7 @@ the node number and DOF constrained in ANSYS.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.full.FullFile.m">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">m</span></span><a class="headerlink" href="#ansys.mapdl.reader.full.FullFile.m" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">m</span></span><a class="headerlink" href="#ansys.mapdl.reader.full.FullFile.m" title="Permalink to this definition">¶</a></dt>
 <dd><p>Mass Matrix corresponding to sorted DOF.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">full</span><span class="o">.</span><span class="n">m</span>
@@ -485,7 +489,7 @@ the node number and DOF constrained in ANSYS.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.full.FullFile.neqn">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">neqn</span></span><a class="headerlink" href="#ansys.mapdl.reader.full.FullFile.neqn" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">neqn</span></span><a class="headerlink" href="#ansys.mapdl.reader.full.FullFile.neqn" title="Permalink to this definition">¶</a></dt>
 <dd><p>Number of equations</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">full</span><span class="o">.</span><span class="n">neqn</span>
@@ -496,19 +500,12 @@ the node number and DOF constrained in ANSYS.</p>
 
 </dd></dl>
 
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
               
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="loading_emat.html" title="previous page">Working with a ANSYS Element Matrix File (.emat)</a>
-    <a class='right-next' id="next-link" href="quality.html" title="next page">Compute Cell Quality</a>
-
-              </div>
               
           </main>
           
@@ -516,20 +513,19 @@ the node number and DOF constrained in ANSYS.</p>
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright (c) 2021 ANSYS, Inc. All rights reserved.<br/>
+    &copy; Copyright (c) 2021 ANSYS, Inc. All rights reserved.<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.2.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.0.<br>
 </p>
     </div>
     

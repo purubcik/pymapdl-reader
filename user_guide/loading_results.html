@@ -4,11 +4,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reading MAPDL Result Files &#8212; PyMAPDL Legacy Reader 0.51.6 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Reading MAPDL Result Files &#8212; PyMAPDL Legacy Reader 0.51.7 documentation</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -23,14 +24,14 @@
 
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/gallery-binder.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/gallery-dataframe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/gallery-rendered-html.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-rendered-html.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -43,7 +44,10 @@
     <link rel="next" title="Reading and Writing Mapdl Archive Files" href="archive.html" />
     <link rel="prev" title="User Guide" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -63,8 +67,8 @@
     
     
 
-<a class="navbar-brand" href="../index.html">
-  <img src="_static/https://docs.pyansys.com/_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
+<a class="navbar-brand" href="https://readerdocs.pyansys.com/">
+  <img src="../_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
 </a>
 
 
@@ -124,7 +128,7 @@
       <div class="navbar-end-item">
         <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/pyansys/PyMAPDL" rel="noopener" target="_blank" title="GitHub">
+          <a class="nav-link" href="https://github.com/pyansys/pymapdl-reader" rel="noopener" target="_blank" title="GitHub">
             <span><i class="fab fa-github-square"></i></span>
             <label class="sr-only">GitHub</label>
           </a>
@@ -284,7 +288,7 @@
               
               <div>
                 
-  <div class="section" id="reading-mapdl-result-files">
+  <section id="reading-mapdl-result-files">
 <h1>Reading MAPDL Result Files<a class="headerlink" href="#reading-mapdl-result-files" title="Permalink to this headline">¶</a></h1>
 <p>The <cite>ansys-mapdl-reader</cite> module supports the following result types from MAPDL:</p>
 <ul class="simple">
@@ -320,7 +324,7 @@ modules at <a class="reference external" href="https://github.com/pyansys/DPF-Co
 modern interface to ANSYS result files using a client/server interface
 using the same software used within ANSYS Workbench, but via a Python
 client.</p>
-<div class="section" id="loading-the-result-file">
+<section id="loading-the-result-file">
 <h2>Loading the Result File<a class="headerlink" href="#loading-the-result-file" title="Permalink to this headline">¶</a></h2>
 <p>As the MAPDL result files are binary files, the entire file does not
 need to be loaded into memory in order to retrieve results.  This
@@ -341,8 +345,8 @@ with</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rth</span> <span class="o">=</span> <span class="n">pymapdl_reader</span><span class="o">.</span><span class="n">read_binary</span><span class="p">(</span><span class="s1">&#39;file.rth&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="result-properties">
+</section>
+<section id="result-properties">
 <h2>Result Properties<a class="headerlink" href="#result-properties" title="Permalink to this headline">¶</a></h2>
 <p>The properties of the <code class="docutils literal notranslate"><span class="pre">Result</span></code> can be quickly shown by printing the
 result file with:</p>
@@ -402,8 +406,8 @@ for the first result can be accessed with:</p>
 <span class="go">       34, 36, 37, 39, 38, 40], dtype=int32)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="mesh">
+</section>
+<section id="mesh">
 <h2>Mesh<a class="headerlink" href="#mesh" title="Permalink to this headline">¶</a></h2>
 <p>The mesh of the result can be found by querying the <code class="docutils literal notranslate"><span class="pre">mesh</span></code> property
 of a result, which returns a <code class="docutils literal notranslate"><span class="pre">ansys.mapdl.reader.mesh.Mesh</span></code> class.</p>
@@ -424,11 +428,11 @@ of a result, which returns a <code class="docutils literal notranslate"><span cl
 <p>Which contains the following attributes:</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.mesh.Mesh">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.mesh.</span></span><span class="sig-name descname"><span class="pre">Mesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nnum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elem_off</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ekey</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_comps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elem_comps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rdat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rnum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keyopt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.mesh.</span></span><span class="sig-name descname"><span class="pre">Mesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nnum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elem_off</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ekey</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_comps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elem_comps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rdat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rnum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keyopt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh" title="Permalink to this definition">¶</a></dt>
 <dd><p>Common class between Archive, and result mesh</p>
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.mesh.Mesh.ekey">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">ekey</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.ekey" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ekey</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.ekey" title="Permalink to this definition">¶</a></dt>
 <dd><p>Element type key</p>
 <p>Array containing element type numbers in the first column and
 the element types (like SURF154) in the second column.</p>
@@ -447,7 +451,7 @@ the element types (like SURF154) in the second column.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.mesh.Mesh.elem">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">elem</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.elem" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">elem</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.elem" title="Permalink to this definition">¶</a></dt>
 <dd><p>List of elements containing raw ansys information.</p>
 <p>Each element contains 10 items plus the nodes belonging to the
 element.  The first 10 items are:</p>
@@ -482,7 +486,7 @@ element.  The first 10 items are:</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.mesh.Mesh.elem_real_constant">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">elem_real_constant</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.elem_real_constant" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">elem_real_constant</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.elem_real_constant" title="Permalink to this definition">¶</a></dt>
 <dd><p>Real constant reference for each element.</p>
 <p>Use the data within <code class="docutils literal notranslate"><span class="pre">rlblock</span></code> and <code class="docutils literal notranslate"><span class="pre">rlblock_num</span></code> to get the
 real constant datat for each element.</p>
@@ -504,7 +508,7 @@ real constant datat for each element.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.mesh.Mesh.element_components">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">element_components</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.element_components" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">element_components</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.element_components" title="Permalink to this definition">¶</a></dt>
 <dd><p>Element components for the archive.</p>
 <p>Output is a dictionary of element components.  Each entry is an
 array of MAPDL element numbers corresponding to the element
@@ -541,7 +545,7 @@ component.  The keys are element component names.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.mesh.Mesh.enum">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">enum</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.enum" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">enum</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.enum" title="Permalink to this definition">¶</a></dt>
 <dd><p>ANSYS element numbers.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -555,7 +559,7 @@ component.  The keys are element component names.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.mesh.Mesh.etype">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">etype</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.etype" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">etype</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.etype" title="Permalink to this definition">¶</a></dt>
 <dd><p>Element type of each element.</p>
 <p>This is the ansys element type for each element.</p>
 <p class="rubric">Examples</p>
@@ -580,7 +584,7 @@ Reference for more details:</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.mesh.Mesh.key_option">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">key_option</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.key_option" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">key_option</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.key_option" title="Permalink to this definition">¶</a></dt>
 <dd><p>Additional key options for element types</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -594,7 +598,7 @@ Reference for more details:</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.mesh.Mesh.material_type">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">material_type</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.material_type" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">material_type</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.material_type" title="Permalink to this definition">¶</a></dt>
 <dd><p>Material type index of each element in the archive.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -610,19 +614,19 @@ Reference for more details:</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.mesh.Mesh.n_elem">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">n_elem</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.n_elem" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_elem</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.n_elem" title="Permalink to this definition">¶</a></dt>
 <dd><p>Number of nodes</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.mesh.Mesh.n_node">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">n_node</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.n_node" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_node</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.n_node" title="Permalink to this definition">¶</a></dt>
 <dd><p>Number of nodes</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.mesh.Mesh.nnum">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">nnum</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.nnum" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">nnum</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.nnum" title="Permalink to this definition">¶</a></dt>
 <dd><p>Array of node numbers.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -636,7 +640,7 @@ Reference for more details:</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.mesh.Mesh.node_angles">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">node_angles</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.node_angles" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">node_angles</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.node_angles" title="Permalink to this definition">¶</a></dt>
 <dd><p>Node angles from the archive file.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -656,7 +660,7 @@ Reference for more details:</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.mesh.Mesh.node_components">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">node_components</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.node_components" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">node_components</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.node_components" title="Permalink to this definition">¶</a></dt>
 <dd><p>Node components for the archive.</p>
 <p>Output is a dictionary of node components.  Each entry is an
 array of MAPDL node numbers corresponding to the node
@@ -684,7 +688,7 @@ component.  The keys are node component names.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.mesh.Mesh.nodes">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">nodes</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.nodes" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">nodes</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.nodes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Array of nodes.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -704,7 +708,7 @@ component.  The keys are node component names.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.mesh.Mesh.rlblock">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">rlblock</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.rlblock" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rlblock</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.rlblock" title="Permalink to this definition">¶</a></dt>
 <dd><p>Real constant data from the RLBLOCK.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -721,7 +725,7 @@ component.  The keys are node component names.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.mesh.Mesh.rlblock_num">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">rlblock_num</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.rlblock_num" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rlblock_num</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.rlblock_num" title="Permalink to this definition">¶</a></dt>
 <dd><p>Indices from the real constant data</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -767,7 +771,7 @@ file size.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.mesh.Mesh.section">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">section</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.section" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">section</span></span><a class="headerlink" href="#ansys.mapdl.reader.mesh.Mesh.section" title="Permalink to this definition">¶</a></dt>
 <dd><p>Section number</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -783,7 +787,7 @@ file size.</p>
 
 </dd></dl>
 
-<div class="section" id="coordinate-systems">
+<section id="coordinate-systems">
 <h3>Coordinate Systems<a class="headerlink" href="#coordinate-systems" title="Permalink to this headline">¶</a></h3>
 <p>Non-default coordinate systems are always saved to a MAPDL result
 file.  The coordinate system is zero indexed and individual coordinate
@@ -816,9 +820,9 @@ transformation matrix and the origin into one array.  For example:</p>
 </div>
 <p>See <code class="docutils literal notranslate"><span class="pre">parse_coordinate_system</span></code> for more details regarding the
 contents of the coordinate systems stored in the result file.</p>
-</div>
-</div>
-<div class="section" id="accessing-solution-results">
+</section>
+</section>
+<section id="accessing-solution-results">
 <h2>Accessing Solution Results<a class="headerlink" href="#accessing-solution-results" title="Permalink to this headline">¶</a></h2>
 <p>You can obtain detailed information using <code class="docutils literal notranslate"><span class="pre">solution_info</span></code> for each result:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># return a dictionary of solution info for the first result</span>
@@ -943,7 +947,7 @@ for the first result from a modal analysis.</p>
  <span class="mi">10920</span>   <span class="mf">49788.</span>      <span class="mf">8798.7</span>     <span class="o">-</span><span class="mf">21929.</span>     <span class="o">-</span><span class="mf">7302.5</span>      <span class="mf">11294.</span>      <span class="mf">4300.0</span>
 </pre></div>
 </div>
-<div class="section" id="loading-a-results-from-a-modal-analysis-result-file">
+<section id="loading-a-results-from-a-modal-analysis-result-file">
 <h3>Loading a Results from a Modal Analysis Result File<a class="headerlink" href="#loading-a-results-from-a-modal-analysis-result-file" title="Permalink to this headline">¶</a></h3>
 <p>This example reads in binary results from a modal analysis of a beam
 from ANSYS.  This section of code does not rely on <code class="docutils literal notranslate"><span class="pre">VTK</span></code> and can be
@@ -980,8 +984,8 @@ sorted node numbering.  Note that results are zero indexed.</p>
 <span class="go"> ...</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="accessing-element-solution-data">
+</section>
+<section id="accessing-element-solution-data">
 <h3>Accessing Element Solution Data<a class="headerlink" href="#accessing-element-solution-data" title="Permalink to this headline">¶</a></h3>
 <p>Individual element results for the entire solution can be accessed
 using the <code class="docutils literal notranslate"><span class="pre">element_solution_data</span></code> method.  For example, to get the
@@ -998,8 +1002,8 @@ volume of each element:</p>
 <span class="n">volume</span> <span class="o">=</span> <span class="n">edata</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="animiating-a-modal-solution">
+</section>
+<section id="animiating-a-modal-solution">
 <h3>Animiating a Modal Solution<a class="headerlink" href="#animiating-a-modal-solution" title="Permalink to this headline">¶</a></h3>
 <p>Solutions from a modal analysis can be animated using
 <code class="docutils literal notranslate"><span class="pre">animate_nodal_solution</span></code>.  For example:</p>
@@ -1010,8 +1014,8 @@ volume of each element:</p>
 <span class="n">result</span><span class="o">.</span><span class="n">animate_nodal_solution</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="plotting-nodal-results">
+</section>
+<section id="plotting-nodal-results">
 <h3>Plotting Nodal Results<a class="headerlink" href="#plotting-nodal-results" title="Permalink to this headline">¶</a></h3>
 <p>As the geometry of the model is contained within the result file, you
 can plot the result without having to load any additional geometry.
@@ -1054,8 +1058,8 @@ displayed.</p>
                          <span class="n">window_size</span><span class="o">=</span><span class="p">[</span><span class="mi">800</span><span class="p">,</span> <span class="mi">600</span><span class="p">],</span> <span class="n">interactive</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="animating-a-modal-solution">
+</section>
+<section id="animating-a-modal-solution">
 <h3>Animating a Modal Solution<a class="headerlink" href="#animating-a-modal-solution" title="Permalink to this headline">¶</a></h3>
 <p>Mode shapes from a modal analysis can be animated using
 <code class="docutils literal notranslate"><span class="pre">animate_nodal_solution</span></code>:</p>
@@ -1068,9 +1072,9 @@ movie_filename and animate it with:</p>
 </pre></div>
 </div>
 <img alt="../_images/beam_mode_shape.gif" src="../_images/beam_mode_shape.gif" />
-</div>
-</div>
-<div class="section" id="results-from-a-cyclic-analysis">
+</section>
+</section>
+<section id="results-from-a-cyclic-analysis">
 <h2>Results from a Cyclic Analysis<a class="headerlink" href="#results-from-a-cyclic-analysis" title="Permalink to this headline">¶</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">ansys-mapdl-reader</span></code> module can load and display the results of
 a cyclic analysis:</p>
@@ -1165,8 +1169,8 @@ shape by a complex value for a given phase.</p>
 <p>The phase of the result can be changed by modifying the <code class="docutils literal notranslate"><span class="pre">phase</span></code>
 option.  See <code class="docutils literal notranslate"><span class="pre">help(result.plot_nodal_solution)</span></code> for details on its
 implementation.</p>
-</div>
-<div class="section" id="exporting-to-paraview">
+</section>
+<section id="exporting-to-paraview">
 <h2>Exporting to ParaView<a class="headerlink" href="#exporting-to-paraview" title="Permalink to this headline">¶</a></h2>
 <p>ParaView is a visualization application that can be used for rapid
 generation of plots and graphs using VTK through a GUI.
@@ -1191,12 +1195,12 @@ for each result in the result file.  The nodal result values will
 depend on the analysis type, while nodal stress will always be the
 node average stress in the Sx, Sy Sz, Sxy, Syz, and Sxz directions.</p>
 <img alt="../_images/paraview.jpg" src="../_images/paraview.jpg" />
-</div>
-<div class="section" id="result-object-methods">
+</section>
+<section id="result-object-methods">
 <h2>Result Object Methods<a class="headerlink" href="#result-object-methods" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.rst.Result">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.rst.</span></span><span class="sig-name descname"><span class="pre">Result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">read_mesh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.rst.</span></span><span class="sig-name descname"><span class="pre">Result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">read_mesh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reads a binary ANSYS result file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1403,7 +1407,7 @@ the top down.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.rst.Result.available_results">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">available_results</span></span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.available_results" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">available_results</span></span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.available_results" title="Permalink to this definition">¶</a></dt>
 <dd><p>Available result types.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">available_results</span>
@@ -1488,7 +1492,7 @@ PRNSOL, S</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.rst.Result.element_components">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">element_components</span></span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.element_components" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">element_components</span></span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.element_components" title="Permalink to this definition">¶</a></dt>
 <dd><p>Dictionary of ansys element components from the result file.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -1649,7 +1653,7 @@ the bottom layer is reported.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.rst.Result.materials">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">materials</span></span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.materials" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">materials</span></span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.materials" title="Permalink to this definition">¶</a></dt>
 <dd><p>Result file material properties.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -1722,11 +1726,22 @@ properrties of that material with only the valid entries filled.</p>
 <li><p>MGYY : Magnetic coercive force, element y direction (Charge / (Length*Time))</p></li>
 <li><p>MGZZ : Magnetic coercive force, element z direction (Charge / (Length*Time))</p></li>
 </ul>
+<p class="rubric">Examples</p>
+<p>Return the material properties from the example result
+file. Note that the keys of <code class="docutils literal notranslate"><span class="pre">rst.materials</span></code> is the material
+type.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl.reader</span> <span class="kn">import</span> <span class="n">examples</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span> <span class="o">=</span> <span class="n">pymapdl_reader</span><span class="o">.</span><span class="n">read_binary</span><span class="p">(</span><span class="n">examples</span><span class="o">.</span><span class="n">rstfile</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">materials</span>
+<span class="go">{1: {&#39;EX&#39;: 16900000.0, &#39;NUXY&#39;: 0.31, &#39;DENS&#39;: 0.00041408}}</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.rst.Result.mesh">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">mesh</span></span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.mesh" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mesh</span></span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.mesh" title="Permalink to this definition">¶</a></dt>
 <dd><p>Mesh from result file</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">mesh</span>
@@ -1742,13 +1757,13 @@ properrties of that material with only the valid entries filled.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.rst.Result.n_results">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">n_results</span></span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.n_results" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_results</span></span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.n_results" title="Permalink to this definition">¶</a></dt>
 <dd><p>Number of results</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.rst.Result.n_sector">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">n_sector</span></span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.n_sector" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_sector</span></span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.n_sector" title="Permalink to this definition">¶</a></dt>
 <dd><p>Number of sectors</p>
 </dd></dl>
 
@@ -2391,7 +2406,7 @@ solution results are reflected in <code class="docutils literal notranslate"><sp
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.rst.Result.node_components">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">node_components</span></span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.node_components" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">node_components</span></span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.node_components" title="Permalink to this definition">¶</a></dt>
 <dd><p>Dictionary of ansys node components from the result file.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
@@ -3213,7 +3228,7 @@ Binary can only be selected for the legacy writer.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.rst.Result.section_data">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">section_data</span></span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.section_data" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">section_data</span></span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.section_data" title="Permalink to this definition">¶</a></dt>
 <dd><p>The section data from the result file</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -3336,7 +3351,7 @@ center of gravity</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.rst.Result.version">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">version</span></span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.version" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">version</span></span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.version" title="Permalink to this definition">¶</a></dt>
 <dd><p>The version of MAPDL used to generate this result file.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">version</span>
@@ -3364,7 +3379,7 @@ center of gravity</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.cyclic_reader.CyclicResult">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.cyclic_reader.</span></span><span class="sig-name descname"><span class="pre">CyclicResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.cyclic_reader.</span></span><span class="sig-name descname"><span class="pre">CyclicResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult" title="Permalink to this definition">¶</a></dt>
 <dd><p>Adds cyclic functionality to the result class</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.cyclic_reader.CyclicResult.animate_nodal_displacement">
@@ -3434,7 +3449,7 @@ A single loop of the mode will be recorded.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.cyclic_reader.CyclicResult.full_rotor">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">full_rotor</span></span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.full_rotor" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">full_rotor</span></span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.full_rotor" title="Permalink to this definition">¶</a></dt>
 <dd><p>UnstructuredGrid of the full replicated rotor</p>
 </dd></dl>
 
@@ -3465,7 +3480,7 @@ a negative/positive harmonic index.</p></li>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.cyclic_reader.CyclicResult.harmonic_indices">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">harmonic_indices</span></span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.harmonic_indices" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">harmonic_indices</span></span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.harmonic_indices" title="Permalink to this definition">¶</a></dt>
 <dd><p>Harmonic indices of the result file.</p>
 <p>Harmonic index is simply the Nodal Diameter of the mode.  This
 is defined as the number of complete sine waves that pass
@@ -3480,7 +3495,7 @@ through the circumference.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.cyclic_reader.CyclicResult.mode_table">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">mode_table</span></span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.mode_table" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mode_table</span></span><a class="headerlink" href="#ansys.mapdl.reader.cyclic_reader.CyclicResult.mode_table" title="Permalink to this definition">¶</a></dt>
 <dd><p>Unique modes for cyclic results</p>
 </dd></dl>
 
@@ -4167,19 +4182,12 @@ equivalent stress.</p>
 
 </dd></dl>
 
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
               
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="index.html" title="previous page">User Guide</a>
-    <a class='right-next' id="next-link" href="archive.html" title="next page">Reading and Writing Mapdl Archive Files</a>
-
-              </div>
               
           </main>
           
@@ -4187,20 +4195,19 @@ equivalent stress.</p>
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright (c) 2021 ANSYS, Inc. All rights reserved.<br/>
+    &copy; Copyright (c) 2021 ANSYS, Inc. All rights reserved.<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.2.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.0.<br>
 </p>
     </div>
     

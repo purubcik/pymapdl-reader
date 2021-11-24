@@ -4,11 +4,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shell Static Analysis &#8212; PyMAPDL Legacy Reader 0.51.6 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Shell Static Analysis &#8212; PyMAPDL Legacy Reader 0.51.7 documentation</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -23,14 +24,14 @@
 
     
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/basic.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/gallery-binder.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/gallery-dataframe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/gallery-rendered-html.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-rendered-html.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -43,7 +44,10 @@
     <link rel="next" title="Understanding Nodal Diameters from a Cyclic Model Analysis" href="../01-cyclic_results/academic_sector_nd.html" />
     <link rel="prev" title="Thermal Analysis" href="load_thermal_result.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -63,8 +67,8 @@
     
     
 
-<a class="navbar-brand" href="../../index.html">
-  <img src="_static/https://docs.pyansys.com/_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
+<a class="navbar-brand" href="https://readerdocs.pyansys.com/">
+  <img src="../../_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
 </a>
 
 
@@ -124,7 +128,7 @@
       <div class="navbar-end-item">
         <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/pyansys/PyMAPDL" rel="noopener" target="_blank" title="GitHub">
+          <a class="nav-link" href="https://github.com/pyansys/pymapdl-reader" rel="noopener" target="_blank" title="GitHub">
             <span><i class="fab fa-github-square"></i></span>
             <label class="sr-only">GitHub</label>
           </a>
@@ -244,7 +248,7 @@
 <p>Click <a class="reference internal" href="#sphx-glr-download-examples-00-read-binary-pontoon-py"><span class="std std-ref">here</span></a>
 to download the full example code</p>
 </div>
-<div class="sphx-glr-example-title section" id="shell-static-analysis">
+<section class="sphx-glr-example-title" id="shell-static-analysis">
 <span id="ref-pontoon"></span><span id="sphx-glr-examples-00-read-binary-pontoon-py"></span><h1>Shell Static Analysis<a class="headerlink" href="#shell-static-analysis" title="Permalink to this headline">¶</a></h1>
 <p>Visualize a shell static analysis</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># download the pontoon example</span>
@@ -284,8 +288,7 @@ RF  : Nodal reaction forces
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pontoon</span><span class="o">.</span><span class="n">plot_nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">show_displacement</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">displacement_factor</span><span class="o">=</span><span class="mi">100000</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="pontoon" class="sphx-glr-single-img" src="../../_images/sphx_glr_pontoon_001.png" />
-<p>print the available result types</p>
+<img src="../../_images/sphx_glr_pontoon_001.png" srcset="../../_images/sphx_glr_pontoon_001.png" alt="pontoon" class = "sphx-glr-single-img"/><p>print the available result types</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pontoon</span><span class="o">.</span><span class="n">available_results</span>
 </pre></div>
 </div>
@@ -307,8 +310,7 @@ RF  : Nodal reaction forces
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pontoon</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="pontoon" class="sphx-glr-single-img" src="../../_images/sphx_glr_pontoon_002.png" />
-<p>Plot the elastic strain and show exaggerated displacement</p>
+<img src="../../_images/sphx_glr_pontoon_002.png" srcset="../../_images/sphx_glr_pontoon_002.png" alt="pontoon" class = "sphx-glr-single-img"/><p>Plot the elastic strain and show exaggerated displacement</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pontoon</span><span class="o">.</span><span class="n">plot_nodal_elastic_strain</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;eqv&#39;</span><span class="p">,</span> <span class="n">show_displacement</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
                                   <span class="n">displacement_factor</span><span class="o">=</span><span class="mi">100000</span><span class="p">,</span>
                                   <span class="n">overlay_wireframe</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
@@ -318,8 +320,7 @@ RF  : Nodal reaction forces
 <span class="c1"># Note: lighting is disabled here as it&#39;s too dark</span>
 </pre></div>
 </div>
-<img alt="pontoon" class="sphx-glr-single-img" src="../../_images/sphx_glr_pontoon_003.png" />
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  1.535 seconds)</p>
+<img src="../../_images/sphx_glr_pontoon_003.png" srcset="../../_images/sphx_glr_pontoon_003.png" alt="pontoon" class = "sphx-glr-single-img"/><p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  1.194 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-00-read-binary-pontoon-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/23871ce12046ab88e0a02da0a6a30bb5/pontoon.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">pontoon.py</span></code></a></p>
@@ -329,18 +330,11 @@ RF  : Nodal reaction forces
 </div>
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
-</div>
+</section>
 
 
               </div>
               
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="load_thermal_result.html" title="previous page">Thermal Analysis</a>
-    <a class='right-next' id="next-link" href="../01-cyclic_results/academic_sector_nd.html" title="next page">Understanding Nodal Diameters from a Cyclic Model Analysis</a>
-
-              </div>
               
           </main>
           
@@ -348,20 +342,19 @@ RF  : Nodal reaction forces
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright (c) 2021 ANSYS, Inc. All rights reserved.<br/>
+    &copy; Copyright (c) 2021 ANSYS, Inc. All rights reserved.<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.2.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.0.<br>
 </p>
     </div>
     
