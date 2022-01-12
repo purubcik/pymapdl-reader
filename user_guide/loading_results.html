@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Reading MAPDL Result Files &#8212; PyMAPDL Legacy Reader 0.51.7 documentation</title>
+    <title>Reading MAPDL Result Files &#8212; PyMAPDL Legacy Reader 0.51.8 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -1200,7 +1200,7 @@ node average stress in the Sx, Sy Sz, Sxy, Syz, and Sxz directions.</p>
 <h2>Result Object Methods<a class="headerlink" href="#result-object-methods" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.rst.Result">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.rst.</span></span><span class="sig-name descname"><span class="pre">Result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">read_mesh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.rst.</span></span><span class="sig-name descname"><span class="pre">Result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">read_mesh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parse_vtk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reads a binary ANSYS result file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1209,6 +1209,8 @@ node average stress in the Sx, Sy Sz, Sxy, Syz, and Sxz directions.</p>
 <li><p><strong>ignore_cyclic</strong> (<em>bool</em><em>, </em><em>optional</em>) – Ignores any cyclic properties.</p></li>
 <li><p><strong>read_mesh</strong> (<em>bool</em><em>, </em><em>optional</em>) – Debug parameter.  Set to False to disable reading in the
 mesh from the result file.</p></li>
+<li><p><strong>parse_vtk</strong> (<em>bool</em><em>, </em><em>optional</em>) – Set to <code class="docutils literal notranslate"><span class="pre">False</span></code> to skip the parsing the mesh as a VTK
+UnstructuredGrid, which might take a long time for large models.</p></li>
 </ul>
 </dd>
 </dl>
@@ -1742,7 +1744,7 @@ type.</p>
 <dl class="py property">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.rst.Result.mesh">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mesh</span></span><a class="headerlink" href="#ansys.mapdl.reader.rst.Result.mesh" title="Permalink to this definition">¶</a></dt>
-<dd><p>Mesh from result file</p>
+<dd><p>Mesh from result file.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">mesh</span>
 <span class="go">ANSYS Mesh</span>
@@ -4207,7 +4209,7 @@ equivalent stress.</p>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.2.<br>
 </p>
     </div>
     
