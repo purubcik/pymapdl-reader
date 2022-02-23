@@ -5,12 +5,12 @@
 
 Computation times
 =================
-**00:35.124** total execution time for **examples_01-cyclic_results** files:
+**00:32.643** total execution time for **examples_01-cyclic_results** files:
 
 +--------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-cyclic_results_academic_sector_nd.py` (``academic_sector_nd.py``)                       | 00:23.229 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-cyclic_results_academic_sector_nd.py` (``academic_sector_nd.py``)                       | 00:21.496 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-cyclic_results_sector_model.py` (``sector_model.py``)                                   | 00:09.859 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-cyclic_results_sector_model.py` (``sector_model.py``)                                   | 00:09.101 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-cyclic_results_academic_sector_stress_strain.py` (``academic_sector_stress_strain.py``) | 00:02.037 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-cyclic_results_academic_sector_stress_strain.py` (``academic_sector_stress_strain.py``) | 00:02.045 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------------+-----------+--------+
