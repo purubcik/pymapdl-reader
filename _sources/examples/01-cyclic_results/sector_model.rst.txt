@@ -144,7 +144,7 @@ use the (load step, sub step) ``(4, 3)``.
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.9.9/x64/lib/python3.9/site-packages/pyvista/core/pointset.py:324: PyvistaDeprecationWarning: You did not specify a value for `inplace` and the default value will be changing to `False` in future versions for point-based meshes (e.g., `PolyData`). Please make sure you are not assuming this to be an inplace operation.
+    /opt/hostedtoolcache/Python/3.9.10/x64/lib/python3.9/site-packages/pyvista/core/pointset.py:324: PyvistaDeprecationWarning: You did not specify a value for `inplace` and the default value will be changing to `False` in future versions for point-based meshes (e.g., `PolyData`). Please make sure you are not assuming this to be an inplace operation.
       warnings.warn(DEFAULT_INPLACE_WARNING, PyvistaDeprecationWarning)
 
 
@@ -189,7 +189,7 @@ Disable movie_filename and increase n_frames for a smoother plot
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.098 seconds)
+   **Total running time of the script:** ( 0 minutes  9.859 seconds)
 
 
 .. _sphx_glr_download_examples_01-cyclic_results_sector_model.py:
