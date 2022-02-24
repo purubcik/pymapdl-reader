@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Reading MAPDL Result Files &#8212; PyMAPDL Legacy Reader 0.51.9 documentation</title>
+    <title>Reading MAPDL Result Files &#8212; PyMAPDL - Legacy Reader</title>
     
     
   <link href="../_static/css/theme.css" rel="stylesheet">
@@ -34,6 +34,8 @@
     
   <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
+    
+        <link href="../_static/css/breadcrumbs.css" rel="stylesheet">
     
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -70,7 +72,7 @@
     
     
 
-<a class="navbar-brand" href="https://readerdocs.pyansys.com/">
+<a class="navbar-brand" href="https://docs.pyansys.com/">
   <img src="../_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
 </a>
 
@@ -144,6 +146,29 @@
 </div>
     </nav>
     
+    
+        <div class="container-xl">
+    <div class="row">
+        <div class="col-12 col-md-3" id="breadcrumbs-spacer"></div>
+        <div class="col-12 col-md-11 col-xl-9" id="breadcrumbs">
+          
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+    
+        <li class="nav-item nav-item-additional-breadcrumb"><a href="https://docs.pyansys.com/">PyAnsys</a> » </li>
+    
+    
+        <li class="nav-item nav-item-0"><a href="../index.html">PyMAPDL - Legacy Reader</a> » </li>
+    
+
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">User Guide</a> » </li>
+        <li class="nav-item nav-item-this"><a href="">Reading MAPDL Result Files</a></li> 
+      </ul>
+    </div>
+        </div>
+  </div>
+</div>
     
 
 
@@ -1670,7 +1695,7 @@ the bottom layer is reported.</p>
 <dd><p>Result file material properties.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><strong>materials</strong> – Dictionary of Materials.  Keys are the material numbers,
+<dd class="field-odd"><p>Dictionary of Materials.  Keys are the material numbers,
 and each material is a dictionary of the material
 properrties of that material with only the valid entries filled.</p>
 </dd>
@@ -1738,6 +1763,37 @@ properrties of that material with only the valid entries filled.</p>
 <li><p>MGXX : Magnetic coercive force, element x direction (Charge / (Length*Time))</p></li>
 <li><p>MGYY : Magnetic coercive force, element y direction (Charge / (Length*Time))</p></li>
 <li><p>MGZZ : Magnetic coercive force, element z direction (Charge / (Length*Time))</p></li>
+</ul>
+<p>Materials may contain the key <code class="docutils literal notranslate"><span class="pre">&quot;stress_failure_criteria&quot;</span></code>, which
+contains failure criteria information for temperature-dependent stress
+limits. This includes the following keys:</p>
+<ul class="simple">
+<li><p>XTEN : Allowable tensile stress or strain in the x-direction. (Must
+be positive.)</p></li>
+<li><p>XCMP : Allowable compressive stress or strain in the
+x-direction. (Defaults to negative of XTEN.)</p></li>
+<li><p>YTEN : Allowable tensile stress or strain in the y-direction. (Must
+be positive.)</p></li>
+<li><p>YCMP : Allowable compressive stress or strain in the
+y-direction. (Defaults to negative of YTEN.)</p></li>
+<li><p>ZTEN : Allowable tensile stress or strain in the z-direction. (Must
+be positive.)</p></li>
+<li><p>ZCMP : Allowable compressive stress or strain in the
+z-direction. (Defaults to negative of ZTEN.)</p></li>
+<li><p>XY : Allowable XY stress or shear strain. (Must be positive.)</p></li>
+<li><p>YZ : Allowable YZ stress or shear strain. (Must be positive.)</p></li>
+<li><p>XZ : Allowable XZ stress or shear strain. (Must be positive.)</p></li>
+<li><p>XYCP : XY coupling coefficient (Used only if Lab1 = S). Defaults to -1.0. [1]</p></li>
+<li><p>YZCP : YZ coupling coefficient (Used only if Lab1 = S). Defaults to -1.0. [1]</p></li>
+<li><p>XZCP : XZ coupling coefficient (Used only if Lab1 = S). Defaults to -1.0. [1]</p></li>
+<li><p>XZIT : XZ tensile inclination parameter for Puck failure index (default =
+0.0)</p></li>
+<li><p>XZIC : XZ compressive inclination parameter for Puck failure index
+(default = 0.0)</p></li>
+<li><p>YZIT : YZ tensile inclination parameter for Puck failure index
+(default = 0.0)</p></li>
+<li><p>YZIC : YZ compressive inclination parameter for Puck failure index
+(default = 0.0)</p></li>
 </ul>
 <p class="rubric">Examples</p>
 <p>Return the material properties from the example result
@@ -4220,7 +4276,7 @@ equivalent stress.</p>
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright (c) 2021 ANSYS, Inc. All rights reserved.<br>
+    &copy; Copyright (c) 2022 ANSYS, Inc. All rights reserved.<br>
 </p>
     </div>
     
