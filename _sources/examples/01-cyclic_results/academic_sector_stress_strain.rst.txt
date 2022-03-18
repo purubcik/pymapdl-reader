@@ -183,15 +183,6 @@ can help you automate saving screenshots.
    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-    /opt/hostedtoolcache/Python/3.9.10/x64/lib/python3.9/site-packages/pyvista/core/pointset.py:324: PyvistaDeprecationWarning: You did not specify a value for `inplace` and the default value will be changing to `False` in future versions for point-based meshes (e.g., `PolyData`). Please make sure you are not assuming this to be an inplace operation.
-      warnings.warn(DEFAULT_INPLACE_WARNING, PyvistaDeprecationWarning)
-
 
 
 
@@ -252,7 +243,7 @@ Available stress components are ``['S1', 'S2', 'S3', 'SINT', 'SEQV']``.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.978 seconds)
+   **Total running time of the script:** ( 0 minutes  1.746 seconds)
 
 
 .. _sphx_glr_download_examples_01-cyclic_results_academic_sector_stress_strain.py:
