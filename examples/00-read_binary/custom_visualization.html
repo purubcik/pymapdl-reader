@@ -9,8 +9,9 @@
     <title>Custom Scalar Visualization &#8212; PyMAPDL - Legacy Reader</title>
     
     
-  <link href="../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -20,19 +21,16 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/pyansys_sphinx_theme.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-rendered-html.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     
         <link href="../../_static/css/breadcrumbs.css" rel="stylesheet">
@@ -54,7 +52,7 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -128,20 +126,20 @@
       
     </div>
 
+    
     <div id="navbar-end">
       
       <div class="navbar-end-item">
         <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/pyansys/pymapdl-reader" rel="noopener" target="_blank" title="GitHub">
-            <span><i class="fab fa-github-square"></i></span>
-            <label class="sr-only">GitHub</label>
-          </a>
+          <a class="nav-link" href="https://github.com/pyansys/pymapdl-reader" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
         </li>
       </ul>
       </div>
       
     </div>
+    
   </div>
 </div>
     </nav>
@@ -177,7 +175,8 @@
           
             
             <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
@@ -241,6 +240,9 @@
 
   </div>
 </nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
             </div>
             
           
@@ -251,7 +253,7 @@
               
               <div class="toc-item">
                 
-<div class="tocsection onthispage pt-5 pb-3">
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
     <i class="fas fa-list"></i> On this page
 </div>
 
@@ -304,7 +306,7 @@
 to download the full example code</p>
 </div>
 <section class="sphx-glr-example-title" id="custom-scalar-visualization">
-<span id="ref-custom-visualization"></span><span id="sphx-glr-examples-00-read-binary-custom-visualization-py"></span><h1>Custom Scalar Visualization<a class="headerlink" href="#custom-scalar-visualization" title="Permalink to this headline">¶</a></h1>
+<span id="ref-custom-visualization"></span><span id="sphx-glr-examples-00-read-binary-custom-visualization-py"></span><h1>Custom Scalar Visualization<a class="headerlink" href="#custom-scalar-visualization" title="Permalink to this headline">#</a></h1>
 <p>Display custom scalars using an existing mesh.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyvista</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -336,7 +338,7 @@ of the Python visualizing property used to plot within Python.</p>
 
 -------------------------------------------------------------------------------
 shaft.grid:
- UnstructuredGrid (0x7fe49ad17a60)
+ UnstructuredGrid (0x7f619cd31880)
   N Cells:      25051
   N Points:     27132
   X Bounds:     0.000e+00, 2.700e+02
@@ -347,7 +349,7 @@ shaft.grid:
 </div>
 </section>
 <section id="plotting">
-<h1>Plotting<a class="headerlink" href="#plotting" title="Permalink to this headline">¶</a></h1>
+<h1>Plotting<a class="headerlink" href="#plotting" title="Permalink to this headline">#</a></h1>
 <p>The grid instance is a <cite>pyvista.UnstructuredGrid</cite> part of the
 <cite>pyvista</cite> library.  This class allows for advanced plotting using
 VTK in just a few lines of code.  For example, you can plot the
@@ -357,7 +359,7 @@ underlying mesh with:</p>
 </div>
 <img src="../../_images/sphx_glr_custom_visualization_001.png" srcset="../../_images/sphx_glr_custom_visualization_001.png" alt="custom visualization" class = "sphx-glr-single-img"/></section>
 <section id="plotting-node-scalars">
-<h1>Plotting Node Scalars<a class="headerlink" href="#plotting-node-scalars" title="Permalink to this headline">¶</a></h1>
+<h1>Plotting Node Scalars<a class="headerlink" href="#plotting-node-scalars" title="Permalink to this headline">#</a></h1>
 <p>If you point-wise or cell-wise scalars (nodes and elements in FEA),
 you can plot these scalars by setting the <code class="docutils literal notranslate"><span class="pre">scalars=</span></code> parameter.
 Here, I’m simply using the x location of the nodes to color the
@@ -371,7 +373,7 @@ of cells in the unstructured grid.  Here, we’re plotting node values.</p>
 </div>
 <img src="../../_images/sphx_glr_custom_visualization_002.png" srcset="../../_images/sphx_glr_custom_visualization_002.png" alt="custom visualization" class = "sphx-glr-single-img"/></section>
 <section id="plotting-with-missing-values">
-<h1>Plotting With Missing Values<a class="headerlink" href="#plotting-with-missing-values" title="Permalink to this headline">¶</a></h1>
+<h1>Plotting With Missing Values<a class="headerlink" href="#plotting-with-missing-values" title="Permalink to this headline">#</a></h1>
 <p>If you do not have values for every node (for example, the midside
 nodes), you can leave these values as NAN and the plotter will take
 care of plotting only the real values.</p>
@@ -390,7 +392,7 @@ nodes.</p>
 <span class="n">pontoon</span><span class="o">.</span><span class="n">grid</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">scalars</span><span class="o">=</span><span class="n">scalars</span><span class="p">,</span> <span class="n">show_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">lighting</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
-<img src="../../_images/sphx_glr_custom_visualization_003.png" srcset="../../_images/sphx_glr_custom_visualization_003.png" alt="custom visualization" class = "sphx-glr-single-img"/><p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  4.447 seconds)</p>
+<img src="../../_images/sphx_glr_custom_visualization_003.png" srcset="../../_images/sphx_glr_custom_visualization_003.png" alt="custom visualization" class = "sphx-glr-single-img"/><p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  3.649 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-00-read-binary-custom-visualization-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/bc5ebbdb7e9c8ac974fb708e0f25244c/custom_visualization.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">custom_visualization.py</span></code></a></p>
@@ -412,7 +414,8 @@ nodes.</p>
       </div>
     </div>
   
-  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 <footer class="footer mt-5 mt-md-0">
   <div class="container">
     

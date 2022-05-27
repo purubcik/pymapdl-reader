@@ -5,16 +5,16 @@
 
 Computation times
 =================
-**00:18.051** total execution time for **examples_00-read_binary** files:
+**00:17.127** total execution time for **examples_00-read_binary** files:
 
 +-----------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-read_binary_load_shaft_result.py` (``load_shaft_result.py``)       | 00:09.668 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-read_binary_load_shaft_result.py` (``load_shaft_result.py``)       | 00:09.855 | 0.0 MB |
 +-----------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-read_binary_custom_visualization.py` (``custom_visualization.py``) | 00:04.447 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-read_binary_custom_visualization.py` (``custom_visualization.py``) | 00:03.649 | 0.0 MB |
 +-----------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-read_binary_load_corner_result.py` (``load_corner_result.py``)     | 00:01.527 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-read_binary_load_corner_result.py` (``load_corner_result.py``)     | 00:01.512 | 0.0 MB |
 +-----------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-read_binary_pontoon.py` (``pontoon.py``)                           | 00:01.362 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-read_binary_pontoon.py` (``pontoon.py``)                           | 00:01.396 | 0.0 MB |
 +-----------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-read_binary_load_thermal_result.py` (``load_thermal_result.py``)   | 00:01.048 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-read_binary_load_thermal_result.py` (``load_thermal_result.py``)   | 00:00.716 | 0.0 MB |
 +-----------------------------------------------------------------------------------------------+-----------+--------+

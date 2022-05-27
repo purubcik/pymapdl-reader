@@ -9,8 +9,9 @@
     <title>Examples Gallery &#8212; PyMAPDL - Legacy Reader</title>
     
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -20,19 +21,16 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/pyansys_sphinx_theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-rendered-html.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     
         <link href="../_static/css/breadcrumbs.css" rel="stylesheet">
@@ -54,7 +52,7 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -128,20 +126,20 @@
       
     </div>
 
+    
     <div id="navbar-end">
       
       <div class="navbar-end-item">
         <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/pyansys/pymapdl-reader" rel="noopener" target="_blank" title="GitHub">
-            <span><i class="fab fa-github-square"></i></span>
-            <label class="sr-only">GitHub</label>
-          </a>
+          <a class="nav-link" href="https://github.com/pyansys/pymapdl-reader" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
         </li>
       </ul>
       </div>
       
     </div>
+    
   </div>
 </div>
     </nav>
@@ -176,7 +174,8 @@
           
             
             <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
@@ -240,6 +239,9 @@
 
   </div>
 </nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
             </div>
             
           
@@ -250,7 +252,7 @@
               
               <div class="toc-item">
                 
-<div class="tocsection onthispage pt-5 pb-3">
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
     <i class="fas fa-list"></i> On this page
 </div>
 
@@ -292,15 +294,15 @@
               <div>
                 
   <section id="examples-gallery">
-<span id="ref-example-gallery"></span><span id="sphx-glr-examples"></span><h1>Examples Gallery<a class="headerlink" href="#examples-gallery" title="Permalink to this headline">¶</a></h1>
+<span id="ref-example-gallery"></span><span id="sphx-glr-examples"></span><h1>Examples Gallery<a class="headerlink" href="#examples-gallery" title="Permalink to this headline">#</a></h1>
 <p>Here are a series of examples that demonstrate the behavior and usage
 of <code class="docutils literal notranslate"><span class="pre">ansys-mapdl-reader</span></code>.</p>
 <div class="sphx-glr-clear"></div><section id="loading-and-visualizing-result-files">
-<span id="sphx-glr-examples-00-read-binary"></span><h2>Loading and Visualizing Result Files<a class="headerlink" href="#loading-and-visualizing-result-files" title="Permalink to this headline">¶</a></h2>
+<span id="sphx-glr-examples-00-read-binary"></span><h2>Loading and Visualizing Result Files<a class="headerlink" href="#loading-and-visualizing-result-files" title="Permalink to this headline">#</a></h2>
 <div class="sphx-glr-thumbcontainer" tooltip="Custom Scalar Visualization"><figure class="align-default" id="id1">
 <img alt="Custom Scalar Visualization" src="../_images/sphx_glr_custom_visualization_thumb.png" />
 <figcaption>
-<p><span class="caption-text"><a class="reference internal" href="00-read_binary/custom_visualization.html#sphx-glr-examples-00-read-binary-custom-visualization-py"><span class="std std-ref">Custom Scalar Visualization</span></a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text"><a class="reference internal" href="00-read_binary/custom_visualization.html#sphx-glr-examples-00-read-binary-custom-visualization-py"><span class="std std-ref">Custom Scalar Visualization</span></a></span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div><div class="toctree-wrapper compound">
@@ -308,7 +310,7 @@ of <code class="docutils literal notranslate"><span class="pre">ansys-mapdl-read
 <div class="sphx-glr-thumbcontainer" tooltip="Cylindrical Nodal Stress"><figure class="align-default" id="id2">
 <img alt="Cylindrical Nodal Stress" src="../_images/sphx_glr_load_corner_result_thumb.png" />
 <figcaption>
-<p><span class="caption-text"><a class="reference internal" href="00-read_binary/load_corner_result.html#sphx-glr-examples-00-read-binary-load-corner-result-py"><span class="std std-ref">Cylindrical Nodal Stress</span></a></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text"><a class="reference internal" href="00-read_binary/load_corner_result.html#sphx-glr-examples-00-read-binary-load-corner-result-py"><span class="std std-ref">Cylindrical Nodal Stress</span></a></span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div><div class="toctree-wrapper compound">
@@ -316,7 +318,7 @@ of <code class="docutils literal notranslate"><span class="pre">ansys-mapdl-read
 <div class="sphx-glr-thumbcontainer" tooltip="Visualize a shaft modal analysis"><figure class="align-default" id="id3">
 <img alt="Shaft Modal Analysis" src="../_images/sphx_glr_load_shaft_result_thumb.png" />
 <figcaption>
-<p><span class="caption-text"><a class="reference internal" href="00-read_binary/load_shaft_result.html#sphx-glr-examples-00-read-binary-load-shaft-result-py"><span class="std std-ref">Shaft Modal Analysis</span></a></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text"><a class="reference internal" href="00-read_binary/load_shaft_result.html#sphx-glr-examples-00-read-binary-load-shaft-result-py"><span class="std std-ref">Shaft Modal Analysis</span></a></span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div><div class="toctree-wrapper compound">
@@ -324,7 +326,7 @@ of <code class="docutils literal notranslate"><span class="pre">ansys-mapdl-read
 <div class="sphx-glr-thumbcontainer" tooltip="Visualize the result of verification manual test 33."><figure class="align-default" id="id4">
 <img alt="Thermal Analysis" src="../_images/sphx_glr_load_thermal_result_thumb.png" />
 <figcaption>
-<p><span class="caption-text"><a class="reference internal" href="00-read_binary/load_thermal_result.html#sphx-glr-examples-00-read-binary-load-thermal-result-py"><span class="std std-ref">Thermal Analysis</span></a></span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text"><a class="reference internal" href="00-read_binary/load_thermal_result.html#sphx-glr-examples-00-read-binary-load-thermal-result-py"><span class="std std-ref">Thermal Analysis</span></a></span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div><div class="toctree-wrapper compound">
@@ -332,20 +334,20 @@ of <code class="docutils literal notranslate"><span class="pre">ansys-mapdl-read
 <div class="sphx-glr-thumbcontainer" tooltip="Visualize a shell static analysis"><figure class="align-default" id="id5">
 <img alt="Shell Static Analysis" src="../_images/sphx_glr_pontoon_thumb.png" />
 <figcaption>
-<p><span class="caption-text"><a class="reference internal" href="00-read_binary/pontoon.html#sphx-glr-examples-00-read-binary-pontoon-py"><span class="std std-ref">Shell Static Analysis</span></a></span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text"><a class="reference internal" href="00-read_binary/pontoon.html#sphx-glr-examples-00-read-binary-pontoon-py"><span class="std std-ref">Shell Static Analysis</span></a></span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div><div class="toctree-wrapper compound">
 </div>
 <div class="sphx-glr-clear"></div></section>
 <section id="cyclic-result-analysis">
-<span id="sphx-glr-examples-01-cyclic-results"></span><h2>Cyclic Result Analysis<a class="headerlink" href="#cyclic-result-analysis" title="Permalink to this headline">¶</a></h2>
+<span id="sphx-glr-examples-01-cyclic-results"></span><h2>Cyclic Result Analysis<a class="headerlink" href="#cyclic-result-analysis" title="Permalink to this headline">#</a></h2>
 <p>The following examples demonstrate how to load results from and
 directly analyze MAPDL result files from a cyclic analysis.</p>
 <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to interpret modes from a cyclic analysis from MAPDL result file from bo..."><figure class="align-default" id="id6">
 <img alt="Understanding Nodal Diameters from a Cyclic Model Analysis" src="../_images/sphx_glr_academic_sector_nd_thumb.png" />
 <figcaption>
-<p><span class="caption-text"><a class="reference internal" href="01-cyclic_results/academic_sector_nd.html#sphx-glr-examples-01-cyclic-results-academic-sector-nd-py"><span class="std std-ref">Understanding Nodal Diameters from a Cyclic Model Analysis</span></a></span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text"><a class="reference internal" href="01-cyclic_results/academic_sector_nd.html#sphx-glr-examples-01-cyclic-results-academic-sector-nd-py"><span class="std std-ref">Understanding Nodal Diameters from a Cyclic Model Analysis</span></a></span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div><div class="toctree-wrapper compound">
@@ -353,7 +355,7 @@ directly analyze MAPDL result files from a cyclic analysis.</p>
 <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to extract strain and stress from a cyclic modal analysis."><figure class="align-default" id="id7">
 <img alt="Stress and Strain from a Cyclic Modal Analysis" src="../_images/sphx_glr_academic_sector_stress_strain_thumb.png" />
 <figcaption>
-<p><span class="caption-text"><a class="reference internal" href="01-cyclic_results/academic_sector_stress_strain.html#sphx-glr-examples-01-cyclic-results-academic-sector-stress-strain-py"><span class="std std-ref">Stress and Strain from a Cyclic Modal Analysis</span></a></span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text"><a class="reference internal" href="01-cyclic_results/academic_sector_stress_strain.html#sphx-glr-examples-01-cyclic-results-academic-sector-stress-strain-py"><span class="std std-ref">Stress and Strain from a Cyclic Modal Analysis</span></a></span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div><div class="toctree-wrapper compound">
@@ -361,7 +363,7 @@ directly analyze MAPDL result files from a cyclic analysis.</p>
 <div class="sphx-glr-thumbcontainer" tooltip="First, load the rotor.  Notice how printing the rotor class reveals the details of the rotor re..."><figure class="align-default" id="id8">
 <img alt="Cyclic Model Visualization" src="../_images/sphx_glr_sector_model_thumb.png" />
 <figcaption>
-<p><span class="caption-text"><a class="reference internal" href="01-cyclic_results/sector_model.html#sphx-glr-examples-01-cyclic-results-sector-model-py"><span class="std std-ref">Cyclic Model Visualization</span></a></span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text"><a class="reference internal" href="01-cyclic_results/sector_model.html#sphx-glr-examples-01-cyclic-results-sector-model-py"><span class="std std-ref">Cyclic Model Visualization</span></a></span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div><div class="toctree-wrapper compound">
@@ -388,7 +390,8 @@ directly analyze MAPDL result files from a cyclic analysis.</p>
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 <footer class="footer mt-5 mt-md-0">
   <div class="container">
     

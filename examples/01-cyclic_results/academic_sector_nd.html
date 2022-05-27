@@ -9,8 +9,9 @@
     <title>Understanding Nodal Diameters from a Cyclic Model Analysis &#8212; PyMAPDL - Legacy Reader</title>
     
     
-  <link href="../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -20,19 +21,16 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/pyansys_sphinx_theme.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-rendered-html.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     
         <link href="../../_static/css/breadcrumbs.css" rel="stylesheet">
@@ -54,7 +52,7 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -128,20 +126,20 @@
       
     </div>
 
+    
     <div id="navbar-end">
       
       <div class="navbar-end-item">
         <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/pyansys/pymapdl-reader" rel="noopener" target="_blank" title="GitHub">
-            <span><i class="fab fa-github-square"></i></span>
-            <label class="sr-only">GitHub</label>
-          </a>
+          <a class="nav-link" href="https://github.com/pyansys/pymapdl-reader" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
         </li>
       </ul>
       </div>
       
     </div>
+    
   </div>
 </div>
     </nav>
@@ -177,7 +175,8 @@
           
             
             <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
@@ -241,6 +240,9 @@
 
   </div>
 </nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
             </div>
             
           
@@ -251,7 +253,7 @@
               
               <div class="toc-item">
                 
-<div class="tocsection onthispage pt-5 pb-3">
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
     <i class="fas fa-list"></i> On this page
 </div>
 
@@ -314,7 +316,7 @@
 to download the full example code</p>
 </div>
 <section class="sphx-glr-example-title" id="understanding-nodal-diameters-from-a-cyclic-model-analysis">
-<span id="ref-academic-sector"></span><span id="sphx-glr-examples-01-cyclic-results-academic-sector-nd-py"></span><h1>Understanding Nodal Diameters from a Cyclic Model Analysis<a class="headerlink" href="#understanding-nodal-diameters-from-a-cyclic-model-analysis" title="Permalink to this headline">¶</a></h1>
+<span id="ref-academic-sector"></span><span id="sphx-glr-examples-01-cyclic-results-academic-sector-nd-py"></span><h1>Understanding Nodal Diameters from a Cyclic Model Analysis<a class="headerlink" href="#understanding-nodal-diameters-from-a-cyclic-model-analysis" title="Permalink to this headline">#</a></h1>
 <p>This example shows how to interpret modes from a cyclic analysis from
 MAPDL result file from both single bladed sectors as well as
 multi-bladed sectors from a modal analysis.</p>
@@ -354,7 +356,7 @@ NSL : Nodal displacements
 </div>
 </section>
 <section id="rotor-sector-order">
-<h1>Rotor Sector Order<a class="headerlink" href="#rotor-sector-order" title="Permalink to this headline">¶</a></h1>
+<h1>Rotor Sector Order<a class="headerlink" href="#rotor-sector-order" title="Permalink to this headline">#</a></h1>
 <p>Note that the sector rotations follow the right-hand rule where the
 X-axis and Y-axis make up the horizontal plane and the Z-axis is
 vertical and positive upwards.  Rotation follows the right-hand
@@ -399,7 +401,7 @@ which is (Load-step, sub-step).</p>
 </div>
 <img src="../../_images/sphx_glr_academic_sector_nd_003.png" srcset="../../_images/sphx_glr_academic_sector_nd_003.png" alt="academic sector nd" class = "sphx-glr-single-img"/></section>
 <section id="understanding-harmonic-indexing">
-<h1>Understanding Harmonic Indexing<a class="headerlink" href="#understanding-harmonic-indexing" title="Permalink to this headline">¶</a></h1>
+<h1>Understanding Harmonic Indexing<a class="headerlink" href="#understanding-harmonic-indexing" title="Permalink to this headline">#</a></h1>
 <p>ANSYS has great documentation on harmonic indexing within their
 internal documentation, but for the sake of completeness it will be repeated here.</p>
 <p>The harmonic index used within MAPDL is an integer that determines
@@ -467,7 +469,7 @@ scalar_bar_args={&#39;title&#39;: &#39;Scalar Bar Title&#39;}
 </div>
 </section>
 <section id="multi-bladed-sectors">
-<h1>Multi-Bladed Sectors<a class="headerlink" href="#multi-bladed-sectors" title="Permalink to this headline">¶</a></h1>
+<h1>Multi-Bladed Sectors<a class="headerlink" href="#multi-bladed-sectors" title="Permalink to this headline">#</a></h1>
 <p>When there are multiple blades per sector as in the case of the
 following example, the relationship between the harmonic indices and
 nodal diameters becomes more complicated</p>
@@ -543,7 +545,7 @@ analysis since they are not aliased back into a repeated mode.</p>
 </div>
 </section>
 <section id="plot-the-multi-bladed-sector">
-<h1>Plot the Multi-Bladed Sector<a class="headerlink" href="#plot-the-multi-bladed-sector" title="Permalink to this headline">¶</a></h1>
+<h1>Plot the Multi-Bladed Sector<a class="headerlink" href="#plot-the-multi-bladed-sector" title="Permalink to this headline">#</a></h1>
 <p>We can verify these results by analyzing a multi-sector rotor</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">multi_blade_rotor</span> <span class="o">=</span> <span class="n">examples</span><span class="o">.</span><span class="n">download_academic_rotor_4blade_result</span><span class="p">()</span>
 
@@ -665,7 +667,7 @@ scalar_bar_args={&#39;title&#39;: &#39;Scalar Bar Title&#39;}
 </div>
 </section>
 <section id="traveling-wave-animation">
-<h1>Traveling Wave Animation<a class="headerlink" href="#traveling-wave-animation" title="Permalink to this headline">¶</a></h1>
+<h1>Traveling Wave Animation<a class="headerlink" href="#traveling-wave-animation" title="Permalink to this headline">#</a></h1>
 <p>You can animate the traveling wave for a cyclic result using
 <code class="docutils literal notranslate"><span class="pre">animate_nodal_displacement</span></code>.  For a modal result, be sure to
 modify <code class="docutils literal notranslate"><span class="pre">displacement_factor</span></code> to a value that properly scales the
@@ -689,7 +691,7 @@ second mode in the mode pair <code class="docutils literal notranslate"><span cl
                                      <span class="n">movie_filename</span><span class="o">=</span><span class="s1">&#39;EO3_Mode1.gif&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img src="../../_images/sphx_glr_academic_sector_nd_012.png" srcset="../../_images/sphx_glr_academic_sector_nd_012.png" alt="academic sector nd" class = "sphx-glr-single-img"/><p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  27.559 seconds)</p>
+<img src="../../_images/sphx_glr_academic_sector_nd_012.png" srcset="../../_images/sphx_glr_academic_sector_nd_012.png" alt="academic sector nd" class = "sphx-glr-single-img"/><p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  24.511 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-01-cyclic-results-academic-sector-nd-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/c9ed20fb704a0c01197c3e73488bb440/academic_sector_nd.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">academic_sector_nd.py</span></code></a></p>
@@ -711,7 +713,8 @@ second mode in the mode pair <code class="docutils literal notranslate"><span cl
       </div>
     </div>
   
-  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 <footer class="footer mt-5 mt-md-0">
   <div class="container">
     
