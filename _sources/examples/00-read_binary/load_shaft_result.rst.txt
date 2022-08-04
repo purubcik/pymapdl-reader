@@ -59,8 +59,6 @@ Mesh is stored within the result object
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     ANSYS Mesh
@@ -89,8 +87,6 @@ Mesh is stored within the result object
 
 
 .. rst-class:: sphx-glr-script-out
-
- Out:
 
  .. code-block:: none
 
@@ -134,8 +130,6 @@ Plot the shaft
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     dict_keys(['EBC1', 'EBC2', 'SHAFT_MESH'])
@@ -149,14 +143,16 @@ Plot a node component
 
 This camera angle was saved interactively from ``shaft.plot``
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-44
+.. GENERATED FROM PYTHON SOURCE LINES 37-46
 
 .. code-block:: default
 
-    cpos = [(-115.35773008378118, 285.36602704380107, -393.9029392590675),
-            (126.12852038381345, 0.2179228023931401, 5.236408799851887),
-            (0.37246222812978824, 0.8468424028124546, 0.37964435122285495)]
-    shaft.plot(element_components=['SHAFT_MESH'], cpos=cpos)
+    cpos = [
+        (-115.35773008378118, 285.36602704380107, -393.9029392590675),
+        (126.12852038381345, 0.2179228023931401, 5.236408799851887),
+        (0.37246222812978824, 0.8468424028124546, 0.37964435122285495),
+    ]
+    shaft.plot(element_components=["SHAFT_MESH"], cpos=cpos)
     # get cpos from cpos = shaft.plot()
 
 
@@ -172,16 +168,17 @@ This camera angle was saved interactively from ``shaft.plot``
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-46
+.. GENERATED FROM PYTHON SOURCE LINES 47-48
 
 Plot a node component as a wireframe
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-50
+.. GENERATED FROM PYTHON SOURCE LINES 48-53
 
 .. code-block:: default
 
-    shaft.plot(element_components=['SHAFT_MESH'], cpos=cpos, style='wireframe',
-               lighting=False)
+    shaft.plot(
+        element_components=["SHAFT_MESH"], cpos=cpos, style="wireframe", lighting=False
+    )
 
 
 
@@ -196,15 +193,15 @@ Plot a node component as a wireframe
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-52
+.. GENERATED FROM PYTHON SOURCE LINES 54-55
 
 Plot the shaft with edges and with a blue color
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-54
+.. GENERATED FROM PYTHON SOURCE LINES 55-57
 
 .. code-block:: default
 
-    shaft.plot(show_edges=True, color='cyan')
+    shaft.plot(show_edges=True, color="cyan")
 
 
 
@@ -218,15 +215,15 @@ Plot the shaft with edges and with a blue color
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-56
+.. GENERATED FROM PYTHON SOURCE LINES 58-59
 
 Plot the shaft without lighting but with edges and with a blue color
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-59
+.. GENERATED FROM PYTHON SOURCE LINES 59-62
 
 .. code-block:: default
 
-    shaft.plot(lighting=False, show_edges=True, color='cyan')
+    shaft.plot(lighting=False, show_edges=True, color="cyan")
 
 
 
@@ -241,18 +238,24 @@ Plot the shaft without lighting but with edges and with a blue color
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-61
+.. GENERATED FROM PYTHON SOURCE LINES 63-64
 
 plot a mode shape without contours using the "bwr" color map
 
-.. GENERATED FROM PYTHON SOURCE LINES 61-66
+.. GENERATED FROM PYTHON SOURCE LINES 64-75
 
 .. code-block:: default
 
-    shaft.plot_nodal_solution(9, element_components=['SHAFT_MESH'],
-                              show_displacement=True, cmap='bwr',
-                              displacement_factor=0.3, stitle=None,
-                              overlay_wireframe=True, cpos=cpos)
+    shaft.plot_nodal_solution(
+        9,
+        element_components=["SHAFT_MESH"],
+        show_displacement=True,
+        cmap="bwr",
+        displacement_factor=0.3,
+        stitle=None,
+        overlay_wireframe=True,
+        cpos=cpos,
+    )
 
 
 
@@ -265,11 +268,9 @@ plot a mode shape without contours using the "bwr" color map
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.9.12/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2052: PyvistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.9.13/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2282: PyvistaDeprecationWarning: 
     "stitle" is a depreciated keyword and will be removed in a future
     release.
 
@@ -282,18 +283,24 @@ plot a mode shape without contours using the "bwr" color map
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-68
+.. GENERATED FROM PYTHON SOURCE LINES 76-77
 
 plot a mode shape with contours and the default colormap
 
-.. GENERATED FROM PYTHON SOURCE LINES 68-73
+.. GENERATED FROM PYTHON SOURCE LINES 77-88
 
 .. code-block:: default
 
-    shaft.plot_nodal_solution(1, element_components=['SHAFT_MESH'],
-                              n_colors=10, show_displacement=True,
-                              displacement_factor=1, stitle=None,
-                              overlay_wireframe=True, cpos=cpos)
+    shaft.plot_nodal_solution(
+        1,
+        element_components=["SHAFT_MESH"],
+        n_colors=10,
+        show_displacement=True,
+        displacement_factor=1,
+        stitle=None,
+        overlay_wireframe=True,
+        cpos=cpos,
+    )
 
 
 
@@ -306,11 +313,9 @@ plot a mode shape with contours and the default colormap
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.9.12/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2052: PyvistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.9.13/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2282: PyvistaDeprecationWarning: 
     "stitle" is a depreciated keyword and will be removed in a future
     release.
 
@@ -323,22 +328,28 @@ plot a mode shape with contours and the default colormap
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-78
+.. GENERATED FROM PYTHON SOURCE LINES 89-93
 
 Animate a mode of a component the shaft
 
 Set ``loop==True`` to plot continuously.
 Disable ``movie_filename`` and increase ``n_frames`` for a smoother plot
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-83
+.. GENERATED FROM PYTHON SOURCE LINES 93-104
 
 .. code-block:: default
 
-    shaft.animate_nodal_solution(5, element_components='SHAFT_MESH',
-                                 comp='norm', displacement_factor=1,
-                                 show_edges=True, cpos=cpos,
-                                 loop=False, movie_filename='demo.gif',
-                                 n_frames=30)
+    shaft.animate_nodal_solution(
+        5,
+        element_components="SHAFT_MESH",
+        comp="norm",
+        displacement_factor=1,
+        show_edges=True,
+        cpos=cpos,
+        loop=False,
+        movie_filename="demo.gif",
+        n_frames=30,
+    )
 
 
 
@@ -350,11 +361,8 @@ Disable ``movie_filename`` and increase ``n_frames`` for a smoother plot
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    Rendering animation:   0%|          | 0/30 [00:00<?, ?it/s]    Rendering animation:   3%|3         | 1/30 [00:00<00:09,  2.93it/s]    Rendering animation:   7%|6         | 2/30 [00:00<00:07,  3.86it/s]    Rendering animation:  10%|#         | 3/30 [00:00<00:06,  4.24it/s]    Rendering animation:  13%|#3        | 4/30 [00:00<00:05,  4.37it/s]    Rendering animation:  17%|#6        | 5/30 [00:01<00:05,  4.51it/s]    Rendering animation:  20%|##        | 6/30 [00:01<00:05,  4.60it/s]    Rendering animation:  23%|##3       | 7/30 [00:01<00:04,  4.65it/s]    Rendering animation:  27%|##6       | 8/30 [00:01<00:04,  4.71it/s]    Rendering animation:  30%|###       | 9/30 [00:02<00:04,  4.72it/s]    Rendering animation:  33%|###3      | 10/30 [00:02<00:04,  4.73it/s]    Rendering animation:  37%|###6      | 11/30 [00:02<00:03,  4.75it/s]    Rendering animation:  40%|####      | 12/30 [00:02<00:03,  4.78it/s]    Rendering animation:  43%|####3     | 13/30 [00:02<00:03,  4.77it/s]    Rendering animation:  47%|####6     | 14/30 [00:03<00:03,  4.76it/s]    Rendering animation:  50%|#####     | 15/30 [00:03<00:03,  4.74it/s]    Rendering animation:  53%|#####3    | 16/30 [00:03<00:02,  4.75it/s]    Rendering animation:  57%|#####6    | 17/30 [00:03<00:02,  4.80it/s]    Rendering animation:  60%|######    | 18/30 [00:03<00:02,  4.71it/s]    Rendering animation:  63%|######3   | 19/30 [00:04<00:02,  4.68it/s]    Rendering animation:  67%|######6   | 20/30 [00:04<00:02,  4.69it/s]    Rendering animation:  70%|#######   | 21/30 [00:04<00:01,  4.68it/s]    Rendering animation:  73%|#######3  | 22/30 [00:04<00:01,  4.65it/s]    Rendering animation:  77%|#######6  | 23/30 [00:04<00:01,  4.66it/s]    Rendering animation:  80%|########  | 24/30 [00:05<00:01,  4.71it/s]    Rendering animation:  83%|########3 | 25/30 [00:05<00:01,  4.72it/s]    Rendering animation:  87%|########6 | 26/30 [00:05<00:00,  4.73it/s]    Rendering animation:  90%|######### | 27/30 [00:05<00:00,  4.69it/s]    Rendering animation:  93%|#########3| 28/30 [00:06<00:00,  4.69it/s]    Rendering animation:  97%|#########6| 29/30 [00:06<00:00,  4.71it/s]    Rendering animation: 100%|##########| 30/30 [00:06<00:00,  4.73it/s]    Rendering animation: 100%|##########| 30/30 [00:06<00:00,  4.52it/s]
 
     [(-115.35773008378118, 285.36602704380107, -393.9029392590675),
      (126.12852038381345, 0.2179228023931401, 5.236408799851887),
@@ -365,28 +373,23 @@ Disable ``movie_filename`` and increase ``n_frames`` for a smoother plot
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.855 seconds)
+   **Total running time of the script:** ( 0 minutes  8.136 seconds)
 
 
 .. _sphx_glr_download_examples_00-read_binary_load_shaft_result.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: load_shaft_result.py <load_shaft_result.py>`
 
-     :download:`Download Python source code: load_shaft_result.py <load_shaft_result.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: load_shaft_result.ipynb <load_shaft_result.ipynb>`
+      :download:`Download Jupyter notebook: load_shaft_result.ipynb <load_shaft_result.ipynb>`
 
 
 .. only:: html

@@ -61,8 +61,6 @@ Download the academic modal analysis file
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     PyMAPDL Result
@@ -106,7 +104,7 @@ plane.
 .. code-block:: default
 
 
-    _ = rotor.plot_sectors(cpos='xy', stitle='Sector', smooth_shading=True, cmap='bwr')
+    _ = rotor.plot_sectors(cpos="xy", stitle="Sector", smooth_shading=True, cmap="bwr")
 
 
 
@@ -120,11 +118,9 @@ plane.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.9.12/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2052: PyvistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.9.13/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2282: PyvistaDeprecationWarning: 
     "stitle" is a depreciated keyword and will be removed in a future
     release.
 
@@ -160,8 +156,6 @@ indices from 0 to N/2, which in this case is 12
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     [  0   0  -1   1  -2   2   3  -3   4  -4   5  -5   6  -6   7  -7   8  -8
@@ -179,7 +173,7 @@ which is (Load-step, sub-step).
 
 .. code-block:: default
 
-    _ = rotor.plot_nodal_displacement((2, 2), comp='norm', cpos='xy')
+    _ = rotor.plot_nodal_displacement((2, 2), comp="norm", cpos="xy")
 
 
 
@@ -201,7 +195,7 @@ Alternatively, you can refer to the results using cumulative indexing.
 
 .. code-block:: default
 
-    _ = rotor.plot_nodal_displacement(10, comp='norm', cpos='xy')
+    _ = rotor.plot_nodal_displacement(10, comp="norm", cpos="xy")
 
 
 
@@ -233,13 +227,13 @@ number of MAPDL sectors, the harmonic index will always match the
 nodal diameter.  For example, the cumulative result 10 has a
 harmonic index of 5:
 
-.. GENERATED FROM PYTHON SOURCE LINES 73-90
+.. GENERATED FROM PYTHON SOURCE LINES 73-97
 
 .. code-block:: default
 
 
     rnum = 10
-    print('Harmonic Index:', rotor.harmonic_indices[rnum])
+    print("Harmonic Index:", rotor.harmonic_indices[rnum])
 
 
     # For the purpose of illustrating the nodal diameter content, we
@@ -250,8 +244,15 @@ harmonic index of 5:
     # as five, and only 5 lines can be drawn through the node lines
     # spanning the circumference of the rotor.
     r = 0.55
-    _ = rotor.plot_nodal_displacement(rnum, comp='norm', cpos='xy', rng=[r, r + 1E-2],
-                                      stitle=None, add_text=False, cmap='bwr')
+    _ = rotor.plot_nodal_displacement(
+        rnum,
+        comp="norm",
+        cpos="xy",
+        rng=[r, r + 1e-2],
+        stitle=None,
+        add_text=False,
+        cmap="bwr",
+    )
 
 
 
@@ -265,12 +266,10 @@ harmonic index of 5:
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     Harmonic Index: 5
-    /opt/hostedtoolcache/Python/3.9.12/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2052: PyvistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.9.13/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2282: PyvistaDeprecationWarning: 
     "stitle" is a depreciated keyword and will be removed in a future
     release.
 
@@ -283,11 +282,11 @@ harmonic index of 5:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 91-92
+.. GENERATED FROM PYTHON SOURCE LINES 98-99
 
 The same can be done for the simpler nodal diameter 1
 
-.. GENERATED FROM PYTHON SOURCE LINES 92-105
+.. GENERATED FROM PYTHON SOURCE LINES 99-119
 
 .. code-block:: default
 
@@ -295,8 +294,15 @@ The same can be done for the simpler nodal diameter 1
     print(rotor.harmonic_indices[rnum])
 
     r = 0
-    _ = rotor.plot_nodal_displacement(rnum, comp='z', cpos='xy', rng=[r, r + 1E-2],
-                                      add_text=False, stitle=None, cmap='bwr')
+    _ = rotor.plot_nodal_displacement(
+        rnum,
+        comp="z",
+        cpos="xy",
+        rng=[r, r + 1e-2],
+        add_text=False,
+        stitle=None,
+        cmap="bwr",
+    )
 
 
     # Therefore for this rotor with the number of sectors (N) equaling the
@@ -315,12 +321,10 @@ The same can be done for the simpler nodal diameter 1
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     1
-    /opt/hostedtoolcache/Python/3.9.12/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2052: PyvistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.9.13/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2282: PyvistaDeprecationWarning: 
     "stitle" is a depreciated keyword and will be removed in a future
     release.
 
@@ -333,7 +337,7 @@ The same can be done for the simpler nodal diameter 1
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 106-125
+.. GENERATED FROM PYTHON SOURCE LINES 120-139
 
 Multi-Bladed Sectors
 ~~~~~~~~~~~~~~~~~~~~
@@ -355,26 +359,24 @@ where:
 Therefore, for a 6 sector rotor, the first 4 possible nodal diameters at
 harmonic index 1 are:
 
-.. GENERATED FROM PYTHON SOURCE LINES 125-134
+.. GENERATED FROM PYTHON SOURCE LINES 139-148
 
 .. code-block:: default
 
 
     N = 6  # number of sectors
     k = 1  # harmonic index
-    print('Nodal Diameters :')
+    print("Nodal Diameters :")
     for m in range(5):
         if m > 0:
-            print('%4d' % (m*N - k))
-        print('%4d' % (m*N + k))
+            print("%4d" % (m * N - k))
+        print("%4d" % (m * N + k))
 
 
 
 
 
 .. rst-class:: sphx-glr-script-out
-
- Out:
 
  .. code-block:: none
 
@@ -392,7 +394,7 @@ harmonic index 1 are:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 135-140
+.. GENERATED FROM PYTHON SOURCE LINES 149-154
 
 Normally for a rotor where the number of blades per sector is 1,
 nodal diameters higher than N are simply aliased back to 1 and these
@@ -400,7 +402,7 @@ solutions do not appear in the results.  However, when the sector
 contains multiple blades per sector, these results do appear in the
 analysis since they are not aliased back into a repeated mode.
 
-.. GENERATED FROM PYTHON SOURCE LINES 140-162
+.. GENERATED FROM PYTHON SOURCE LINES 154-176
 
 .. code-block:: default
 
@@ -413,17 +415,17 @@ analysis since they are not aliased back into a repeated mode.
     nodal_diameters = []
     for m in range(5):
         if m > 0:
-            nodal_diameters.append(m*N - k)
-        nodal_diameters.append(m*N + k)
+            nodal_diameters.append(m * N - k)
+        nodal_diameters.append(m * N + k)
 
-    print('Nodal Diameters :')
+    print("Nodal Diameters :")
     for d in nodal_diameters:
         if d > n_blades:  # ignore
             continue
-        elif d > n_blades//2:  # back alias
-            print('%4d' % -(n_blades-d))
+        elif d > n_blades // 2:  # back alias
+            print("%4d" % -(n_blades - d))
         else:
-            print('%4d' % d)
+            print("%4d" % d)
 
 
 
@@ -431,8 +433,6 @@ analysis since they are not aliased back into a repeated mode.
 
 
 .. rst-class:: sphx-glr-script-out
-
- Out:
 
  .. code-block:: none
 
@@ -449,14 +449,14 @@ analysis since they are not aliased back into a repeated mode.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 163-167
+.. GENERATED FROM PYTHON SOURCE LINES 177-181
 
 Plot the Multi-Bladed Sector
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We can verify these results by analyzing a multi-sector rotor
 
-.. GENERATED FROM PYTHON SOURCE LINES 167-174
+.. GENERATED FROM PYTHON SOURCE LINES 181-189
 
 .. code-block:: default
 
@@ -464,8 +464,9 @@ We can verify these results by analyzing a multi-sector rotor
     multi_blade_rotor = examples.download_academic_rotor_4blade_result()
 
     # plot all the sectors
-    _ = multi_blade_rotor.plot_sectors(cpos='xy', stitle='Sector',
-                                       smooth_shading=True, cmap='bwr')
+    _ = multi_blade_rotor.plot_sectors(
+        cpos="xy", stitle="Sector", smooth_shading=True, cmap="bwr"
+    )
 
 
 
@@ -478,11 +479,9 @@ We can verify these results by analyzing a multi-sector rotor
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.9.12/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2052: PyvistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.9.13/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2282: PyvistaDeprecationWarning: 
     "stitle" is a depreciated keyword and will be removed in a future
     release.
 
@@ -495,28 +494,26 @@ We can verify these results by analyzing a multi-sector rotor
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 175-178
+.. GENERATED FROM PYTHON SOURCE LINES 190-193
 
 We can then see that the harmonic indices for harmonic index 1
 indeed alias back to the expected nodal diameters in the following
 plots.
 
-.. GENERATED FROM PYTHON SOURCE LINES 178-183
+.. GENERATED FROM PYTHON SOURCE LINES 193-198
 
 .. code-block:: default
 
     print(multi_blade_rotor.harmonic_indices)
 
     hi_1 = np.nonzero(multi_blade_rotor.harmonic_indices == 1)[0]
-    print('Cumulative indices matching harmonic index 1:', hi_1)
+    print("Cumulative indices matching harmonic index 1:", hi_1)
 
 
 
 
 
 .. rst-class:: sphx-glr-script-out
-
- Out:
 
  .. code-block:: none
 
@@ -527,20 +524,19 @@ plots.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 184-185
+.. GENERATED FROM PYTHON SOURCE LINES 199-200
 
 Cumulative result 8 and harmonic index 1
 
-.. GENERATED FROM PYTHON SOURCE LINES 185-193
+.. GENERATED FROM PYTHON SOURCE LINES 200-207
 
 .. code-block:: default
 
     rnum = 8
-    text = 'Expected Nodal Diameter %2d' % nodal_diameters[0]
-    _ = multi_blade_rotor.plot_nodal_displacement(rnum, comp='z',
-                                                  cpos='xy', rng=[r, r + 1E-2],
-                                                  add_text=text, stitle=None,
-                                                  cmap='bwr')
+    text = "Expected Nodal Diameter %2d" % nodal_diameters[0]
+    _ = multi_blade_rotor.plot_nodal_displacement(
+        rnum, comp="z", cpos="xy", rng=[r, r + 1e-2], add_text=text, stitle=None, cmap="bwr"
+    )
 
 
 
@@ -554,11 +550,9 @@ Cumulative result 8 and harmonic index 1
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.9.12/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2052: PyvistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.9.13/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2282: PyvistaDeprecationWarning: 
     "stitle" is a depreciated keyword and will be removed in a future
     release.
 
@@ -571,20 +565,19 @@ Cumulative result 8 and harmonic index 1
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 194-195
+.. GENERATED FROM PYTHON SOURCE LINES 208-209
 
 Cumulative result 10 and harmonic index 5
 
-.. GENERATED FROM PYTHON SOURCE LINES 195-203
+.. GENERATED FROM PYTHON SOURCE LINES 209-216
 
 .. code-block:: default
 
     rnum = 10
-    text = 'Expected Nodal Diameter %2d' % nodal_diameters[1]
-    _ = multi_blade_rotor.plot_nodal_displacement(rnum, comp='z',
-                                                  cpos='xy', rng=[r, r + 1E-2],
-                                                  add_text=text, stitle=None,
-                                                  cmap='bwr')
+    text = "Expected Nodal Diameter %2d" % nodal_diameters[1]
+    _ = multi_blade_rotor.plot_nodal_displacement(
+        rnum, comp="z", cpos="xy", rng=[r, r + 1e-2], add_text=text, stitle=None, cmap="bwr"
+    )
 
 
 
@@ -598,11 +591,9 @@ Cumulative result 10 and harmonic index 5
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.9.12/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2052: PyvistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.9.13/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2282: PyvistaDeprecationWarning: 
     "stitle" is a depreciated keyword and will be removed in a future
     release.
 
@@ -615,20 +606,19 @@ Cumulative result 10 and harmonic index 5
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 204-205
+.. GENERATED FROM PYTHON SOURCE LINES 217-218
 
 Cumulative result 13 and harmonic index 7
 
-.. GENERATED FROM PYTHON SOURCE LINES 205-213
+.. GENERATED FROM PYTHON SOURCE LINES 218-225
 
 .. code-block:: default
 
     rnum = 13
-    text = 'Expected Nodal Diameter %2d' % nodal_diameters[2]
-    _ = multi_blade_rotor.plot_nodal_displacement(rnum, comp='z',
-                                                  cpos='xy', rng=[r, r + 1E-2],
-                                                  add_text=text, stitle=None,
-                                                  cmap='bwr')
+    text = "Expected Nodal Diameter %2d" % nodal_diameters[2]
+    _ = multi_blade_rotor.plot_nodal_displacement(
+        rnum, comp="z", cpos="xy", rng=[r, r + 1e-2], add_text=text, stitle=None, cmap="bwr"
+    )
 
 
 
@@ -642,11 +632,9 @@ Cumulative result 13 and harmonic index 7
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.9.12/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2052: PyvistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.9.13/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2282: PyvistaDeprecationWarning: 
     "stitle" is a depreciated keyword and will be removed in a future
     release.
 
@@ -659,20 +647,19 @@ Cumulative result 13 and harmonic index 7
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 214-215
+.. GENERATED FROM PYTHON SOURCE LINES 226-227
 
 Cumulative result 15 and harmonic index 11
 
-.. GENERATED FROM PYTHON SOURCE LINES 215-223
+.. GENERATED FROM PYTHON SOURCE LINES 227-234
 
 .. code-block:: default
 
     rnum = 15
-    text = 'Expected Nodal Diameter %2d' % nodal_diameters[3]
-    _ = multi_blade_rotor.plot_nodal_displacement(rnum, comp='z',
-                                                  cpos='xy', rng=[r, r + 1E-2],
-                                                  add_text=text, stitle=None,
-                                                  cmap='bwr')
+    text = "Expected Nodal Diameter %2d" % nodal_diameters[3]
+    _ = multi_blade_rotor.plot_nodal_displacement(
+        rnum, comp="z", cpos="xy", rng=[r, r + 1e-2], add_text=text, stitle=None, cmap="bwr"
+    )
 
 
 
@@ -686,11 +673,9 @@ Cumulative result 15 and harmonic index 11
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.9.12/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2052: PyvistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.9.13/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2282: PyvistaDeprecationWarning: 
     "stitle" is a depreciated keyword and will be removed in a future
     release.
 
@@ -703,7 +688,7 @@ Cumulative result 15 and harmonic index 11
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 224-237
+.. GENERATED FROM PYTHON SOURCE LINES 235-248
 
 Traveling Wave Animation
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -719,14 +704,20 @@ Set ``loop=True`` to allow for a continuous plot, and modify
 ``help(pyvista.plot)`` for additional keyword arguments.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 237-243
+.. GENERATED FROM PYTHON SOURCE LINES 248-260
 
 .. code-block:: default
 
-    _ = rotor.animate_nodal_displacement((3, 1), displacement_factor=0.03,
-                                         n_frames=30, show_axes=False, background='w',
-                                         loop=False, add_text=False,
-                                         movie_filename='EO3_Mode1.gif')
+    _ = rotor.animate_nodal_displacement(
+        (3, 1),
+        displacement_factor=0.03,
+        n_frames=30,
+        show_axes=False,
+        background="w",
+        loop=False,
+        add_text=False,
+        movie_filename="EO3_Mode1.gif",
+    )
 
 
 
@@ -741,20 +732,26 @@ Set ``loop=True`` to allow for a continuous plot, and modify
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 244-247
+.. GENERATED FROM PYTHON SOURCE LINES 261-264
 
 Note how you can plot the backwards traveling wave by selecting the
 second mode in the mode pair ``(3, 2)`` instead of ``(3, 1)``.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 247-251
+.. GENERATED FROM PYTHON SOURCE LINES 264-274
 
 .. code-block:: default
 
-    _ = rotor.animate_nodal_displacement((3, 2), displacement_factor=0.03,
-                                         n_frames=30, show_axes=False, background='w',
-                                         loop=False, add_text=False,
-                                         movie_filename='EO3_Mode1.gif')
+    _ = rotor.animate_nodal_displacement(
+        (3, 2),
+        displacement_factor=0.03,
+        n_frames=30,
+        show_axes=False,
+        background="w",
+        loop=False,
+        add_text=False,
+        movie_filename="EO3_Mode1.gif",
+    )
 
 
 
@@ -770,28 +767,23 @@ second mode in the mode pair ``(3, 2)`` instead of ``(3, 1)``.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  24.511 seconds)
+   **Total running time of the script:** ( 0 minutes  17.449 seconds)
 
 
 .. _sphx_glr_download_examples_01-cyclic_results_academic_sector_nd.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: academic_sector_nd.py <academic_sector_nd.py>`
 
-     :download:`Download Python source code: academic_sector_nd.py <academic_sector_nd.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: academic_sector_nd.ipynb <academic_sector_nd.ipynb>`
+      :download:`Download Jupyter notebook: academic_sector_nd.ipynb <academic_sector_nd.ipynb>`
 
 
 .. only:: html

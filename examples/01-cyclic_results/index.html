@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Computation times &#8212; PyMAPDL - Legacy Reader</title>
+    <title>Cyclic Result Analysis &#8212; PyMAPDL - Legacy Reader</title>
     
 <script>
   document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
@@ -48,6 +48,8 @@
     <script src="../../_static/copybutton.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Understanding Nodal Diameters from a Cyclic Model Analysis" href="academic_sector_nd.html" />
+    <link rel="prev" title="Shell Static Analysis" href="../00-read_binary/pontoon.html" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="docsearch:language" content="en">
   </head>
@@ -110,7 +112,7 @@
  </a>
 </li>
 
-<li class="toctree-l1 nav-item">
+<li class="toctree-l1 current active nav-item">
  <a class="reference internal nav-link" href="../index.html">
   Examples Gallery
  </a>
@@ -168,7 +170,8 @@
         <li class="nav-item nav-item-0"><a href="../../index.html">PyMAPDL - Legacy Reader</a> » </li>
     
 
-        <li class="nav-item nav-item-this"><a href="">Computation times</a></li> 
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Examples Gallery</a> » </li>
+        <li class="nav-item nav-item-this"><a href="">Cyclic Result Analysis</a></li> 
       </ul>
     </div>
         </div>
@@ -188,7 +191,73 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <div class="bd-toc-item active">
-    
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../00-read_binary/index.html">
+   Loading and Visualizing Result Files
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../00-read_binary/custom_visualization.html">
+     Custom Scalar Visualization
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../00-read_binary/load_corner_result.html">
+     Cylindrical Nodal Stress
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../00-read_binary/load_shaft_result.html">
+     Shaft Modal Analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../00-read_binary/load_thermal_result.html">
+     Thermal Analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../00-read_binary/pontoon.html">
+     Shell Static Analysis
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   Cyclic Result Analysis
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="academic_sector_nd.html">
+     Understanding Nodal Diameters from a Cyclic Model Analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="academic_sector_stress_strain.html">
+     Stress and Strain from a Cyclic Modal Analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sector_model.html">
+     Cyclic Model Visualization
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
   </div>
 </nav>
   </div>
@@ -225,33 +294,21 @@
               
               <article class="bd-article" role="main">
                 
-  <section id="computation-times">
-<span id="sphx-glr-examples-00-read-binary-sg-execution-times"></span><h1>Computation times<a class="headerlink" href="#computation-times" title="Permalink to this heading">#</a></h1>
-<p><strong>00:13.092</strong> total execution time for <strong>examples_00-read_binary</strong> files:</p>
-<table class="table">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="load_shaft_result.html#sphx-glr-examples-00-read-binary-load-shaft-result-py"><span class="std std-ref">Shaft Modal Analysis</span></a> (<code class="docutils literal notranslate"><span class="pre">load_shaft_result.py</span></code>)</p></td>
-<td><p>00:08.136</p></td>
-<td><p>0.0 MB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="custom_visualization.html#sphx-glr-examples-00-read-binary-custom-visualization-py"><span class="std std-ref">Custom Scalar Visualization</span></a> (<code class="docutils literal notranslate"><span class="pre">custom_visualization.py</span></code>)</p></td>
-<td><p>00:02.155</p></td>
-<td><p>0.0 MB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pontoon.html#sphx-glr-examples-00-read-binary-pontoon-py"><span class="std std-ref">Shell Static Analysis</span></a> (<code class="docutils literal notranslate"><span class="pre">pontoon.py</span></code>)</p></td>
-<td><p>00:01.137</p></td>
-<td><p>0.0 MB</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="load_corner_result.html#sphx-glr-examples-00-read-binary-load-corner-result-py"><span class="std std-ref">Cylindrical Nodal Stress</span></a> (<code class="docutils literal notranslate"><span class="pre">load_corner_result.py</span></code>)</p></td>
-<td><p>00:01.112</p></td>
-<td><p>0.0 MB</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="load_thermal_result.html#sphx-glr-examples-00-read-binary-load-thermal-result-py"><span class="std std-ref">Thermal Analysis</span></a> (<code class="docutils literal notranslate"><span class="pre">load_thermal_result.py</span></code>)</p></td>
-<td><p>00:00.553</p></td>
-<td><p>0.0 MB</p></td>
-</tr>
-</tbody>
-</table>
+  <section id="cyclic-result-analysis">
+<span id="sphx-glr-examples-01-cyclic-results"></span><h1>Cyclic Result Analysis<a class="headerlink" href="#cyclic-result-analysis" title="Permalink to this heading">#</a></h1>
+<p>The following examples demonstrate how to load results from and
+directly analyze MAPDL result files from a cyclic analysis.</p>
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to interpret modes from a cyclic analysis from MAPDL result file from bo..."><img alt="Understanding Nodal Diameters from a Cyclic Model Analysis" src="../../_images/sphx_glr_academic_sector_nd_thumb.png" />
+<p><a class="reference internal" href="academic_sector_nd.html#sphx-glr-examples-01-cyclic-results-academic-sector-nd-py"><span class="std std-ref">Understanding Nodal Diameters from a Cyclic Model Analysis</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Understanding Nodal Diameters from a Cyclic Model Analysis</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to extract strain and stress from a cyclic modal analysis."><img alt="Stress and Strain from a Cyclic Modal Analysis" src="../../_images/sphx_glr_academic_sector_stress_strain_thumb.png" />
+<p><a class="reference internal" href="academic_sector_stress_strain.html#sphx-glr-examples-01-cyclic-results-academic-sector-stress-strain-py"><span class="std std-ref">Stress and Strain from a Cyclic Modal Analysis</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Stress and Strain from a Cyclic Modal Analysis</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="First, load the rotor.  Notice how printing the rotor class reveals the details of the rotor re..."><img alt="Cyclic Model Visualization" src="../../_images/sphx_glr_sector_model_thumb.png" />
+<p><a class="reference internal" href="sector_model.html#sphx-glr-examples-01-cyclic-results-sector-model-py"><span class="std std-ref">Cyclic Model Visualization</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Cyclic Model Visualization</div>
+</div></div><div class="toctree-wrapper compound">
+</div>
 </section>
 
 

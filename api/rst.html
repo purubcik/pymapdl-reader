@@ -1,19 +1,23 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>Result Class &#8212; PyMAPDL - Legacy Reader</title>
     
-    
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
 
-    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
   <link rel="stylesheet"
     href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
@@ -23,14 +27,14 @@
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/pyansys_sphinx_theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/ansys_sphinx_theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-rendered-html.css" />
-    
+
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
 
     
         <link href="../_static/css/breadcrumbs.css" rel="stylesheet">
@@ -38,6 +42,7 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -45,43 +50,42 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Miscellaneous Classes" href="misc.html" />
     <link rel="prev" title="Compute Cell Quality" href="mesh_quality.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="en">
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+    <div class="bd-header-announcement container-fluid" id="banner">
+      
+
+    </div>
 
     
     
-    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><style>
-    .navbar-light {
-        background-color: black !important;
-    }
-</style>
-
-<div class="container-xl">
+    <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
 
   <div id="navbar-start">
     
     
+  
 
-<a class="navbar-brand" href="https://docs.pyansys.com/">
-  <img src="../_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    <img src="../_static/pyansys-logo-black-cropped.png" class="logo__image only-light" alt="Logo image">
+    <img src="../_static/pyansys-logo-black-cropped.png" class="logo__image only-dark" alt="Logo image">
+  
+  
 </a>
-
-
     
   </div>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon" >
-      <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
-    </span>
+    <span class="fas fa-bars"></span>
   </button>
 
   
@@ -126,8 +130,15 @@
       
     </div>
 
-    
     <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <span id="theme-switch" class="btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
       
       <div class="navbar-end-item">
         <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
@@ -139,7 +150,6 @@
       </div>
       
     </div>
-    
   </div>
 </div>
     </nav>
@@ -170,13 +180,13 @@
     
 
 
-    <div class="container-xl">
-      <div class="row">
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
           
-            
-            <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar">
-              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
@@ -221,55 +231,54 @@
 
   </div>
 </nav>
-              </div>
-              <div class="sidebar-end-items">
-              </div>
-            </div>
-            
-          
+  </div>
+  <div class="sidebar-end-items">
+  </div>
+</div>
+
 
           
-          <div class="d-none d-xl-block col-xl-2 bd-toc">
-            
-              
-              <div class="toc-item">
-                
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+    
+    <div class="toc-item">
+      
 
 <nav id="bd-toc-nav">
     
 </nav>
-              </div>
-              
-              <div class="toc-item">
-                
-              </div>
-              
-            
-          </div>
-          
+    </div>
+    
+    <div class="toc-item">
+      
+    </div>
+    
+  
+</div>
+
 
           
           
-            
-          
-          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+          <div class="bd-content col-12 col-md-9 col-xl-7">
               
-              <div>
+              <article class="bd-article" role="main">
                 
   <section id="result-class">
-<span id="ref-rst-api"></span><h1>Result Class<a class="headerlink" href="#result-class" title="Permalink to this headline">#</a></h1>
+<span id="ref-rst-api"></span><h1>Result Class<a class="headerlink" href="#result-class" title="Permalink to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.rst.</span></span><span class="sig-name descname"><span class="pre">Result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">read_mesh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parse_vtk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Reads a binary ANSYS result file.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>filename</strong> (<em>str</em><em>, </em><em>pathlib.Path</em><em>, </em><em>optional</em>) – Filename of the ANSYS binary result file.</p></li>
-<li><p><strong>ignore_cyclic</strong> (<em>bool</em><em>, </em><em>optional</em>) – Ignores any cyclic properties.</p></li>
-<li><p><strong>read_mesh</strong> (<em>bool</em><em>, </em><em>optional</em>) – Debug parameter.  Set to False to disable reading in the
+<li><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/dev/library/pathlib.html#pathlib.Path" title="(in Python v3.12)"><em>pathlib.Path</em></a><em>, </em><em>optional</em>) – Filename of the ANSYS binary result file.</p></li>
+<li><p><strong>ignore_cyclic</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Ignores any cyclic properties.</p></li>
+<li><p><strong>read_mesh</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Debug parameter.  Set to False to disable reading in the
 mesh from the result file.</p></li>
-<li><p><strong>parse_vtk</strong> (<em>bool</em><em>, </em><em>optional</em>) – Set to <code class="docutils literal notranslate"><span class="pre">False</span></code> to skip the parsing the mesh as a VTK
+<li><p><strong>parse_vtk</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Set to <code class="docutils literal notranslate"><span class="pre">False</span></code> to skip the parsing the mesh as a VTK
 UnstructuredGrid, which might take a long time for large models.</p></li>
 </ul>
 </dd>
@@ -282,13 +291,14 @@ UnstructuredGrid, which might take a long time for large models.</p></li>
 <dl class="py method">
 <dt class="sig sig-object py">
 <span class="sig-name descname"><span class="pre">animate_nodal_displacement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'norm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_frames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">movie_filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">progress_bar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
-<dd><p>Animate nodal solution.  Assumes nodal solution is a
-displacement array from a modal or static solution.</p>
+<dd><p>Animate nodal solution.</p>
+<p>Assumes nodal solution is a displacement array from a modal or static
+solution.</p>
 <dl class="simple">
 <dt>rnum<span class="classifier">int or list</span></dt><dd><p>Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p>
 </dd>
-<dt>comp<span class="classifier">str, optional</span></dt><dd><p>Scalar component to display.  Options are <code class="docutils literal notranslate"><span class="pre">'x'</span></code>,
+<dt>comp<span class="classifier">str, default: “norm”</span></dt><dd><p>Scalar component to display.  Options are <code class="docutils literal notranslate"><span class="pre">'x'</span></code>,
 <code class="docutils literal notranslate"><span class="pre">'y'</span></code>, <code class="docutils literal notranslate"><span class="pre">'z'</span></code>, and <code class="docutils literal notranslate"><span class="pre">'norm'</span></code>, and <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
 </dd>
 <dt>node_components<span class="classifier">list, optional</span></dt><dd><p>Accepts either a string or a list strings of node
@@ -317,10 +327,10 @@ animate once and close.  Automatically disabled when
 <code class="docutils literal notranslate"><span class="pre">&quot;gif&quot;</span></code>.  See <code class="docutils literal notranslate"><span class="pre">imagio.get_writer</span></code>.  A single loop of
 the mode will be recorded.</p>
 </dd>
-<dt>progress_bar<span class="classifier">bool, optional</span></dt><dd><p>Displays a progress bar when generating a movie while
-<code class="docutils literal notranslate"><span class="pre">off_screen=True</span></code>.  Default is <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<dt>progress_bar<span class="classifier">bool, default: True</span></dt><dd><p>Displays a progress bar when generating a movie while
+<code class="docutils literal notranslate"><span class="pre">off_screen=True</span></code>.</p>
 </dd>
-<dt>kwargs<span class="classifier">optional keyword arguments, optional</span></dt><dd><p>See <code class="docutils literal notranslate"><span class="pre">help(pyvista.Plot)</span></code> for additional keyword arguments.</p>
+<dt>kwargs<span class="classifier">optional keyword arguments</span></dt><dd><p>See <a class="reference external" href="https://docs.pyvista.org/api/plotting/_autosummary/pyvista.plot.html#pyvista.plot" title="(in PyVista v0.36.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyvista.plot()</span></code></a> for additional keyword arguments.</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
@@ -339,6 +349,10 @@ without looping</p>
 </div>
 <p>Animate the second result and save as a movie in the background.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">animate_nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">movie_filename</span><span class="o">=</span><span class="s1">&#39;disp.mp4&#39;</span><span class="p">,</span> <span class="n">off_screen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Disable plotting within the notebook.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">animate_nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">notebook</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -346,13 +360,14 @@ without looping</p>
 <dl class="py method">
 <dt class="sig sig-object py">
 <span class="sig-name descname"><span class="pre">animate_nodal_solution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'norm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_frames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">movie_filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">progress_bar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
-<dd><p>Animate nodal solution.  Assumes nodal solution is a
-displacement array from a modal or static solution.</p>
+<dd><p>Animate nodal solution.</p>
+<p>Assumes nodal solution is a displacement array from a modal or static
+solution.</p>
 <dl class="simple">
 <dt>rnum<span class="classifier">int or list</span></dt><dd><p>Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p>
 </dd>
-<dt>comp<span class="classifier">str, optional</span></dt><dd><p>Scalar component to display.  Options are <code class="docutils literal notranslate"><span class="pre">'x'</span></code>,
+<dt>comp<span class="classifier">str, default: “norm”</span></dt><dd><p>Scalar component to display.  Options are <code class="docutils literal notranslate"><span class="pre">'x'</span></code>,
 <code class="docutils literal notranslate"><span class="pre">'y'</span></code>, <code class="docutils literal notranslate"><span class="pre">'z'</span></code>, and <code class="docutils literal notranslate"><span class="pre">'norm'</span></code>, and <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
 </dd>
 <dt>node_components<span class="classifier">list, optional</span></dt><dd><p>Accepts either a string or a list strings of node
@@ -381,10 +396,10 @@ animate once and close.  Automatically disabled when
 <code class="docutils literal notranslate"><span class="pre">&quot;gif&quot;</span></code>.  See <code class="docutils literal notranslate"><span class="pre">imagio.get_writer</span></code>.  A single loop of
 the mode will be recorded.</p>
 </dd>
-<dt>progress_bar<span class="classifier">bool, optional</span></dt><dd><p>Displays a progress bar when generating a movie while
-<code class="docutils literal notranslate"><span class="pre">off_screen=True</span></code>.  Default is <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<dt>progress_bar<span class="classifier">bool, default: True</span></dt><dd><p>Displays a progress bar when generating a movie while
+<code class="docutils literal notranslate"><span class="pre">off_screen=True</span></code>.</p>
 </dd>
-<dt>kwargs<span class="classifier">optional keyword arguments, optional</span></dt><dd><p>See <code class="docutils literal notranslate"><span class="pre">help(pyvista.Plot)</span></code> for additional keyword arguments.</p>
+<dt>kwargs<span class="classifier">optional keyword arguments</span></dt><dd><p>See <a class="reference external" href="https://docs.pyvista.org/api/plotting/_autosummary/pyvista.plot.html#pyvista.plot" title="(in PyVista v0.36.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyvista.plot()</span></code></a> for additional keyword arguments.</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
@@ -403,6 +418,10 @@ without looping</p>
 </div>
 <p>Animate the second result and save as a movie in the background.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">animate_nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">movie_filename</span><span class="o">=</span><span class="s1">&#39;disp.mp4&#39;</span><span class="p">,</span> <span class="n">off_screen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Disable plotting within the notebook.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span><span class="o">.</span><span class="n">animate_nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">notebook</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -507,11 +526,11 @@ element at each node.  Due to the discontinuities across
 elements, stresses will vary based on the element they are
 evaluated from.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>nodes</strong> (<em>str</em><em>, </em><em>sequence of int</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence of int</em><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
 component or array of node numbers.  For example</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
@@ -521,7 +540,7 @@ component or array of node numbers.  For example</p>
 </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>nnum</strong> (<em>numpy.ndarray</em>) – Node numbers of the result.</p></li>
 <li><p><strong>stress</strong> (<em>numpy.ndarray</em>) – Stresses at <code class="docutils literal notranslate"><span class="pre">R,</span> <span class="pre">THETA,</span> <span class="pre">Z,</span> <span class="pre">RTHETA,</span> <span class="pre">THETAZ,</span> <span class="pre">RZ</span></code> averaged
@@ -582,11 +601,11 @@ PRNSOL, S</p>
 <span class="sig-name descname"><span class="pre">element_solution_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datatype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Retrieves element solution data.  Similar to ETABLE.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>datatype</strong> (<em>str</em>) – <p>Element data type to retrieve.</p>
+<li><p><strong>datatype</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a>) – <p>Element data type to retrieve.</p>
 <ul>
 <li><p>EMS: misc. data</p></li>
 <li><p>ENF: nodal forces</p></li>
@@ -615,11 +634,11 @@ list containing (step, substep) of the requested result.</p></li>
 <li><p>MNL: material nonlinear record</p></li>
 </ul>
 </p></li>
-<li><p><strong>sort</strong> (<em>bool</em>) – Sort results by element number.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p><strong>sort</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a>) – Sort results by element number.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
 <li><p><strong>**kwargs</strong> (<em>optional keyword arguments</em>) – Hidden options for distributed result files.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>enum</strong> (<em>np.ndarray</em>) – Element numbers.</p></li>
 <li><p><strong>element_data</strong> (<em>list</em>) – List with one data item for each element.</p></li>
@@ -674,19 +693,19 @@ from MAPDL with ESOL commands:</p>
 <dd><p>Retrieves the element component stresses.</p>
 <p>Equivalent ANSYS command: PRESOL, S</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>principal</strong> (<em>bool</em><em>, </em><em>optional</em>) – Returns principal stresses instead of component stresses.
+<li><p><strong>principal</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Returns principal stresses instead of component stresses.
 Default False.</p></li>
-<li><p><strong>in_element_coord_sys</strong> (<em>bool</em><em>, </em><em>optional</em>) – Returns the results in the element coordinate system.
+<li><p><strong>in_element_coord_sys</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Returns the results in the element coordinate system.
 Default False and will return the results in the global
 coordinate system.</p></li>
 <li><p><strong>**kwargs</strong> (<em>optional keyword arguments</em>) – Hidden options for distributed result files.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>enum</strong> (<em>np.ndarray</em>) – ANSYS element numbers corresponding to each element.</p></li>
 <li><p><strong>element_stress</strong> (<em>list</em>) – Stresses at each element for each node for Sx Sy Sz Sxy
@@ -715,7 +734,7 @@ the bottom layer is reported.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">filename</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">filename</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em></dt>
 <dd><p>String form of the filename. This property is read-only.</p>
 </dd></dl>
 
@@ -724,13 +743,13 @@ the bottom layer is reported.</p>
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">materials</span></span></dt>
 <dd><p>Result file material properties.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Dictionary of Materials.  Keys are the material numbers,
 and each material is a dictionary of the material
 properrties of that material with only the valid entries filled.</p>
 </dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>dict</p>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#dict" title="(in Python v3.12)">dict</a></p>
 </dd>
 </dl>
 <p class="rubric">Notes</p>
@@ -871,15 +890,15 @@ type.</p>
 <span class="sig-name descname"><span class="pre">nodal_acceleration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_nodal_coord_sys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Nodal velocities for a given result set.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>in_nodal_coord_sys</strong> (<em>bool</em><em>, </em><em>optional</em>) – When <code class="docutils literal notranslate"><span class="pre">True</span></code>, returns results in the nodal coordinate
+<li><p><strong>in_nodal_coord_sys</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – When <code class="docutils literal notranslate"><span class="pre">True</span></code>, returns results in the nodal coordinate
 system.  Default False.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>nnum</strong> (<em>int np.ndarray</em>) – Node numbers associated with the results.</p></li>
 <li><p><strong>result</strong> (<em>float np.ndarray</em>) – Array of nodal accelerations.  Array is (<code class="docutils literal notranslate"><span class="pre">nnod</span></code> x
@@ -908,11 +927,11 @@ solution results are reflected in <code class="docutils literal notranslate"><sp
 <p>These nodal boundary conditions are generally set with the
 APDL command <code class="docutils literal notranslate"><span class="pre">D</span></code>.  For example, <code class="docutils literal notranslate"><span class="pre">D,</span> <span class="pre">25,</span> <span class="pre">UX,</span> <span class="pre">0.001</span></code></p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>nnum</strong> (<em>np.ndarray</em>) – Node numbers of the nodes with boundary conditions.</p></li>
 <li><p><strong>dof</strong> (<em>np.ndarray</em>) – Array of indices of the degrees of freedom of the nodes
@@ -945,13 +964,13 @@ cartesian coordinate system or nodal coordinate system.</p>
 <p>Solution may be nodal temperatures or nodal displacements
 depending on the type of the solution.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>in_nodal_coord_sys</strong> (<em>bool</em><em>, </em><em>optional</em>) – When <code class="docutils literal notranslate"><span class="pre">True</span></code>, returns results in the nodal coordinate
+<li><p><strong>in_nodal_coord_sys</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – When <code class="docutils literal notranslate"><span class="pre">True</span></code>, returns results in the nodal coordinate
 system.  Default <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
-<li><p><strong>nodes</strong> (<em>str</em><em>, </em><em>sequence of int</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence of int</em><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
 component or array of node numbers.  For example</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
@@ -961,7 +980,7 @@ component or array of node numbers.  For example</p>
 </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>nnum</strong> (<em>int np.ndarray</em>) – Node numbers associated with the results.</p></li>
 <li><p><strong>result</strong> (<em>float np.ndarray</em>) – Array of nodal displacements or nodal temperatures.  Array
@@ -1005,11 +1024,11 @@ the integration points or values at the integration points
 moved to the nodes.</p>
 <p>Equivalent MAPDL command: <code class="docutils literal notranslate"><span class="pre">PRNSOL,</span> <span class="pre">EPEL</span></code></p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>nodes</strong> (<em>str</em><em>, </em><em>sequence of int</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence of int</em><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
 component or array of node numbers.  For example</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
@@ -1019,7 +1038,7 @@ component or array of node numbers.  For example</p>
 </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>nnum</strong> (<em>np.ndarray</em>) – MAPDL node numbers.</p></li>
 <li><p><strong>elastic_strain</strong> (<em>np.ndarray</em>) – Nodal component elastic strains.  Array is in the order
@@ -1055,11 +1074,11 @@ component or array of node numbers.  For example</p>
 <p>Nodal input force is generally set with the APDL command
 <code class="docutils literal notranslate"><span class="pre">F</span></code>.  For example, <code class="docutils literal notranslate"><span class="pre">F,</span> <span class="pre">25,</span> <span class="pre">FX,</span> <span class="pre">0.001</span></code></p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>nnum</strong> (<em>np.ndarray</em>) – Node numbers of the nodes with nodal forces.</p></li>
 <li><p><strong>dof</strong> (<em>np.ndarray</em>) – Array of indices of the degrees of freedom of the nodes
@@ -1092,11 +1111,11 @@ of freedom associated with each index.</p></li>
 <p>Plastic strains are always values at the integration points
 moved to the nodes.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>nodes</strong> (<em>str</em><em>, </em><em>sequence of int</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence of int</em><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
 component or array of node numbers.  For example</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
@@ -1106,7 +1125,7 @@ component or array of node numbers.  For example</p>
 </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>nnum</strong> (<em>np.ndarray</em>) – MAPDL node numbers.</p></li>
 <li><p><strong>plastic_strain</strong> (<em>np.ndarray</em>) – Nodal component plastic strains.  Array is in the order
@@ -1139,11 +1158,11 @@ through 50.</p>
 <span class="sig-name descname"><span class="pre">nodal_reaction_forces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Nodal reaction forces.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>rforces</strong> (<em>np.ndarray</em>) – Nodal reaction forces for each degree of freedom.</p></li>
 <li><p><strong>nnum</strong> (<em>np.ndarray</em>) – Node numbers corresponding to the reaction forces.  Node
@@ -1181,13 +1200,13 @@ cartesian coordinate system or nodal coordinate system.</p>
 <p>Solution may be nodal temperatures or nodal displacements
 depending on the type of the solution.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>in_nodal_coord_sys</strong> (<em>bool</em><em>, </em><em>optional</em>) – When <code class="docutils literal notranslate"><span class="pre">True</span></code>, returns results in the nodal coordinate
+<li><p><strong>in_nodal_coord_sys</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – When <code class="docutils literal notranslate"><span class="pre">True</span></code>, returns results in the nodal coordinate
 system.  Default <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
-<li><p><strong>nodes</strong> (<em>str</em><em>, </em><em>sequence of int</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence of int</em><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
 component or array of node numbers.  For example</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
@@ -1197,7 +1216,7 @@ component or array of node numbers.  For example</p>
 </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>nnum</strong> (<em>int np.ndarray</em>) – Node numbers associated with the results.</p></li>
 <li><p><strong>result</strong> (<em>float np.ndarray</em>) – Array of nodal displacements or nodal temperatures.  Array
@@ -1239,11 +1258,11 @@ solution results are reflected in <code class="docutils literal notranslate"><sp
 this method averages the nodal forces for each element for
 each node.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>nodes</strong> (<em>str</em><em>, </em><em>sequence of int</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence of int</em><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
 component or array of node numbers.  For example</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
@@ -1253,7 +1272,7 @@ component or array of node numbers.  For example</p>
 </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>nnum</strong> (<em>np.ndarray</em>) – MAPDL node numbers.</p></li>
 <li><p><strong>forces</strong> (<em>np.ndarray</em>) – Averaged nodal forces.  Array is sized <code class="docutils literal notranslate"><span class="pre">[nnod</span> <span class="pre">x</span> <span class="pre">numdof]</span></code>
@@ -1298,11 +1317,11 @@ element at each node.  Due to the discontinuities across
 elements, stresses will vary based on the element they are
 evaluated from.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>nodes</strong> (<em>str</em><em>, </em><em>sequence of int</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence of int</em><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
 component or array of node numbers.  For example</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
@@ -1312,7 +1331,7 @@ component or array of node numbers.  For example</p>
 </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>nnum</strong> (<em>numpy.ndarray</em>) – Node numbers of the result.</p></li>
 <li><p><strong>stress</strong> (<em>numpy.ndarray</em>) – Stresses at <code class="docutils literal notranslate"><span class="pre">X,</span> <span class="pre">Y,</span> <span class="pre">Z,</span> <span class="pre">XY,</span> <span class="pre">YZ,</span> <span class="pre">XZ</span></code> averaged at each corner
@@ -1350,11 +1369,11 @@ solution.</p>
 numbering.</p>
 <p>Equivalent MAPDL command: PRNSOL, TEMP</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>nodes</strong> (<em>str</em><em>, </em><em>sequence of int</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence of int</em><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
 component or array of node numbers.  For example</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
@@ -1364,7 +1383,7 @@ component or array of node numbers.  For example</p>
 </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>nnum</strong> (<em>numpy.ndarray</em>) – Node numbers of the result.</p></li>
 <li><p><strong>temperature</strong> (<em>numpy.ndarray</em>) – Temperature at each node.</p></li>
@@ -1399,11 +1418,11 @@ are always values at the integration points moved to the
 nodes.</p>
 <p>Equivalent MAPDL command: PRNSOL, EPTH, COMP</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>nodes</strong> (<em>str</em><em>, </em><em>sequence of int</em><em> or </em><em>str</em><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence of int</em><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
 component or array of node numbers.  For example</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
@@ -1413,7 +1432,7 @@ component or array of node numbers.  For example</p>
 </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>nnum</strong> (<em>np.ndarray</em>) – MAPDL node numbers.</p></li>
 <li><p><strong>thermal_strain</strong> (<em>np.ndarray</em>) – Nodal component plastic strains.  Array is in the order
@@ -1447,16 +1466,16 @@ component or array of node numbers.  For example</p>
 <p>The nodal results are returned returned in the global
 cartesian coordinate system or nodal coordinate system.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>solution_type</strong> (<em>str</em><em>, </em><em>optional</em>) – The solution type.  Must be either nodal displacements
+<li><p><strong>solution_type</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – The solution type.  Must be either nodal displacements
 (<code class="docutils literal notranslate"><span class="pre">'NSL'</span></code>), nodal velocities (<code class="docutils literal notranslate"><span class="pre">'VEL'</span></code>) or nodal
 accelerations (<code class="docutils literal notranslate"><span class="pre">'ACC'</span></code>).</p></li>
-<li><p><strong>in_nodal_coord_sys</strong> (<em>bool</em><em>, </em><em>optional</em>) – When <code class="docutils literal notranslate"><span class="pre">True</span></code>, returns results in the nodal coordinate system.
+<li><p><strong>in_nodal_coord_sys</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – When <code class="docutils literal notranslate"><span class="pre">True</span></code>, returns results in the nodal coordinate system.
 Default <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>nnum</strong> (<em>int np.ndarray</em>) – Node numbers associated with the results.</p></li>
 <li><p><strong>result</strong> (<em>float np.ndarray</em>) – Nodal solution for all result sets.  Array is sized
@@ -1473,15 +1492,15 @@ time steps by number of nodes by degrees of freedom.</p></li>
 <span class="sig-name descname"><span class="pre">nodal_velocity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_nodal_coord_sys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Nodal velocities for a given result set.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>in_nodal_coord_sys</strong> (<em>bool</em><em>, </em><em>optional</em>) – When <code class="docutils literal notranslate"><span class="pre">True</span></code>, returns results in the nodal coordinate
+<li><p><strong>in_nodal_coord_sys</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – When <code class="docutils literal notranslate"><span class="pre">True</span></code>, returns results in the nodal coordinate
 system.  Default False.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>nnum</strong> (<em>int np.ndarray</em>) – Node numbers associated with the results.</p></li>
 <li><p><strong>result</strong> (<em>float np.ndarray</em>) – Array of nodal velocities.  Array is (<code class="docutils literal notranslate"><span class="pre">nnod</span></code> x
@@ -1537,11 +1556,11 @@ compression as of 2019R1), you can disable this within MAPDL
 with:
 <code class="docutils literal notranslate"><span class="pre">/FCOMP,</span> <span class="pre">RST,</span> <span class="pre">0</span></code></p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>data</strong> (<em>list</em><em> or </em><em>np.ndarray</em>) – Data that will replace the existing records.</p></li>
-<li><p><strong>rnum</strong> (<em>int</em>) – Zero based result number.</p></li>
-<li><p><strong>solution_type</strong> (<em>str</em>) – <p>Element data type to overwrite.</p>
+<li><p><strong>data</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em> or </em><em>np.ndarray</em>) – Data that will replace the existing records.</p></li>
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – Zero based result number.</p></li>
+<li><p><strong>solution_type</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a>) – <p>Element data type to overwrite.</p>
 <ul>
 <li><p>EMS: misc. data</p></li>
 <li><p>ENF: nodal forces</p></li>
@@ -1570,7 +1589,7 @@ with:
 <li><p>MNL: material nonlinear record</p></li>
 </ul>
 </p></li>
-<li><p><strong>element_id</strong> (<em>int</em>) – Ansys element number (e.g. <code class="docutils literal notranslate"><span class="pre">1</span></code>)</p></li>
+<li><p><strong>element_id</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – Ansys element number (e.g. <code class="docutils literal notranslate"><span class="pre">1</span></code>)</p></li>
 </ul>
 </dd>
 </dl>
@@ -1602,11 +1621,11 @@ compression as of 2019R1), you can disable this within MAPDL
 with:
 <code class="docutils literal notranslate"><span class="pre">/FCOMP,</span> <span class="pre">RST,</span> <span class="pre">0</span></code></p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>element_data</strong> (<em>dict</em>) – Dictionary of results that will replace the existing records.</p></li>
-<li><p><strong>rnum</strong> (<em>int</em>) – Zero based result number.</p></li>
-<li><p><strong>solution_type</strong> (<em>str</em>) – <p>Element data type to overwrite.</p>
+<li><p><strong>element_data</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#dict" title="(in Python v3.12)"><em>dict</em></a>) – Dictionary of results that will replace the existing records.</p></li>
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – Zero based result number.</p></li>
+<li><p><strong>solution_type</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a>) – <p>Element data type to overwrite.</p>
 <ul>
 <li><p>EMS: misc. data</p></li>
 <li><p>ENF: nodal forces</p></li>
@@ -1656,14 +1675,14 @@ for the first result with random data.</p>
 <dd><p>Reads in coordinate system information from a binary result
 file.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>c_systems</strong> – Dictionary containing one entry for each defined
 coordinate system.  If no non-standard coordinate systems
 have been defined, there will be only one None.  First
 coordinate system is assumed to be global cartesian.</p>
 </dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>dict</p>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#dict" title="(in Python v3.12)">dict</a></p>
 </dd>
 </dl>
 <p class="rubric">Notes</p>
@@ -1701,7 +1720,7 @@ ellipse Z-axis radius to X-axis radius (defaults to 1.0
 
 <dl class="py property">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pathlib_filename</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">pathlib.Path</span></em></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pathlib_filename</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/dev/library/pathlib.html#pathlib.Path" title="(in Python v3.12)"><span class="pre">Path</span></a></em></dt>
 <dd><p>Return the <code class="docutils literal notranslate"><span class="pre">pathlib.Path</span></code> version of the filename. This property can not be set.</p>
 </dd></dl>
 
@@ -1710,24 +1729,24 @@ ellipse Z-axis radius to X-axis radius (defaults to 1.0
 <span class="sig-name descname"><span class="pre">plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Plot result geometry</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>node_components</strong> (<em>list</em><em>, </em><em>optional</em>) – Accepts either a string or a list strings of node
+<li><p><strong>node_components</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em>, </em><em>optional</em>) – Accepts either a string or a list strings of node
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
-<li><p><strong>element_components</strong> (<em>list</em><em>, </em><em>optional</em>) – Accepts either a string or a list strings of element
+<li><p><strong>element_components</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em>, </em><em>optional</em>) – Accepts either a string or a list strings of element
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
-<li><p><strong>sel_type_all</strong> (<em>bool</em><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
+<li><p><strong>sel_type_all</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
 containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
 <li><p><strong>**kwargs</strong> (<em>keyword arguments</em>) – Optional keyword arguments.  See <code class="docutils literal notranslate"><span class="pre">help(pyvista.plot)</span></code>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>cpos</strong> – List of camera position, focal point, and view up.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>list</p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)">list</a></p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
@@ -1749,27 +1768,27 @@ containing all nodes of the component.  Default <code class="docutils literal no
 <span class="sig-name descname"><span class="pre">plot_cylindrical_nodal_stress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">treat_nan_as_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Plot nodal_stress in the cylindrical coordinate system.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em>) – Result number</p></li>
-<li><p><strong>comp</strong> (<em>str</em><em>, </em><em>optional</em>) – Stress component to display.  Available options:
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – Result number</p></li>
+<li><p><strong>comp</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – Stress component to display.  Available options:
 - <code class="docutils literal notranslate"><span class="pre">&quot;R&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;THETA&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;Z&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;RTHETA&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;THETAZ&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;RZ&quot;</span></code></p></li>
-<li><p><strong>show_displacement</strong> (<em>bool</em><em>, </em><em>optional</em>) – Deforms mesh according to the result.</p></li>
-<li><p><strong>displacement_factor</strong> (<em>float</em><em>, </em><em>optional</em>) – Increases or decreases displacement by a factor.</p></li>
-<li><p><strong>node_components</strong> (<em>list</em><em>, </em><em>optional</em>) – Accepts either a string or a list strings of node
+<li><p><strong>show_displacement</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Deforms mesh according to the result.</p></li>
+<li><p><strong>displacement_factor</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#float" title="(in Python v3.12)"><em>float</em></a><em>, </em><em>optional</em>) – Increases or decreases displacement by a factor.</p></li>
+<li><p><strong>node_components</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em>, </em><em>optional</em>) – Accepts either a string or a list strings of node
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
-<li><p><strong>element_components</strong> (<em>list</em><em>, </em><em>optional</em>) – Accepts either a string or a list strings of element
+<li><p><strong>element_components</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em>, </em><em>optional</em>) – Accepts either a string or a list strings of element
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
-<li><p><strong>sel_type_all</strong> (<em>bool</em><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
+<li><p><strong>sel_type_all</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
 containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
-<li><p><strong>treat_nan_as_zero</strong> (<em>bool</em><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
+<li><p><strong>treat_nan_as_zero</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
 when plotting.</p></li>
 <li><p><strong>**kwargs</strong> (<em>keyword arguments</em>) – Optional keyword arguments.  See <code class="docutils literal notranslate"><span class="pre">help(pyvista.plot)</span></code></p></li>
 </ul>
@@ -1789,10 +1808,10 @@ when plotting.</p></li>
 <span class="sig-name descname"><span class="pre">plot_element_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_element_coord_sys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Plot an element result.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em>) – Result number.</p></li>
-<li><p><strong>result_type</strong> (<em>str</em>) – <p>Element data type to retrieve.</p>
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – Result number.</p></li>
+<li><p><strong>result_type</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a>) – <p>Element data type to retrieve.</p>
 <ul>
 <li><p>EMS: misc. data</p></li>
 <li><p>ENF: nodal forces</p></li>
@@ -1821,13 +1840,13 @@ when plotting.</p></li>
 <li><p>MNL: material nonlinear record</p></li>
 </ul>
 </p></li>
-<li><p><strong>item_index</strong> (<em>int</em>) – Index of the data item for each node within the element.</p></li>
-<li><p><strong>in_element_coord_sys</strong> (<em>bool</em><em>, </em><em>optional</em>) – Returns the results in the element coordinate system.
+<li><p><strong>item_index</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – Index of the data item for each node within the element.</p></li>
+<li><p><strong>in_element_coord_sys</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Returns the results in the element coordinate system.
 Default False and will return the results in the global
 coordinate system.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>nnum</strong> (<em>np.ndarray</em>) – ANSYS node numbers</p></li>
 <li><p><strong>result</strong> (<em>np.ndarray</em>) – Array of result data</p></li>
@@ -1842,37 +1861,37 @@ coordinate system.</p></li>
 <span class="sig-name descname"><span class="pre">plot_nodal_displacement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">treat_nan_as_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Plots the nodal solution.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>comp</strong> (<em>str</em><em>, </em><em>optional</em>) – Display component to display.  Options are <code class="docutils literal notranslate"><span class="pre">'X'</span></code>,
+<li><p><strong>comp</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – Display component to display.  Options are <code class="docutils literal notranslate"><span class="pre">'X'</span></code>,
 <code class="docutils literal notranslate"><span class="pre">'Y'</span></code>, <code class="docutils literal notranslate"><span class="pre">'Z'</span></code>, <code class="docutils literal notranslate"><span class="pre">'NORM'</span></code>, or an available degree of
 freedom.  Result may also include other degrees of
 freedom, check <code class="docutils literal notranslate"><span class="pre">rst.result_dof</span></code> for available degrees of
 freedoms for a given result.  Defaults to <code class="docutils literal notranslate"><span class="pre">&quot;NORM&quot;</span></code> for a
 structural displacement result, and <code class="docutils literal notranslate"><span class="pre">&quot;TEMP&quot;</span></code> for a
 thermal result.</p></li>
-<li><p><strong>show_displacement</strong> (<em>bool</em><em>, </em><em>optional</em>) – Deforms mesh according to the result.</p></li>
-<li><p><strong>displacement_factor</strong> (<em>float</em><em>, </em><em>optional</em>) – Increases or decreases displacement by a factor.</p></li>
-<li><p><strong>node_components</strong> (<em>list</em><em>, </em><em>optional</em>) – Accepts either a string or a list strings of node
+<li><p><strong>show_displacement</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Deforms mesh according to the result.</p></li>
+<li><p><strong>displacement_factor</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#float" title="(in Python v3.12)"><em>float</em></a><em>, </em><em>optional</em>) – Increases or decreases displacement by a factor.</p></li>
+<li><p><strong>node_components</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em>, </em><em>optional</em>) – Accepts either a string or a list strings of node
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
-<li><p><strong>element_components</strong> (<em>list</em><em>, </em><em>optional</em>) – Accepts either a string or a list strings of element
+<li><p><strong>element_components</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em>, </em><em>optional</em>) – Accepts either a string or a list strings of element
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
-<li><p><strong>sel_type_all</strong> (<em>bool</em><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
+<li><p><strong>sel_type_all</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
 containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
-<li><p><strong>treat_nan_as_zero</strong> (<em>bool</em><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
+<li><p><strong>treat_nan_as_zero</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
 when plotting.</p></li>
 <li><p><strong>**kwargs</strong> (<em>keyword arguments</em>) – Optional keyword arguments.  See <code class="docutils literal notranslate"><span class="pre">help(pyvista.plot)</span></code>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>cpos</strong> – Camera position from vtk render window.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>list</p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)">list</a></p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
@@ -1895,10 +1914,10 @@ example</p>
 <span class="sig-name descname"><span class="pre">plot_nodal_elastic_strain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalar_bar_args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{'title':</span> <span class="pre">'EQV</span> <span class="pre">Nodal</span> <span class="pre">Elastic</span> <span class="pre">Strain'}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">treat_nan_as_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Plot nodal elastic strain.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em>) – Result number</p></li>
-<li><p><strong>comp</strong> (<em>str</em><em>, </em><em>optional</em>) – Elastic strain component to display.  Available options:
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – Result number</p></li>
+<li><p><strong>comp</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – Elastic strain component to display.  Available options:
 - <code class="docutils literal notranslate"><span class="pre">&quot;X&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;Y&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;Z&quot;</span></code>
@@ -1906,19 +1925,19 @@ example</p>
 - <code class="docutils literal notranslate"><span class="pre">&quot;YZ&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;XZ&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;EQV&quot;</span></code></p></li>
-<li><p><strong>show_displacement</strong> (<em>bool</em><em>, </em><em>optional</em>) – Deforms mesh according to the result.</p></li>
-<li><p><strong>displacement_factor</strong> (<em>float</em><em>, </em><em>optional</em>) – Increases or decreases displacement by a factor.</p></li>
-<li><p><strong>node_components</strong> (<em>list</em><em>, </em><em>optional</em>) – Accepts either a string or a list strings of node
+<li><p><strong>show_displacement</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Deforms mesh according to the result.</p></li>
+<li><p><strong>displacement_factor</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#float" title="(in Python v3.12)"><em>float</em></a><em>, </em><em>optional</em>) – Increases or decreases displacement by a factor.</p></li>
+<li><p><strong>node_components</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em>, </em><em>optional</em>) – Accepts either a string or a list strings of node
 components to plot.  For example:
-<code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
-<li><p><strong>element_components</strong> (<em>list</em><em>, </em><em>optional</em>) – Accepts either a string or a list strings of element
+<code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT']</span></code></p></li>
+<li><p><strong>element_components</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em>, </em><em>optional</em>) – Accepts either a string or a list strings of element
 components to plot.  For example:
-<code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
-<li><p><strong>sel_type_all</strong> (<em>bool</em><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
+<code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT']</span></code></p></li>
+<li><p><strong>sel_type_all</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
 containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
-<li><p><strong>treat_nan_as_zero</strong> (<em>bool</em><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
+<li><p><strong>treat_nan_as_zero</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
 when plotting.</p></li>
-<li><p><strong>**kwargs</strong> (<em>keyword arguments</em>) – Optional keyword arguments.  See <a href="#id1"><span class="problematic" id="id2">``</span></a>help(pyvista.plot)``p</p></li>
+<li><p><strong>**kwargs</strong> (<em>keyword arguments</em>) – Optional keyword arguments.  See <code class="docutils literal notranslate"><span class="pre">help(pyvista.plot)</span></code></p></li>
 </ul>
 </dd>
 </dl>
@@ -1937,11 +1956,11 @@ when plotting.</p></li>
 <span class="sig-name descname"><span class="pre">plot_nodal_plastic_strain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalar_bar_args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{'title':</span> <span class="pre">'Nodal</span> <span class="pre">Plastic</span> <span class="pre">Strain'}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">treat_nan_as_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Plot nodal component plastic strain.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>comp</strong> (<em>str</em><em>, </em><em>optional</em>) – Plastic strain component to display.  Available options:
+<li><p><strong>comp</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – Plastic strain component to display.  Available options:
 - <code class="docutils literal notranslate"><span class="pre">&quot;X&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;Y&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;Z&quot;</span></code>
@@ -1949,17 +1968,17 @@ list containing (step, substep) of the requested result.</p></li>
 - <code class="docutils literal notranslate"><span class="pre">&quot;YZ&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;XZ&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;EQV&quot;</span></code></p></li>
-<li><p><strong>show_displacement</strong> (<em>bool</em><em>, </em><em>optional</em>) – Deforms mesh according to the result.</p></li>
-<li><p><strong>displacement_factor</strong> (<em>float</em><em>, </em><em>optional</em>) – Increases or decreases displacement by a factor.</p></li>
-<li><p><strong>node_components</strong> (<em>list</em><em>, </em><em>optional</em>) – Accepts either a string or a list strings of node
+<li><p><strong>show_displacement</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Deforms mesh according to the result.</p></li>
+<li><p><strong>displacement_factor</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#float" title="(in Python v3.12)"><em>float</em></a><em>, </em><em>optional</em>) – Increases or decreases displacement by a factor.</p></li>
+<li><p><strong>node_components</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em>, </em><em>optional</em>) – Accepts either a string or a list strings of node
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
-<li><p><strong>element_components</strong> (<em>list</em><em>, </em><em>optional</em>) – Accepts either a string or a list strings of element
+<li><p><strong>element_components</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em>, </em><em>optional</em>) – Accepts either a string or a list strings of element
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
-<li><p><strong>sel_type_all</strong> (<em>bool</em><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
+<li><p><strong>sel_type_all</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
 containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
-<li><p><strong>treat_nan_as_zero</strong> (<em>bool</em><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
+<li><p><strong>treat_nan_as_zero</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
 when plotting.</p></li>
 <li><p><strong>**kwargs</strong> (<em>keyword arguments</em>) – Optional keyword arguments.  See <code class="docutils literal notranslate"><span class="pre">help(pyvista.plot)</span></code>.</p></li>
 </ul>
@@ -1980,37 +1999,37 @@ when plotting.</p></li>
 <span class="sig-name descname"><span class="pre">plot_nodal_solution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">treat_nan_as_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Plots the nodal solution.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>comp</strong> (<em>str</em><em>, </em><em>optional</em>) – Display component to display.  Options are <code class="docutils literal notranslate"><span class="pre">'X'</span></code>,
+<li><p><strong>comp</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – Display component to display.  Options are <code class="docutils literal notranslate"><span class="pre">'X'</span></code>,
 <code class="docutils literal notranslate"><span class="pre">'Y'</span></code>, <code class="docutils literal notranslate"><span class="pre">'Z'</span></code>, <code class="docutils literal notranslate"><span class="pre">'NORM'</span></code>, or an available degree of
 freedom.  Result may also include other degrees of
 freedom, check <code class="docutils literal notranslate"><span class="pre">rst.result_dof</span></code> for available degrees of
 freedoms for a given result.  Defaults to <code class="docutils literal notranslate"><span class="pre">&quot;NORM&quot;</span></code> for a
 structural displacement result, and <code class="docutils literal notranslate"><span class="pre">&quot;TEMP&quot;</span></code> for a
 thermal result.</p></li>
-<li><p><strong>show_displacement</strong> (<em>bool</em><em>, </em><em>optional</em>) – Deforms mesh according to the result.</p></li>
-<li><p><strong>displacement_factor</strong> (<em>float</em><em>, </em><em>optional</em>) – Increases or decreases displacement by a factor.</p></li>
-<li><p><strong>node_components</strong> (<em>list</em><em>, </em><em>optional</em>) – Accepts either a string or a list strings of node
+<li><p><strong>show_displacement</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Deforms mesh according to the result.</p></li>
+<li><p><strong>displacement_factor</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#float" title="(in Python v3.12)"><em>float</em></a><em>, </em><em>optional</em>) – Increases or decreases displacement by a factor.</p></li>
+<li><p><strong>node_components</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em>, </em><em>optional</em>) – Accepts either a string or a list strings of node
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
-<li><p><strong>element_components</strong> (<em>list</em><em>, </em><em>optional</em>) – Accepts either a string or a list strings of element
+<li><p><strong>element_components</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em>, </em><em>optional</em>) – Accepts either a string or a list strings of element
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
-<li><p><strong>sel_type_all</strong> (<em>bool</em><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
+<li><p><strong>sel_type_all</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
 containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
-<li><p><strong>treat_nan_as_zero</strong> (<em>bool</em><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
+<li><p><strong>treat_nan_as_zero</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
 when plotting.</p></li>
 <li><p><strong>**kwargs</strong> (<em>keyword arguments</em>) – Optional keyword arguments.  See <code class="docutils literal notranslate"><span class="pre">help(pyvista.plot)</span></code>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>cpos</strong> – Camera position from vtk render window.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>list</p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)">list</a></p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
@@ -2033,35 +2052,35 @@ example</p>
 <span class="sig-name descname"><span class="pre">plot_nodal_stress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">treat_nan_as_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Plots the stresses at each node in the solution.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>comp</strong> (<em>str</em><em>, </em><em>optional</em>) – Stress component to display.  Available options:
+<li><p><strong>comp</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – Stress component to display.  Available options:
 - <code class="docutils literal notranslate"><span class="pre">&quot;X&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;Y&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;Z&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;XY&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;YZ&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;XZ&quot;</span></code></p></li>
-<li><p><strong>node_components</strong> (<em>list</em><em>, </em><em>optional</em>) – Accepts either a string or a list strings of node
+<li><p><strong>node_components</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em>, </em><em>optional</em>) – Accepts either a string or a list strings of node
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
-<li><p><strong>element_components</strong> (<em>list</em><em>, </em><em>optional</em>) – Accepts either a string or a list strings of element
+<li><p><strong>element_components</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em>, </em><em>optional</em>) – Accepts either a string or a list strings of element
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
-<li><p><strong>sel_type_all</strong> (<em>bool</em><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
+<li><p><strong>sel_type_all</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
 containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
-<li><p><strong>treat_nan_as_zero</strong> (<em>bool</em><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
+<li><p><strong>treat_nan_as_zero</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
 when plotting.</p></li>
 <li><p><strong>kwargs</strong> (<em>keyword arguments</em>) – Additional keyword arguments.  See <code class="docutils literal notranslate"><span class="pre">help(pyvista.plot)</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>cpos</strong> – 3 x 3 vtk camera position.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>list</p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)">list</a></p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
@@ -2076,20 +2095,20 @@ when plotting.</p></li>
 <span class="sig-name descname"><span class="pre">plot_nodal_temperature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">treat_nan_as_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Plot nodal temperature</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em>) – Result number</p></li>
-<li><p><strong>show_displacement</strong> (<em>bool</em><em>, </em><em>optional</em>) – Deforms mesh according to the result.</p></li>
-<li><p><strong>displacement_factor</strong> (<em>float</em><em>, </em><em>optional</em>) – Increases or decreases displacement by a factor.</p></li>
-<li><p><strong>node_components</strong> (<em>list</em><em>, </em><em>optional</em>) – Accepts either a string or a list strings of node
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – Result number</p></li>
+<li><p><strong>show_displacement</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Deforms mesh according to the result.</p></li>
+<li><p><strong>displacement_factor</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#float" title="(in Python v3.12)"><em>float</em></a><em>, </em><em>optional</em>) – Increases or decreases displacement by a factor.</p></li>
+<li><p><strong>node_components</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em>, </em><em>optional</em>) – Accepts either a string or a list strings of node
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
-<li><p><strong>element_components</strong> (<em>list</em><em>, </em><em>optional</em>) – Accepts either a string or a list strings of element
+<li><p><strong>element_components</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em>, </em><em>optional</em>) – Accepts either a string or a list strings of element
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
-<li><p><strong>sel_type_all</strong> (<em>bool</em><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
+<li><p><strong>sel_type_all</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
 containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
-<li><p><strong>treat_nan_as_zero</strong> (<em>bool</em><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
+<li><p><strong>treat_nan_as_zero</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
 when plotting.</p></li>
 <li><p><strong>**kwargs</strong> (<em>keyword arguments</em>) – Optional keyword arguments.  See <code class="docutils literal notranslate"><span class="pre">help(pyvista.plot)</span></code></p></li>
 </ul>
@@ -2114,10 +2133,10 @@ when plotting.</p></li>
 <dd><p>Plot nodal component thermal strains.</p>
 <p>Equivalent MAPDL command: PLNSOL, EPTH, COMP</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em>) – Result number</p></li>
-<li><p><strong>comp</strong> (<em>str</em><em>, </em><em>optional</em>) – Thermal strain component to display.  Available options:
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a>) – Result number</p></li>
+<li><p><strong>comp</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – Thermal strain component to display.  Available options:
 - <code class="docutils literal notranslate"><span class="pre">&quot;X&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;Y&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;Z&quot;</span></code>
@@ -2126,17 +2145,17 @@ when plotting.</p></li>
 - <code class="docutils literal notranslate"><span class="pre">&quot;XZ&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;EQV&quot;</span></code>
 - <code class="docutils literal notranslate"><span class="pre">&quot;ESWELL&quot;</span></code></p></li>
-<li><p><strong>show_displacement</strong> (<em>bool</em><em>, </em><em>optional</em>) – Deforms mesh according to the result.</p></li>
-<li><p><strong>displacement_factor</strong> (<em>float</em><em>, </em><em>optional</em>) – Increases or decreases displacement by a factor.</p></li>
-<li><p><strong>node_components</strong> (<em>list</em><em>, </em><em>optional</em>) – Accepts either a string or a list strings of node
+<li><p><strong>show_displacement</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Deforms mesh according to the result.</p></li>
+<li><p><strong>displacement_factor</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#float" title="(in Python v3.12)"><em>float</em></a><em>, </em><em>optional</em>) – Increases or decreases displacement by a factor.</p></li>
+<li><p><strong>node_components</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em>, </em><em>optional</em>) – Accepts either a string or a list strings of node
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
-<li><p><strong>element_components</strong> (<em>list</em><em>, </em><em>optional</em>) – Accepts either a string or a list strings of element
+<li><p><strong>element_components</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em>, </em><em>optional</em>) – Accepts either a string or a list strings of element
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
-<li><p><strong>sel_type_all</strong> (<em>bool</em><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
+<li><p><strong>sel_type_all</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
 containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
-<li><p><strong>treat_nan_as_zero</strong> (<em>bool</em><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
+<li><p><strong>treat_nan_as_zero</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
 when plotting.</p></li>
 <li><p><strong>**kwargs</strong> (<em>keyword arguments</em>) – Optional keyword arguments.  See <code class="docutils literal notranslate"><span class="pre">help(pyvista.plot)</span></code></p></li>
 </ul>
@@ -2157,35 +2176,35 @@ when plotting.</p></li>
 <span class="sig-name descname"><span class="pre">plot_principal_nodal_stress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displacement_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sel_type_all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">treat_nan_as_zero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Plot the principal stress.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
 <li><p><strong>comp</strong> (<em>string</em>) – <p>Stress component to plot.  S1, S2, S3 principal stresses, SINT
 stress intensity, and SEQV equivalent stress.</p>
 <p>Stress type must be a string from the following list:
 <code class="docutils literal notranslate"><span class="pre">['S1',</span> <span class="pre">'S2',</span> <span class="pre">'S3',</span> <span class="pre">'SINT',</span> <span class="pre">'SEQV']</span></code></p>
 </p></li>
-<li><p><strong>show_displacement</strong> (<em>bool</em><em>, </em><em>optional</em>) – Deforms mesh according to the result.</p></li>
-<li><p><strong>displacement_factor</strong> (<em>float</em><em>, </em><em>optional</em>) – Increases or decreases displacement by a factor.</p></li>
-<li><p><strong>node_components</strong> (<em>list</em><em>, </em><em>optional</em>) – Accepts either a string or a list strings of node
+<li><p><strong>show_displacement</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Deforms mesh according to the result.</p></li>
+<li><p><strong>displacement_factor</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#float" title="(in Python v3.12)"><em>float</em></a><em>, </em><em>optional</em>) – Increases or decreases displacement by a factor.</p></li>
+<li><p><strong>node_components</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em>, </em><em>optional</em>) – Accepts either a string or a list strings of node
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
-<li><p><strong>element_components</strong> (<em>list</em><em>, </em><em>optional</em>) – Accepts either a string or a list strings of element
+<li><p><strong>element_components</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a><em>, </em><em>optional</em>) – Accepts either a string or a list strings of element
 components to plot.  For example:
 <code class="docutils literal notranslate"><span class="pre">['MY_COMPONENT',</span> <span class="pre">'MY_OTHER_COMPONENT]</span></code></p></li>
-<li><p><strong>sel_type_all</strong> (<em>bool</em><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
+<li><p><strong>sel_type_all</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – If node_components is specified, plots those elements
 containing all nodes of the component.  Default <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
-<li><p><strong>treat_nan_as_zero</strong> (<em>bool</em><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
+<li><p><strong>treat_nan_as_zero</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Treat NAN values (i.e. stresses at midside nodes) as zero
 when plotting.</p></li>
 <li><p><strong>kwargs</strong> (<em>keyword arguments</em>) – Additional keyword arguments.  See <code class="docutils literal notranslate"><span class="pre">help(pyvista.plot)</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>cpos</strong> – VTK camera position.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>list</p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)">list</a></p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
@@ -2201,11 +2220,11 @@ when plotting.</p></li>
 <dd><p>Computes the principal component stresses for each node in
 the solution.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p><strong>nodenum</strong> (<em>numpy.ndarray</em>) – Node numbers of the result.</p></li>
 <li><p><strong>pstress</strong> (<em>numpy.ndarray</em>) – Principal stresses, stress intensity, and equivalent stress.
@@ -2239,15 +2258,15 @@ principal using the averaged value.</p>
 <span class="sig-name descname"><span class="pre">result_dof</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnum</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Return a list of degrees of freedom for a given result number.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>dof</strong> – List of degrees of freedom.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>list</p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)">list</a></p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
@@ -2266,15 +2285,15 @@ list containing (step, substep) of the requested result.</p>
 <code class="docutils literal notranslate"><span class="pre">'.vtk'</span></code> will use the legacy writer, while <code class="docutils literal notranslate"><span class="pre">'.vtu'</span></code> will
 select the VTK XML writer.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>filename</strong> (<em>str</em><em>, </em><em>pathlib.Path</em>) – Filename of grid to be written.  The file extension will
+<li><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/dev/library/pathlib.html#pathlib.Path" title="(in Python v3.12)"><em>pathlib.Path</em></a>) – Filename of grid to be written.  The file extension will
 select the type of writer to use.  <code class="docutils literal notranslate"><span class="pre">'.vtk'</span></code> will use the
 legacy writer, while <code class="docutils literal notranslate"><span class="pre">'.vtu'</span></code> will select the VTK XML
 writer.</p></li>
 <li><p><strong>rsets</strong> (<em>collections.Iterable</em>) – List of result sets to write.  For example <code class="docutils literal notranslate"><span class="pre">range(3)</span></code> or
 [0].</p></li>
-<li><p><strong>result_types</strong> (<em>list</em>) – <p>Result type to write.  For example <code class="docutils literal notranslate"><span class="pre">['ENF',</span> <span class="pre">'ENS']</span></code>
+<li><p><strong>result_types</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – <p>Result type to write.  For example <code class="docutils literal notranslate"><span class="pre">['ENF',</span> <span class="pre">'ENS']</span></code>
 List of some or all of the following:</p>
 <ul>
 <li><p>EMS: misc. data</p></li>
@@ -2304,7 +2323,7 @@ List of some or all of the following:</p>
 <li><p>MNL: material nonlinear record</p></li>
 </ul>
 </p></li>
-<li><p><strong>progress_bar</strong> (<em>bool</em><em>, </em><em>optional</em>) – Display a progress bar using <code class="docutils literal notranslate"><span class="pre">tqdm</span></code>.</p></li>
+<li><p><strong>progress_bar</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Display a progress bar using <code class="docutils literal notranslate"><span class="pre">tqdm</span></code>.</p></li>
 </ul>
 </dd>
 </dl>
@@ -2336,12 +2355,12 @@ Binary can only be selected for the legacy writer.</p>
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">section_data</span></span></dt>
 <dd><p>The section data from the result file</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>section_data</strong> – Dictionary of the section data with the section numbers as
 keys.</p>
 </dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>dict</p>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#dict" title="(in Python v3.12)">dict</a></p>
 </dd>
 </dl>
 <p class="rubric">Notes</p>
@@ -2356,15 +2375,15 @@ to interpret the section data for a given model.</p>
 <dd><p>Return an informative dictionary of solution data for a
 result.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>rnum</strong> (<em>int</em><em> or </em><em>list</em>) – Cumulative result number with zero based indexing, or a
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>header</strong> – Double precision solution header data.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>dict</p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#dict" title="(in Python v3.12)">dict</a></p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
@@ -2467,11 +2486,11 @@ center of gravity</p>
 
 <dl class="py method">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">write_tables</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">pathlib.Path</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span></dt>
+<span class="sig-name descname"><span class="pre">write_tables</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/dev/library/typing.html#typing.Union" title="(in Python v3.12)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/dev/library/pathlib.html#pathlib.Path" title="(in Python v3.12)"><span class="pre">Path</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Write binary tables to ASCII.  Assumes int32</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>filename</strong> (<em>str</em><em>, </em><em>pathlib.Path</em>) – Filename to write the tables to.</p>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/dev/library/pathlib.html#pathlib.Path" title="(in Python v3.12)"><em>pathlib.Path</em></a>) – Filename to write the tables to.</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
@@ -2485,33 +2504,35 @@ center of gravity</p>
 </section>
 
 
-              </div>
+              </article>
               
-              
-          </main>
-          
 
+              
+          </div>
+          
       </div>
     </div>
+
+  
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-<footer class="footer mt-5 mt-md-0">
-  <div class="container">
-    
-    <div class="footer-item">
-      <p class="copyright">
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
+
+<footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    <p class="copyright">
     &copy; Copyright (c) 2022 ANSYS, Inc. All rights reserved.<br>
 </p>
-    </div>
-    
-    <div class="footer-item">
-      <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
-</p>
-    </div>
-    
   </div>
+  
+  <div class="footer-item">
+    <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.1.1.<br>
+</p>
+  </div>
+  
+</div>
 </footer>
   </body>
 </html>

@@ -44,8 +44,6 @@ the details of the rotor result file.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     PyMAPDL Result
@@ -85,7 +83,7 @@ documentation on all the keyword arguments.
 
 .. code-block:: default
 
-    rotor.plot_sectors(cpos='xy', smooth_shading=True)
+    rotor.plot_sectors(cpos="xy", smooth_shading=True)
     rotor.plot()
 
 
@@ -124,9 +122,9 @@ use the (load step, sub step) ``(4, 3)``.
 
 .. code-block:: default
 
-    rotor.plot_nodal_displacement(20, show_displacement=True,
-                                  displacement_factor=0.001,
-                                  overlay_wireframe=True)  # same as (2, 4)
+    rotor.plot_nodal_displacement(
+        20, show_displacement=True, displacement_factor=0.001, overlay_wireframe=True
+    )  # same as (2, 4)
 
 
 
@@ -147,14 +145,19 @@ Animate Mode 21
 ~~~~~~~~~~~~~~~
 Disable movie_filename and increase n_frames for a smoother plot
 
-.. GENERATED FROM PYTHON SOURCE LINES 42-46
+.. GENERATED FROM PYTHON SOURCE LINES 42-51
 
 .. code-block:: default
 
-    rotor.animate_nodal_solution(20, loop=False, movie_filename='rotor_mode.gif',
-                                 background='w', displacement_factor=0.001,
-                                 add_text=False,
-                                 n_frames=30)
+    rotor.animate_nodal_solution(
+        20,
+        loop=False,
+        movie_filename="rotor_mode.gif",
+        background="w",
+        displacement_factor=0.001,
+        add_text=False,
+        n_frames=30,
+    )
 
 
 
@@ -166,13 +169,11 @@ Disable movie_filename and increase n_frames for a smoother plot
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    [(5.52155060432921, 5.5214282518334326, 5.110814907184016),
-     (3.164628201712816e-07, -0.00012203603295768417, -0.41073538068237303),
+    [(5.521550604329209, 5.5214282518334326, 5.110814907184016),
+     (3.164628200602593e-07, -0.00012203603295746213, -0.41073538068237303),
      (0.0, 0.0, 1.0)]
 
 
@@ -180,28 +181,23 @@ Disable movie_filename and increase n_frames for a smoother plot
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.206 seconds)
+   **Total running time of the script:** ( 0 minutes  7.140 seconds)
 
 
 .. _sphx_glr_download_examples_01-cyclic_results_sector_model.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: sector_model.py <sector_model.py>`
 
-     :download:`Download Python source code: sector_model.py <sector_model.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: sector_model.ipynb <sector_model.ipynb>`
+      :download:`Download Jupyter notebook: sector_model.ipynb <sector_model.ipynb>`
 
 
 .. only:: html

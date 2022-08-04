@@ -58,8 +58,6 @@ Download the academic modal analysis file
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     PyMAPDL Result
@@ -97,7 +95,7 @@ rotor._positive_cyclic_dir = True
 
 .. code-block:: default
 
-    _ = rotor.plot_nodal_displacement((2, 2), 'x', cpos='xy')
+    _ = rotor.plot_nodal_displacement((2, 2), "x", cpos="xy")
 
 
 
@@ -134,7 +132,7 @@ only the master sector will be output.
     so you will see differences between MAPDL and ``pymapdl-reader`` in
     these cases.
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-52
+.. GENERATED FROM PYTHON SOURCE LINES 48-51
 
 .. code-block:: default
 
@@ -148,8 +146,7 @@ only the master sector will be output.
 
 
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 53-66
+.. GENERATED FROM PYTHON SOURCE LINES 52-65
 
 Plot the nodal elastic strain in the "Z" direction for result ``(5, 2)``.
 
@@ -165,13 +162,14 @@ Additionally, you can also save screenshots by setting
 manually closing the plotting screen, set ``off_screen=True``.  This
 can help you automate saving screenshots.
 
-.. GENERATED FROM PYTHON SOURCE LINES 66-71
+.. GENERATED FROM PYTHON SOURCE LINES 65-71
 
 .. code-block:: default
 
 
-    _ = rotor.plot_nodal_elastic_strain((5, 2), 'Z', show_displacement=True,
-                                        displacement_factor=0.01)
+    _ = rotor.plot_nodal_elastic_strain(
+        (5, 2), "Z", show_displacement=True, displacement_factor=0.01
+    )
 
 
 
@@ -195,12 +193,13 @@ result ``(5, 2)``
 
 Available stress components are ``['Y', 'Z', 'XY', 'YZ', 'XZ']``
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-82
+.. GENERATED FROM PYTHON SOURCE LINES 78-83
 
 .. code-block:: default
 
-    _ = rotor.plot_nodal_stress((5, 1), 'Z', show_displacement=True,
-                                displacement_factor=0.01)
+    _ = rotor.plot_nodal_stress(
+        (5, 1), "Z", show_displacement=True, displacement_factor=0.01
+    )
 
 
 
@@ -215,19 +214,20 @@ Available stress components are ``['Y', 'Z', 'XY', 'YZ', 'XZ']``
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 83-87
+.. GENERATED FROM PYTHON SOURCE LINES 84-88
 
 You can also plot the nodal von mises principal stress.  This plot
 shows the principal stress for result ``(5, 2)``.
 
 Available stress components are ``['S1', 'S2', 'S3', 'SINT', 'SEQV']``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 87-89
+.. GENERATED FROM PYTHON SOURCE LINES 88-91
 
 .. code-block:: default
 
-    _ = rotor.plot_principal_nodal_stress((5, 2), 'SEQV', show_displacement=True,
-                                          displacement_factor=0.01)
+    _ = rotor.plot_principal_nodal_stress(
+        (5, 2), "SEQV", show_displacement=True, displacement_factor=0.01
+    )
 
 
 
@@ -243,28 +243,23 @@ Available stress components are ``['S1', 'S2', 'S3', 'SINT', 'SEQV']``.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.871 seconds)
+   **Total running time of the script:** ( 0 minutes  1.467 seconds)
 
 
 .. _sphx_glr_download_examples_01-cyclic_results_academic_sector_stress_strain.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: academic_sector_stress_strain.py <academic_sector_stress_strain.py>`
 
-     :download:`Download Python source code: academic_sector_stress_strain.py <academic_sector_stress_strain.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: academic_sector_stress_strain.ipynb <academic_sector_stress_strain.ipynb>`
+      :download:`Download Jupyter notebook: academic_sector_stress_strain.ipynb <academic_sector_stress_strain.ipynb>`
 
 
 .. only:: html
