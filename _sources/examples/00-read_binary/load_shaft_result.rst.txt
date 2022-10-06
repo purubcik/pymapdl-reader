@@ -270,7 +270,7 @@ plot a mode shape without contours using the "bwr" color map
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.9.13/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2282: PyvistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.9.14/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2282: PyvistaDeprecationWarning: 
     "stitle" is a depreciated keyword and will be removed in a future
     release.
 
@@ -315,7 +315,7 @@ plot a mode shape with contours and the default colormap
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.9.13/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2282: PyvistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.9.14/x64/lib/python3.9/site-packages/pyvista/plotting/plotting.py:2282: PyvistaDeprecationWarning: 
     "stitle" is a depreciated keyword and will be removed in a future
     release.
 
@@ -373,7 +373,7 @@ Disable ``movie_filename`` and increase ``n_frames`` for a smoother plot
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.581 seconds)
+   **Total running time of the script:** ( 0 minutes  10.178 seconds)
 
 
 .. _sphx_glr_download_examples_00-read_binary_load_shaft_result.py:

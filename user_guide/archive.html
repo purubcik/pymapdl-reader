@@ -44,6 +44,7 @@
     <script src="../_static/underscore.js"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -267,6 +268,271 @@
   <a class="reference internal nav-link" href="#archive-class">
    Archive Class
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Archive
+      </span>
+     </code>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.ekey">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.ekey
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.elem">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.elem
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.elem_real_constant">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.elem_real_constant
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.element_components">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.element_components
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.element_coord_system">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.element_coord_system()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.enum">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.enum
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.et_id">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.et_id
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.etype">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.etype
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.filename">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.filename
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.grid">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.grid
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.key_option">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.key_option
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.material_type">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.material_type
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.n_elem">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.n_elem
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.n_node">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.n_node
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.nnum">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.nnum
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.node_angles">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.node_angles
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.node_components">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.node_components
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.nodes">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.nodes
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.parameters">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.parameters
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.pathlib_filename">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.pathlib_filename
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.plot">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.plot()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.quality">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.quality
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.rlblock">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.rlblock
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.rlblock_num">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.rlblock_num
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.save">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.save()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.section">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.section
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.tshape">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.tshape
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.archive.Archive.tshape_key">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Archive.tshape_key
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -423,7 +689,7 @@ will be written as SOLID187.</p>
 <h2>Archive Class<a class="headerlink" href="#archive-class" title="Permalink to this heading">#</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="ansys.mapdl.reader.archive.Archive">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.archive.</span></span><span class="sig-name descname"><span class="pre">Archive</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">read_parameters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parse_vtk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_linear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowable_types</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">null_unallowed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ansys.mapdl.reader.archive.</span></span><span class="sig-name descname"><span class="pre">Archive</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">read_parameters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parse_vtk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_linear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowable_types</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">null_unallowed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">read_eblock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.reader.archive.Archive" title="Permalink to this definition">#</a></dt>
 <dd><p>Read a blocked ANSYS archive file or input file.</p>
 <p>Reads a blocked CDB file and optionally parses it to a vtk grid.
 This can be used to read in files written from MAPDL using the
@@ -450,6 +716,7 @@ element numbers.  Default False.</p></li>
 <li><p><strong>verbose</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – Print out each step when reading the archive file.  Used for
 debug purposes and defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
 <li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – Internally used parameter used to have a custom <code class="docutils literal notranslate"><span class="pre">__repr__</span></code>.</p></li>
+<li><p><strong>read_eblock</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>default: True</em>) – Read the element block.</p></li>
 </ul>
 </dd>
 </dl>
@@ -1075,7 +1342,7 @@ file size.</p>
   
   <div class="footer-item">
     <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.1.1.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
 </p>
   </div>
   

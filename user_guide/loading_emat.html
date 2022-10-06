@@ -44,6 +44,7 @@
     <script src="../_static/underscore.js"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -262,6 +263,145 @@
   <a class="reference internal nav-link" href="#ematfile-object-methods">
    EmatFile Object Methods
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ansys.mapdl.reader.emat.EmatFile">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       EmatFile
+      </span>
+     </code>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.emat.EmatFile.eeqv">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         EmatFile.eeqv
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.emat.EmatFile.element_matrices_index_table">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         EmatFile.element_matrices_index_table
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.emat.EmatFile.enum">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         EmatFile.enum
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.emat.EmatFile.filename">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         EmatFile.filename
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.emat.EmatFile.global_applied_force">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         EmatFile.global_applied_force()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.emat.EmatFile.n_dof">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         EmatFile.n_dof
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.emat.EmatFile.n_elements">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         EmatFile.n_elements
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.emat.EmatFile.n_nodes">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         EmatFile.n_nodes
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.emat.EmatFile.neqv">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         EmatFile.neqv
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.emat.EmatFile.nnum">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         EmatFile.nnum
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.emat.EmatFile.pathlib_filename">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         EmatFile.pathlib_filename
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.emat.EmatFile.read_element">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         EmatFile.read_element()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.emat.EmatFile.read_element_matrix_header">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         EmatFile.read_element_matrix_header()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ansys.mapdl.reader.emat.EmatFile.read_header">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         EmatFile.read_header()
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -627,7 +767,7 @@ lower triangular form.</p>
   
   <div class="footer-item">
     <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.1.1.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
 </p>
   </div>
   
