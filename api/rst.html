@@ -44,6 +44,7 @@
     <script src="../_static/underscore.js"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -530,7 +531,7 @@ evaluated from.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence of int</em><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence</em><em> of </em><a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
 component or array of node numbers.  For example</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
@@ -970,7 +971,7 @@ depending on the type of the solution.</p>
 list containing (step, substep) of the requested result.</p></li>
 <li><p><strong>in_nodal_coord_sys</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – When <code class="docutils literal notranslate"><span class="pre">True</span></code>, returns results in the nodal coordinate
 system.  Default <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
-<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence of int</em><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence</em><em> of </em><a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
 component or array of node numbers.  For example</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
@@ -1028,7 +1029,7 @@ moved to the nodes.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence of int</em><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence</em><em> of </em><a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
 component or array of node numbers.  For example</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
@@ -1115,7 +1116,7 @@ moved to the nodes.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence of int</em><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence</em><em> of </em><a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
 component or array of node numbers.  For example</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
@@ -1206,7 +1207,7 @@ depending on the type of the solution.</p>
 list containing (step, substep) of the requested result.</p></li>
 <li><p><strong>in_nodal_coord_sys</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – When <code class="docutils literal notranslate"><span class="pre">True</span></code>, returns results in the nodal coordinate
 system.  Default <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
-<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence of int</em><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence</em><em> of </em><a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
 component or array of node numbers.  For example</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
@@ -1262,7 +1263,7 @@ each node.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence of int</em><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence</em><em> of </em><a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
 component or array of node numbers.  For example</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
@@ -1321,7 +1322,7 @@ evaluated from.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence of int</em><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence</em><em> of </em><a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
 component or array of node numbers.  For example</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
@@ -1373,7 +1374,7 @@ numbering.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence of int</em><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence</em><em> of </em><a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
 component or array of node numbers.  For example</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
@@ -1422,7 +1423,7 @@ nodes.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>rnum</strong> (<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><em>list</em></a>) – Cumulative result number with zero based indexing, or a
 list containing (step, substep) of the requested result.</p></li>
-<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence of int</em><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
+<li><p><strong>nodes</strong> (<a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>sequence</em><em> of </em><a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – <p>Select a limited subset of nodes.  Can be a nodal
 component or array of node numbers.  For example</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;MY_COMPONENT&quot;</span></code></p></li>
@@ -2528,7 +2529,7 @@ center of gravity</p>
   
   <div class="footer-item">
     <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.1.1.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
 </p>
   </div>
   
