@@ -270,15 +270,15 @@ plot a mode shape without contours using the "bwr" color map
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.10.8/x64/lib/python3.10/site-packages/pyvista/plotting/plotting.py:2282: PyvistaDeprecationWarning: 
-    "stitle" is a depreciated keyword and will be removed in a future
+    /opt/hostedtoolcache/Python/3.10.8/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:276: PyVistaDeprecationWarning: 
+    "stitle" is a deprecated keyword argument and will be removed in a future
     release.
 
     Use ``scalar_bar_args`` instead.  For example:
 
     scalar_bar_args={'title': 'Scalar Bar Title'}
 
-      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
+      warnings.warn(USE_SCALAR_BAR_ARGS, PyVistaDeprecationWarning)
 
 
 
@@ -315,15 +315,15 @@ plot a mode shape with contours and the default colormap
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.10.8/x64/lib/python3.10/site-packages/pyvista/plotting/plotting.py:2282: PyvistaDeprecationWarning: 
-    "stitle" is a depreciated keyword and will be removed in a future
+    /opt/hostedtoolcache/Python/3.10.8/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:276: PyVistaDeprecationWarning: 
+    "stitle" is a deprecated keyword argument and will be removed in a future
     release.
 
     Use ``scalar_bar_args`` instead.  For example:
 
     scalar_bar_args={'title': 'Scalar Bar Title'}
 
-      warnings.warn(USE_SCALAR_BAR_ARGS, PyvistaDeprecationWarning)
+      warnings.warn(USE_SCALAR_BAR_ARGS, PyVistaDeprecationWarning)
 
 
 
@@ -373,7 +373,7 @@ Disable ``movie_filename`` and increase ``n_frames`` for a smoother plot
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.079 seconds)
+   **Total running time of the script:** ( 0 minutes  7.230 seconds)
 
 
 .. _sphx_glr_download_examples_00-read_binary_load_shaft_result.py:

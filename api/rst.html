@@ -331,7 +331,7 @@ the mode will be recorded.</p>
 <dt>progress_bar<span class="classifier">bool, default: True</span></dt><dd><p>Displays a progress bar when generating a movie while
 <code class="docutils literal notranslate"><span class="pre">off_screen=True</span></code>.</p>
 </dd>
-<dt>kwargs<span class="classifier">optional keyword arguments</span></dt><dd><p>See <a class="reference external" href="https://docs.pyvista.org/api/plotting/_autosummary/pyvista.plot.html#pyvista.plot" title="(in PyVista v0.36.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyvista.plot()</span></code></a> for additional keyword arguments.</p>
+<dt>kwargs<span class="classifier">optional keyword arguments</span></dt><dd><p>See <a class="reference external" href="https://docs.pyvista.org/api/plotting/_autosummary/pyvista.plot.html#pyvista.plot" title="(in PyVista v0.37.0)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyvista.plot()</span></code></a> for additional keyword arguments.</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
@@ -400,7 +400,7 @@ the mode will be recorded.</p>
 <dt>progress_bar<span class="classifier">bool, default: True</span></dt><dd><p>Displays a progress bar when generating a movie while
 <code class="docutils literal notranslate"><span class="pre">off_screen=True</span></code>.</p>
 </dd>
-<dt>kwargs<span class="classifier">optional keyword arguments</span></dt><dd><p>See <a class="reference external" href="https://docs.pyvista.org/api/plotting/_autosummary/pyvista.plot.html#pyvista.plot" title="(in PyVista v0.36.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyvista.plot()</span></code></a> for additional keyword arguments.</p>
+<dt>kwargs<span class="classifier">optional keyword arguments</span></dt><dd><p>See <a class="reference external" href="https://docs.pyvista.org/api/plotting/_autosummary/pyvista.plot.html#pyvista.plot" title="(in PyVista v0.37.0)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyvista.plot()</span></code></a> for additional keyword arguments.</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
@@ -993,8 +993,8 @@ number of degrees of freedom which includes <code class="docutils literal notran
 </dd>
 </dl>
 <p class="rubric">Examples</p>
-<p>Return the nodal soltuion (in this case, displacement) for the
-first result of <code class="docutils literal notranslate"><span class="pre">&quot;file.rst&quot;</span></code></p>
+<p>Return the nodal solution (in this case, displacement) for the
+first result of <code class="docutils literal notranslate"><span class="pre">&quot;file.rst&quot;</span></code>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span> <span class="o">=</span> <span class="n">pymapdl_reader</span><span class="o">.</span><span class="n">read_binary</span><span class="p">(</span><span class="s1">&#39;file.rst&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
@@ -1229,8 +1229,8 @@ number of degrees of freedom which includes <code class="docutils literal notran
 </dd>
 </dl>
 <p class="rubric">Examples</p>
-<p>Return the nodal soltuion (in this case, displacement) for the
-first result of <code class="docutils literal notranslate"><span class="pre">&quot;file.rst&quot;</span></code></p>
+<p>Return the nodal solution (in this case, displacement) for the
+first result of <code class="docutils literal notranslate"><span class="pre">&quot;file.rst&quot;</span></code>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">reader</span> <span class="k">as</span> <span class="n">pymapdl_reader</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rst</span> <span class="o">=</span> <span class="n">pymapdl_reader</span><span class="o">.</span><span class="n">read_binary</span><span class="p">(</span><span class="s1">&#39;file.rst&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">nnum</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">rst</span><span class="o">.</span><span class="n">nodal_solution</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
