@@ -120,7 +120,7 @@ plane.
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:280: PyVistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:280: PyVistaDeprecationWarning: 
     "stitle" is a deprecated keyword argument and will be removed in a future
     release.
 
@@ -269,7 +269,7 @@ harmonic index of 5:
  .. code-block:: none
 
     Harmonic Index: 5
-    /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:280: PyVistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:280: PyVistaDeprecationWarning: 
     "stitle" is a deprecated keyword argument and will be removed in a future
     release.
 
@@ -324,7 +324,7 @@ The same can be done for the simpler nodal diameter 1
  .. code-block:: none
 
     1
-    /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:280: PyVistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:280: PyVistaDeprecationWarning: 
     "stitle" is a deprecated keyword argument and will be removed in a future
     release.
 
@@ -481,7 +481,7 @@ We can verify these results by analyzing a multi-sector rotor
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:280: PyVistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:280: PyVistaDeprecationWarning: 
     "stitle" is a deprecated keyword argument and will be removed in a future
     release.
 
@@ -552,7 +552,7 @@ Cumulative result 8 and harmonic index 1
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:280: PyVistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:280: PyVistaDeprecationWarning: 
     "stitle" is a deprecated keyword argument and will be removed in a future
     release.
 
@@ -593,7 +593,7 @@ Cumulative result 10 and harmonic index 5
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:280: PyVistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:280: PyVistaDeprecationWarning: 
     "stitle" is a deprecated keyword argument and will be removed in a future
     release.
 
@@ -634,7 +634,7 @@ Cumulative result 13 and harmonic index 7
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:280: PyVistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:280: PyVistaDeprecationWarning: 
     "stitle" is a deprecated keyword argument and will be removed in a future
     release.
 
@@ -675,7 +675,7 @@ Cumulative result 15 and harmonic index 11
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:280: PyVistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:280: PyVistaDeprecationWarning: 
     "stitle" is a deprecated keyword argument and will be removed in a future
     release.
 
@@ -767,7 +767,7 @@ second mode in the mode pair ``(3, 2)`` instead of ``(3, 1)``.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.738 seconds)
+   **Total running time of the script:** ( 0 minutes  11.508 seconds)
 
 
 .. _sphx_glr_download_examples_01-cyclic_results_academic_sector_nd.py:
