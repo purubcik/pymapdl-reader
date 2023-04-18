@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-read_binary_load_shaft_result.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-read_binary_load_shaft_result.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -270,7 +270,7 @@ plot a mode shape without contours using the "bwr" color map
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:280: PyVistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.10.11/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:280: PyVistaDeprecationWarning: 
     "stitle" is a deprecated keyword argument and will be removed in a future
     release.
 
@@ -315,7 +315,7 @@ plot a mode shape with contours and the default colormap
 
  .. code-block:: none
 
-    /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:280: PyVistaDeprecationWarning: 
+    /opt/hostedtoolcache/Python/3.10.11/x64/lib/python3.10/site-packages/pyvista/plotting/_plotting.py:280: PyVistaDeprecationWarning: 
     "stitle" is a deprecated keyword argument and will be removed in a future
     release.
 
@@ -373,7 +373,7 @@ Disable ``movie_filename`` and increase ``n_frames`` for a smoother plot
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  11.040 seconds)
+   **Total running time of the script:** ( 0 minutes  15.921 seconds)
 
 
 .. _sphx_glr_download_examples_00-read_binary_load_shaft_result.py:
@@ -381,6 +381,8 @@ Disable ``movie_filename`` and increase ``n_frames`` for a smoother plot
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

@@ -21,7 +21,7 @@ directly analyze MAPDL result files from a cyclic analysis.
 .. only:: html
 
   .. image:: /examples/01-cyclic_results/images/thumb/sphx_glr_academic_sector_nd_thumb.png
-    :alt: Understanding Nodal Diameters from a Cyclic Model Analysis
+    :alt:
 
   :ref:`sphx_glr_examples_01-cyclic_results_academic_sector_nd.py`
 
@@ -38,7 +38,7 @@ directly analyze MAPDL result files from a cyclic analysis.
 .. only:: html
 
   .. image:: /examples/01-cyclic_results/images/thumb/sphx_glr_academic_sector_stress_strain_thumb.png
-    :alt: Stress and Strain from a Cyclic Modal Analysis
+    :alt:
 
   :ref:`sphx_glr_examples_01-cyclic_results_academic_sector_stress_strain.py`
 
@@ -55,7 +55,7 @@ directly analyze MAPDL result files from a cyclic analysis.
 .. only:: html
 
   .. image:: /examples/01-cyclic_results/images/thumb/sphx_glr_sector_model_thumb.png
-    :alt: Cyclic Model Visualization
+    :alt:
 
   :ref:`sphx_glr_examples_01-cyclic_results_sector_model.py`
 
